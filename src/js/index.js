@@ -4,11 +4,11 @@ import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-route
 
 import App from './components/App';
 import Home from './components/Home';
-import Affordability from './components/Affordability';
-import Decency from './components/Decency';
-import Neighbourhood from './components/Neighbourhood';
-import Space from './components/Space';
-import Stability from './components/Stability';
+import Affordability from './components/pages/Affordability';
+import Decency from './components/pages/Decency';
+import Neighbourhood from './components/pages/Neighbourhood';
+import Space from './components/pages/Space';
+import Stability from './components/pages/Stability';
 
 ReactDOM.render(
 
