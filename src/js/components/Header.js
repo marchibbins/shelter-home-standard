@@ -22,7 +22,8 @@ export default class Header extends React.Component {
 
     render () {
         return (
-            <Navbar expanded={this.state.expanded} onToggle={this.handleNavbar.bind(this)} inverse>
+            <Navbar expanded={this.state.expanded} onToggle={this.handleNavbar.bind(this)}
+                fixedTop={true} inverse>
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link to="/">Home standard</Link>
