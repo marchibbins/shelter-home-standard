@@ -26,7 +26,9 @@ export default class Header extends React.Component {
                 fixedTop={true} inverse>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">Home standard</Link>
+                        <Link to="/" onClick={this.closeNavbar.bind(this)}>
+                            Home standard
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
