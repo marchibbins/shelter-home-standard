@@ -108,6 +108,7 @@ gulp.task('minifyCss', () => {
 
 gulp.task('serve', () => {
     connect.server({
+        port: 8081,
         middleware: function () {
             return [
                 history(),
