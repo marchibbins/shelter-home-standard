@@ -76,7 +76,8 @@ export default class Affordability extends React.Component {
 
                 <Accordion className="full-width" defaultActiveKey={0}>
                     {data.map((panel, i) => (
-                        <Panel key={i} header={this.panelHeading(panel.title, 'right')} eventKey={i}>
+                        <Panel key={i} header={this.panelHeading(panel.title, 'right')}
+                            className="dimension-chart" eventKey={i}>
                             <ul className="list-unstyled">
                                 {panel.values.map((value, j) => (
                                     <li key={j}>
