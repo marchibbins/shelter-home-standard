@@ -1,18 +1,6 @@
 import React from 'react';
 import { Accordion, Panel, ProgressBar } from 'react-bootstrap';
-
-const data = [
-    {
-        'title': 'Affordability by household income',
-        'values': [
-            {label: 'Up to £9,499', percent: 60},
-            {label: '£9,500–17,499', percent: 70},
-            {label: '£17,500–29,999', percent: 80},
-            {label: '£30,000–49,999', percent: 65},
-            {label: '£50,000 or more', percent: 65}
-        ]
-    }
-];
+import data from '../../data/affordability';
 
 export default class Affordability extends React.Component {
 
