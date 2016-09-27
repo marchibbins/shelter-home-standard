@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from 'react-bootstrap';
 
 import Header from './Header';
 
@@ -6,13 +7,12 @@ export default class App extends React.Component {
 
     render () {
         return (
-            <div>
+            <Grid>
                 <Header/>
                 <main>
-                    <h1>Home standard</h1>
                     {this.props.children}
                 </main>
-            </div>
+            </Grid>
         );
     }
 

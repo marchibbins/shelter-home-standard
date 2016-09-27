@@ -1,0 +1,23 @@
+.panel-group {
+    .panel {
+        border: none;
+
+         + .panel {
+            margin-top: 20px;
+         }
+    }
+
+    .panel-heading {
+        background-color: $grey;
+        border-radius: 0;
+        color: white;
+    }
+
+    .panel-heading--right {
+        text-align: right;
+    }
+
+    .panel-default .panel-collapse .panel-body {
+        border: none;
+    }
+}
