@@ -13,6 +13,14 @@
         color: $text-color;
     }
 
+    .panel-title > a {
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
     .panel-heading--right {
         text-align: right;
     }

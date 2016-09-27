@@ -41,12 +41,23 @@
         border-radius: 0;
         box-shadow: none;
         margin-bottom: 5px;
+
+        &.active .progress-bar {
+            background-color: $affordability-accent;
+        }
+
     }
 
     .progress-bar {
         min-width: 35px;
         padding-right: 5px;
         text-align: right;
+        background-color: $grey;
+        transition: background-color .5s ease;
+        box-shadow: none;
+    }
+
+    .btn.active {
         background-color: $affordability-accent;
     }
 }

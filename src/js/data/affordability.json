@@ -4,7 +4,8 @@
         "values": [
             {
                 "label": "Up to £9,499",
-                "percent": 60
+                "percent": 40,
+                "active": true
             },
             {
                 "label": "£9,500–17,499",
@@ -12,7 +13,8 @@
             },
             {
                 "label": "£17,500–29,999",
-                "percent": 80
+                "percent": 80,
+                "active": true
             },
             {
                 "label": "£30,000–49,999",

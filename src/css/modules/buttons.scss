@@ -2,6 +2,17 @@
     background: $grey;
     border-radius: 0;
     border: none;
+
+    &.active,
+    &:active, {
+        box-shadow: none;
+
+        &.focus,
+        &:focus, {
+            outline: none;
+        }
+    }
+
 }
 
 .btn--full-width {

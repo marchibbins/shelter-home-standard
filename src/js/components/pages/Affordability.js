@@ -1,8 +1,26 @@
 import React from 'react';
+import update from 'react-addons-update';
 import { Accordion, Panel, ProgressBar } from 'react-bootstrap';
 import data from '../../data/affordability';
 
 export default class Affordability extends React.Component {
+
+    constructor (props) {
+        super(props);
+        this.state = {data};
+    }
+
+    handleClick (objIndex, valueIndex, event) {
+        event.preventDefault();
+        let toggle = this.state.data[objIndex].values[valueIndex].active === true ? false : true;
+        this.setState({
+            data: update(this.state.data, {[objIndex]: {
+                values: {[valueIndex]: {
+                    $merge: {active: toggle}}
+                }}
+            })
+        });
+    }
 
     panelHeading (title, align = 'left') {
         return (
@@ -63,19 +81,21 @@ export default class Affordability extends React.Component {
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <Accordion className="full-width" defaultActiveKey={0}>
-                    {data.map((panel, i) => (
+                    {this.state.data.map((panel, i) => (
                         <Panel key={i} header={this.panelHeading(panel.title, 'right')}
                             className="dimension-chart" eventKey={i}>
                             <ul className="list-unstyled">
                                 {panel.values.map((value, j) => (
                                     <li key={j}>
                                         <span className="sr-only">{value.label}</span>
-                                        <ProgressBar now={value.percent} label={value.percent + '%'}/>
+                                        <ProgressBar now={value.percent} label={value.percent + '%'}
+                                            className={value.active ? 'active': ''}/>
                                     </li>
                                 ))}
                             </ul>
                             {panel.values.map((value, k) => (
-                                <button key={k} className="btn">{value.label}</button>
+                                <button className={'btn' + (value.active ? ' active' : '')}
+                                    key={k} onClick={this.handleClick.bind(this, i, k)}>{value.label}</button>
                             ))}
                         </Panel>
                     ))}
