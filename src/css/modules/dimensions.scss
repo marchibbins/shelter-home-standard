@@ -15,3 +15,18 @@
     width: 260px;
     height: 238px;
 }
+
+.dimension-infographic {
+    background-color: $dark-grey;
+    margin-bottom: 20px;
+
+    .dimension-infographic__img {
+        margin: 0 auto;
+    }
+
+    .dimension-infographic__btn {
+        background-color: $dark-grey;
+        color: $affordability-accent;
+        border-top: 1px solid $affordability-accent;
+    }
+}

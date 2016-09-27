@@ -48,8 +48,22 @@ export default class Affordability extends React.Component {
                     </Panel>
                 </Accordion>
 
-                <p><img src="http://placehold.it/250x250/" className="img-responsive"/></p>
-                <p><img src="http://placehold.it/250x250/" className="img-responsive"/></p>
+                <div className="dimension-infographic full-width">
+                    <img src="/dist/img/infographic1.jpg"
+                        className="dimension-infographic__img img-responsive"/>
+                    <img src="/dist/img/infographic2.jpg"
+                        className="dimension-infographic__img img-responsive"/>
+                    <button className="dimension-infographic__btn btn btn-primary btn--full-width">
+                        Infographic on Affordability
+                    </button>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <Accordion className="full-width" defaultActiveKey={1}>
                     <Panel header={this.panelHeading('Affordability by household income', 'right')} eventKey={1}>
