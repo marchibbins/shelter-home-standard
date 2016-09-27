@@ -1,15 +1,24 @@
 import React from 'react';
 import { Accordion, Panel, ProgressBar } from 'react-bootstrap';
 
+const data = [
+    {
+        'title': 'Affordability by household income',
+        'values': [
+            {label: 'Up to £9,499', percent: 60},
+            {label: '£9,500–17,499', percent: 70},
+            {label: '£17,500–29,999', percent: 80},
+            {label: '£30,000–49,999', percent: 65},
+            {label: '£50,000 or more', percent: 65}
+        ]
+    }
+];
+
 export default class Affordability extends React.Component {
 
     panelHeading (title, align = 'left') {
         return (
-            <div className={`panel-heading--${align}`}>
-                <h4 role="presentation" className="panel-title">
-                    <a role="tab">{title}</a>
-                </h4>
-            </div>
+            <div role="presentation" className={`panel-heading--${align}`}>{title}</div>
         );
     }
 
@@ -65,49 +74,32 @@ export default class Affordability extends React.Component {
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <Accordion className="full-width" defaultActiveKey={1}>
-                    <Panel header={this.panelHeading('Affordability by household income', 'right')} eventKey={1}>
-                        <ul className="list-unstyled">
-                            <li>
-                                <h4>Value A</h4>
-                                <ProgressBar now={60} label={'60%'} srOnly/>
-                            </li>
-                            <li>
-                                <h4>Value B</h4>
-                                <ProgressBar now={70} label={"70%"} srOnly/>
-                            </li>
-                            <li>
-                                <h4>Value C</h4>
-                                <ProgressBar now={80} label={"80%"} srOnly/>
-                            </li>
-                            <li>
-                                <h4>Value D</h4>
-                                <ProgressBar now={65} label={"65%"} srOnly/>
-                            </li>
-                        </ul>
-                    </Panel>
-                    <Panel header={this.panelHeading('Affordability by tenure', 'right')} eventKey={2}>
-                        Lorem ipsum
-                    </Panel>
-                    <Panel header={this.panelHeading('Affordability by age', 'right')} eventKey={3}>
-                        Lorem ipsum
-                    </Panel>
-                    <Panel header={this.panelHeading('Affordability by social group', 'right')} eventKey={4}>
-                        Lorem ipsum
-                    </Panel>
-                    <Panel header={this.panelHeading('Affordability by other', 'right')} eventKey={5}>
-                        Lorem ipsum
-                    </Panel>
+                <Accordion className="full-width" defaultActiveKey={0}>
+                    {data.map((panel, i) => (
+                        <Panel key={i} header={this.panelHeading(panel.title, 'right')} eventKey={i}>
+                            <ul className="list-unstyled">
+                                {panel.values.map((value, j) => (
+                                    <li key={j}>
+                                        <span className="sr-only">{value.label}</span>
+                                        <ProgressBar now={value.percent} label={value.percent + '%'}/>
+                                    </li>
+                                ))}
+                            </ul>
+                            {panel.values.map((value, k) => (
+                                <button key={k} className="btn">{value.label}</button>
+                            ))}
+                        </Panel>
+                    ))}
                 </Accordion>
 
                 <ul className="list-unstyled full-width">
                     <li>
-                        <button className="btn btn-primary">
+                        <button className="btn btn-primary btn--full-width">
                             Download the full report
                         </button>
                     </li>
                     <li>
-                        <button className="btn btn-primary">
+                        <button className="btn btn-primary btn--full-width">
                             Download the affordability chapter
                         </button>
                     </li>
