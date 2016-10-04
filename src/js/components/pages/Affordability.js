@@ -119,12 +119,12 @@ export default class Affordability extends React.Component {
 
                 <ul className="list-unstyled full-width">
                     <li>
-                        <button className="btn btn-primary btn--full-width">
+                        <button className="btn btn-primary btn--download btn--full-width">
                             Download the full report
                         </button>
                     </li>
                     <li>
-                        <button className="btn btn-primary btn--full-width">
+                        <button className="btn btn-secondary btn--download btn--full-width">
                             Download the affordability chapter
                         </button>
                     </li>

@@ -71,6 +71,10 @@
 .dimension-chart {
     &.panel {
         margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 28px;
+        }
     }
 
     .panel-body {

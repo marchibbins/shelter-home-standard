@@ -2,6 +2,7 @@
     background: $grey;
     border-radius: 0;
     border: none;
+    white-space: normal;
 
     &.active,
     &:active, {
@@ -12,7 +13,31 @@
             outline: 0;
         }
     }
+}
 
+.btn--download {
+    background: $black;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    padding: 20px 60px 20px 20px;
+    position: relative;
+
+    &.btn-secondary {
+        background: $dark-grey;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right: 10px;
+        background: url(/dist/img/download.jpg);
+    }
 }
 
 .btn--full-width {
