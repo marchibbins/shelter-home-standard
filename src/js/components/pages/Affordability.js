@@ -30,19 +30,24 @@ export default class Affordability extends React.Component {
 
     render () {
         return (
-            <article>
-                <h1 className="dimension-title">
-                    <img src="/dist/img/affordability-logo.jpg"
-                        className="dimension-title__img"/> Affordability</h1>
+            <article className="dimension dimension--affordability">
+                <p className="dimension-strapline">
+                    <span className="dimension-strapline__img">
+                        <span className="sr-only">43%</span></span> of
+                    all homes do not meet the affordability Living Home Standard</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1 className="dimension-title">Affordability</h1>
 
-                <img src="/dist/img/affordability-stat.jpg" className="dimension-img img-responsive"/>
+                <div className="dimension-section">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
 
                 <Accordion className="full-width">
                     <Panel header={this.panelHeading('Essential Criteria')} eventKey={1}>
@@ -68,17 +73,20 @@ export default class Affordability extends React.Component {
                         className="dimension-infographic__img img-responsive"/>
                     <img src="/dist/img/infographic2.jpg"
                         className="dimension-infographic__img img-responsive"/>
-                    <button className="dimension-infographic__btn btn btn-primary btn--full-width">
-                        Infographic on Affordability
+                    <button className="dimension-infographic__btn btn btn-primary">
+                        Infographic on affordability
+                        <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
                     </button>
                 </div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div className="dimension-section">
+                    <p><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit,
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
 
                 <Accordion className="full-width" defaultActiveKey={0}>
                     {this.state.data.map((panel, i) => (
@@ -114,31 +122,39 @@ export default class Affordability extends React.Component {
                     </li>
                 </ul>
 
-                <h3>Renee's Story</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div className="dimension-section">
+                    <div className="full-width">
+                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
+                    </div>
 
-                <p><img src="http://placehold.it/500x500/" className="img-responsive"/></p>
+                    <h3>Renee's Story</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>
+                </div>
 
-                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>
+                <div className="dimension-recommends full-width">
+                    <h3 className="dimension-recommends__title">Shelter recommends</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <p><a href="#" className="read-more">Read more</a></p>
+                </div>
 
-                <h3>Shelter recommends</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-                <p><a href="#">Read more</a></p>
-
-                <ul className="list-unstyled">
-                    <li><button className="btn btn-primary">Neighbourhood</button></li>
-                    <li><button className="btn btn-primary">Stability</button></li>
-                    <li><button className="btn btn-primary">Space</button></li>
-                    <li><button className="btn btn-primary">Decent Conditions</button></li>
-                </ul>
+                <div className="dimension-section">
+                    <h4>Explore other dimensions</h4>
+                    <ul className="list-unstyled">
+                        <li><button className="btn btn-primary">Neighbourhood</button></li>
+                        <li><button className="btn btn-primary">Stability</button></li>
+                        <li><button className="btn btn-primary">Space</button></li>
+                        <li><button className="btn btn-primary">Decent Conditions</button></li>
+                    </ul>
+                </div>
             </article>
         );
     }

@@ -1,10 +1,12 @@
 .panel-group {
+    margin-bottom: 0;
+
     .panel {
         border: none;
 
-         + .panel {
-            margin-top: 20px;
-         }
+        + .panel {
+            margin-top: 2px;
+        }
     }
 
     .panel-heading {
