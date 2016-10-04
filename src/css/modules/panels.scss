@@ -9,10 +9,55 @@
         }
     }
 
+    .panel--arrows {
+        .panel-title {
+            position: relative;
+            padding-right: 40px;
+
+            a {
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 25px;
+                    height: 16px;
+                    position: absolute;
+                    top: 2px;
+                    right: 0;
+                    background: url(/dist/img/arrow-down.jpg);
+                }
+
+                &[aria-expanded="true"]:after {
+                    background: url(/dist/img/arrow-up.jpg);
+                }
+            }
+        }
+
+        &.panel--dark .panel-title a {
+            &:after {
+                background: url(/dist/img/arrow-white-down.jpg);
+            }
+
+            &[aria-expanded="true"]:after {
+                background: url(/dist/img/arrow-white-up.jpg);
+            }
+        }
+    }
+
     .panel-heading {
         background-color: $grey;
         border-radius: 0;
         color: $text-color;
+    }
+
+    .panel--dark .panel-heading {
+        background-color: $dark-grey;
+        color: white;
+        font-weight: bold;
+    }
+
+    .panel-subheading {
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .panel-title > a {

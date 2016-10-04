@@ -22,9 +22,12 @@ export default class Affordability extends React.Component {
         });
     }
 
-    panelHeading (title, align = 'left') {
+    panelHeading (title, subheading = null, align = 'left') {
         return (
-            <div role="presentation" className={`panel-heading--${align}`}>{title}</div>
+            <div role="presentation" className={`panel-heading--${align}`}>
+                {title}
+                {subheading && <div className="panel-subheading">{subheading}</div>}
+            </div>
         );
     }
 
@@ -50,7 +53,8 @@ export default class Affordability extends React.Component {
                 </div>
 
                 <Accordion className="full-width">
-                    <Panel header={this.panelHeading('Essential Criteria')} eventKey={1}>
+                    <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
+                        className="dimension-criteria panel--arrows" eventKey={1}>
                         <ol className="list-unstyled">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Ut enim ad minim veniam</li>
@@ -58,7 +62,8 @@ export default class Affordability extends React.Component {
                             <li>Excepteur sint occaecat cupidatat non</li>
                         </ol>
                     </Panel>
-                    <Panel header={this.panelHeading('Tradeable Criteria')} eventKey={2}>
+                    <Panel header={this.panelHeading('Tradeable Criteria', 'Lorem ipsum dolor sit amet')}
+                        className="dimension-criteria panel--arrows" eventKey={2}>
                         <ol className="list-unstyled">
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Ut enim ad minim veniam</li>
@@ -90,8 +95,8 @@ export default class Affordability extends React.Component {
 
                 <Accordion className="full-width" defaultActiveKey={0}>
                     {this.state.data.map((panel, i) => (
-                        <Panel key={i} header={this.panelHeading(panel.title, 'right')}
-                            className="dimension-chart" eventKey={i}>
+                        <Panel key={i} header={this.panelHeading(panel.title, null, 'right')}
+                            className="dimension-chart panel--dark panel--arrows" eventKey={i}>
                             <ul className="list-unstyled">
                                 {panel.values.map((value, j) => (
                                     <li key={j}>
@@ -101,10 +106,13 @@ export default class Affordability extends React.Component {
                                     </li>
                                 ))}
                             </ul>
-                            {panel.values.map((value, k) => (
-                                <button className={'btn' + (value.active ? ' active' : '')}
-                                    key={k} onClick={this.handleClick.bind(this, i, k)}>{value.label}</button>
-                            ))}
+                            <div className="dimension-chart__buttons">
+                                <div className="dimension-chart__filter">Filter:</div>
+                                {panel.values.map((value, k) => (
+                                    <button className={'btn' + (value.active ? ' active' : '')}
+                                        key={k} onClick={this.handleClick.bind(this, i, k)}>{value.label}</button>
+                                ))}
+                            </div>
                         </Panel>
                     ))}
                 </Accordion>
