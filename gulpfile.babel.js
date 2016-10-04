@@ -131,8 +131,9 @@ gulp.task('uglifyJs', () => {
 });
 
 gulp.task('watch', () => {
-    gutil.log(gutil.colors.green(`Watching '${paths.css.sourceFiles}'`
+    gutil.log(gutil.colors.green(`Watching '${paths.assets.sourceFiles}', '${paths.css.sourceFiles}'`
         + ` and '${paths.js.sourceFiles}' for changes`));
+    gulp.watch(paths.assets.sourceFiles, ['assets']);
     gulp.watch(paths.css.sourceFiles, ['css']);
     gulp.watch([paths.js.sourceFiles, paths.js.jsonFiles], ['bundle']);
 });
