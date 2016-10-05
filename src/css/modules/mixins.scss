@@ -1,49 +1,49 @@
+@mixin accent-color($bg, $color) {
+    background: $bg;
+    color: $color;
+}
+
+@mixin accent-outline($border, $color) {
+    border-color: $border;
+    color: $color;
+}
+
 .affordability-colour {
-    background: $affordability-accent;
-    color: white;
+    @include accent-color($affordability-accent, white);
 }
 
 .decent-colour {
-    background: $decent-accent;
-    color: $black;
+    @include accent-color($decent-accent, $black);
 }
 
 .neighbourhood-colour {
-    background: $neighbourhood-accent;
-    color: white;
+    @include accent-color($neighbourhood-accent, white);
 }
 
 .security-colour {
-    background: $security-accent;
-    color: $black;
+    @include accent-color($security-accent, $black);
 }
 
 .stability-colour {
-    background: $stability-accent;
-    color: $black;
+    @include accent-color($stability-accent, $black);
 }
 
 .affordability-colour-outline {
-    border-color: $affordability-accent;
-    color: $affordability-accent;
+    @include accent-outline($affordability-accent, $affordability-accent);
 }
 
 .decent-colour-outline {
-    border-color: $decent-accent;
-    color: $decent-accent;
+    @include accent-outline($decent-accent, $decent-accent);
 }
 
 .neighbourhood-colour-outline {
-    border-color: $neighbourhood-accent;
-    color: $neighbourhood-accent;
+    @include accent-outline($neighbourhood-accent, $neighbourhood-accent);
 }
 
 .security-colour-outline {
-    border-color: $security-accent;
-    color: $security-accent;
+    @include accent-outline($security-accent, $security-accent);
 }
 
 .stability-colour-outline {
-    border-color: $stability-accent;
-    color: $stability-accent;
+    @include accent-outline($stability-accent, $stability-accent);
 }
