@@ -1,3 +1,20 @@
 .navbar {
     border-bottom: 18px solid $grey;
+
+    .navbar-brand {
+        height: 120px;
+    }
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+.navbar-nav {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.navbar-inverse {
+    background-color: $black;
 }
