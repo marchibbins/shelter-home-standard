@@ -30,7 +30,7 @@ export default class Base extends React.Component {
 
     render () {
         const dimensions = [
-            'Affordability', 'Neighbourhood', 'Stability', 'Space', 'Decent conditions'
+            'Affordability', 'Decent conditions', 'Neighbourhood', 'Security', 'Stability'
         ];
 
         return (

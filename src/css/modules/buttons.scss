@@ -38,8 +38,25 @@
         right: 10px;
         background: url(/dist/img/download.jpg);
     }
+
+    &.hover,
+    &:hover,
+    &.focus,
+    &:focus,
+    &:active,
+    &:active {
+        color: white;
+        background: $black;
+    }
 }
 
 .btn--full-width {
     width: 100%;
 }
+
+
+.btn--affordability {}
+.btn--decent {}
+.btn--neighbourhood {}
+.btn--security {}
+.btn--stability {}

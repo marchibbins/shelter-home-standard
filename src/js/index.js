@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Affordability from './components/pages/Affordability';
 import Decency from './components/pages/Decency';
 import Neighbourhood from './components/pages/Neighbourhood';
-import Space from './components/pages/Space';
+import Security from './components/pages/Security';
 import Stability from './components/pages/Stability';
 
 ReactDOM.render(
@@ -18,7 +18,7 @@ ReactDOM.render(
             <Route path="/affordability" component={Affordability}/>
             <Route path="/decency" component={Decency}/>
             <Route path="/neighbourhood" component={Neighbourhood}/>
-            <Route path="/space" component={Space}/>
+            <Route path="/security" component={Security}/>
             <Route path="/stability" component={Stability}/>
             <Redirect from='*' to='/' />
         </Route>

@@ -46,9 +46,9 @@ export default class Header extends React.Component {
                             <NavItem onClick={this.closeNavbar.bind(this)}>
                                 Neighbourhood</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/space">
+                        <LinkContainer to="/security">
                             <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Space</NavItem>
+                                Security</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/stability">
                             <NavItem onClick={this.closeNavbar.bind(this)}>
