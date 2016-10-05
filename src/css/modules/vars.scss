@@ -12,3 +12,29 @@ $decent-accent: #90d4d5;
 $neighbourhood-accent: #20b3c5;
 $security-accent: #c8c92f;
 $stability-accent: #c8c5b2;
+
+
+.affordability-colour {
+    background: $affordability-accent;
+    color: white;
+}
+
+.decent-colour {
+    background: $decent-accent;
+    color: $black;
+}
+
+.neighbourhood-colour {
+    background: $neighbourhood-accent;
+    color: white;
+}
+
+.security-colour {
+    background: $security-accent;
+    color: $black;
+}
+
+.stability-colour {
+    background: $stability-accent;
+    color: $black;
+}

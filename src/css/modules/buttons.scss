@@ -13,6 +13,26 @@
             outline: 0;
         }
     }
+
+    &.btn--affordablity {
+        @extend .affordability-colour;
+    }
+
+    &.btn--decent {
+        @extend .decent-colour;
+    }
+
+    &.btn--neighbourhood {
+        @extend .neighbourhood-colour;
+    }
+
+    &.btn--security {
+        @extend .security-colour;
+    }
+
+    &.btn--stability {
+        @extend .stability-colour;
+    }
 }
 
 .btn--download {
@@ -53,10 +73,3 @@
 .btn--full-width {
     width: 100%;
 }
-
-
-.btn--affordability {}
-.btn--decent {}
-.btn--neighbourhood {}
-.btn--security {}
-.btn--stability {}

@@ -154,9 +154,7 @@
         margin-bottom: 25px;
     }
 
-    .dimension--affordability & {
-        background: $affordability-accent;
-    }
+    @extend .dimension-colours;
 }
 
 .dimension-explore {
@@ -167,5 +165,27 @@
     .btn {
         margin-bottom: 10px;
         margin-right: 10px;
+    }
+}
+
+.dimension-colours {
+    .dimension--affordability & {
+        @extend .affordability-colour;
+    }
+
+    .dimension--decent & {
+        @extend .decent-colour;
+    }
+
+    .dimension--neighbourhood & {
+        @extend .neighbourhood-colour;
+    }
+
+    .dimension--security & {
+        @extend .security-colour;
+    }
+
+    .dimension--stability & {
+        @extend .stability-colour;
     }
 }
