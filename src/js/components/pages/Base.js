@@ -5,16 +5,19 @@ import { Link } from 'react-router';
 
 export default class Base extends React.Component {
 
+    constructor (props) {
+        super(props);
+        this.state = {
+            attributes: this.props.attributes
+        };
+    }
+
     handleAttrClick (objIndex, valueIndex, event) {
         event.preventDefault();
-        let toggle = this.props.attributes[objIndex].values[valueIndex].active === true ? false : true;
-        this.setState({
-            data: update(this.attributes.attr, {[objIndex]: {
-                values: {[valueIndex]: {
-                    $merge: {active: toggle}}
-                }}
-            })
-        });
+        let attributes = this.state.attributes,
+            attr = attributes[objIndex].values[valueIndex];
+        attr.active = attr.active === true ? false : true;
+        this.setState(attributes);
     }
 
     panelHeading (title, subheading = null, align = 'left') {
@@ -74,7 +77,7 @@ export default class Base extends React.Component {
                 <section className="dimension-section">{this.props.info}</section>
 
                 <Accordion className="full-width" defaultActiveKey={0}>
-                    {this.props.attributes.map((panel, i) => (
+                    {this.state.attributes.map((panel, i) => (
                         <Panel key={i} header={this.panelHeading(panel.title, null, 'right')}
                             className="dimension-chart panel--dark panel--arrows" eventKey={i}>
                             <ul className="list-unstyled">
