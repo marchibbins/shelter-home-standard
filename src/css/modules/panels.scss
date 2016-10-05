@@ -60,11 +60,15 @@
         line-height: 20px;
     }
 
-    .panel-title > a {
-        &:hover,
-        &:focus,
-        &:active {
-            text-decoration: none;
+    .panel-title {
+        font-size: 14px;
+
+        > a {
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
         }
     }
 
