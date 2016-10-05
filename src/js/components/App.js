@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from 'react-bootstrap';
 
 import Header from './Header';
+import Footer from './Footer';
 
 export default class App extends React.Component {
 
@@ -12,6 +13,7 @@ export default class App extends React.Component {
                 <main>
                     {this.props.children}
                 </main>
+                <Footer/>
             </Grid>
         );
     }

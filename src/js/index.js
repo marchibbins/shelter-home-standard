@@ -10,9 +10,13 @@ import Neighbourhood from './components/pages/Neighbourhood';
 import Security from './components/pages/Security';
 import Stability from './components/pages/Stability';
 
+const handleUpdate = function () {
+    window.scrollTo(0, 0);
+};
+
 ReactDOM.render(
 
-    <Router history={browserHistory}>
+    <Router history={browserHistory} onUpdate={handleUpdate}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="/affordability" component={Affordability}/>

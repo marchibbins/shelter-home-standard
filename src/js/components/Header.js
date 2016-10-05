@@ -38,14 +38,6 @@ export default class Header extends React.Component {
                             <NavItem onClick={this.closeNavbar.bind(this)}>
                                 Affordability</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/decency">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Decency</NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/neighbourhood">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Neighbourhood</NavItem>
-                        </LinkContainer>
                         <LinkContainer to="/security">
                             <NavItem onClick={this.closeNavbar.bind(this)}>
                                 Security</NavItem>
@@ -53,6 +45,14 @@ export default class Header extends React.Component {
                         <LinkContainer to="/stability">
                             <NavItem onClick={this.closeNavbar.bind(this)}>
                                 Stability</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/decency">
+                            <NavItem onClick={this.closeNavbar.bind(this)}>
+                                Decent conditions</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/neighbourhood">
+                            <NavItem onClick={this.closeNavbar.bind(this)}>
+                                Neighbourhood</NavItem>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>

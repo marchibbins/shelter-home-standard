@@ -1,0 +1,31 @@
+.footer {
+    background-color: $black;
+    color: white;
+    padding: 48px 15px 30px;
+
+    .nav-pills {
+        a {
+            color: white;
+            padding: 8px 10px;
+            text-transform: uppercase;
+        }
+
+        .active {
+            a, a:hover, a:focus {
+                background: none;
+            }
+        }
+
+        .navitem--primary a {
+            color: $brand-red;
+        }
+
+        .navitem--secondary a {
+            color: $dark-grey;
+        }
+
+        .navitem--large a {
+            font-size: 16px;
+        }
+    }
+}
