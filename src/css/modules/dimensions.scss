@@ -135,12 +135,37 @@
     font-size: 14px;
 }
 
+.dimension-downloads {
+    margin-bottom: 0;
+}
+
+.dimension-blockquote {
+    border-left: none;
+    font-weight: bold;
+    padding: 0;
+}
+
 .dimension-recommends {
-    background-color: $light-blue;
+    background-color: $light-grey;
     padding: 25px 15px;
     margin-bottom: 50px;
 
     .dimension-recommends__title {
         margin-bottom: 25px;
+    }
+
+    .dimension--affordability & {
+        background: $affordability-accent;
+    }
+}
+
+.dimension-explore {
+    .dimension-explore__title {
+        font-size: 16px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
 }

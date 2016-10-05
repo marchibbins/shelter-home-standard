@@ -28,7 +28,8 @@ export default class Affordability extends React.Component {
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>
+                    <blockquote className="dimension-blockquote">&ldquo;Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit&rdquo;</blockquote>
                 </div>
             );
 

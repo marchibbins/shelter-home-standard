@@ -1,5 +1,4 @@
 import React from 'react';
-import update from 'react-addons-update';
 import { Accordion, Panel, ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router';
 
@@ -100,7 +99,7 @@ export default class Base extends React.Component {
                     ))}
                 </Accordion>
 
-                <ul className="list-unstyled full-width">
+                <ul className="list-unstyled dimension-downloads full-width">
                     <li>
                         <a href={this.props.fullLink}
                             className="btn btn-primary btn--download btn--full-width">
@@ -123,16 +122,16 @@ export default class Base extends React.Component {
                     <p><a href={this.props.recommendsLink} className="read-more">Read more</a></p>
                 </div>
 
-                <div className="dimension-section">
-                    <h4>Explore other dimensions</h4>
+                <div className="dimension-section dimension-explore">
+                    <h4 className="dimension-explore__title">Explore other dimensions</h4>
                     <ul className="list-unstyled">
                         {dimensions.map((dimension, i) => {
                             if (dimension.toLowerCase() !== this.props.dimension.toLowerCase()) {
+                                let slug = dimension.split(' ')[0].toLowerCase();
                                 return (
-                                    <li key={i}>
-                                        <Link to={`/${dimension.toLowerCase()}`}
-                                            className="btn btn-primary">{dimension}</Link>
-                                    </li>
+                                    <Link key={i} to={`/${dimension.toLowerCase()}`}
+                                        className={`btn btn-primary btn--${slug}`}>
+                                        {dimension}</Link>
                                 );
                             }
                         })}
