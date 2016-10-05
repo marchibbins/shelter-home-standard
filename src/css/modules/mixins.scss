@@ -1,0 +1,49 @@
+.affordability-colour {
+    background: $affordability-accent;
+    color: white;
+}
+
+.decent-colour {
+    background: $decent-accent;
+    color: $black;
+}
+
+.neighbourhood-colour {
+    background: $neighbourhood-accent;
+    color: white;
+}
+
+.security-colour {
+    background: $security-accent;
+    color: $black;
+}
+
+.stability-colour {
+    background: $stability-accent;
+    color: $black;
+}
+
+.affordability-colour-outline {
+    border-color: $affordability-accent;
+    color: $affordability-accent;
+}
+
+.decent-colour-outline {
+    border-color: $decent-accent;
+    color: $decent-accent;
+}
+
+.neighbourhood-colour-outline {
+    border-color: $neighbourhood-accent;
+    color: $neighbourhood-accent;
+}
+
+.security-colour-outline {
+    border-color: $security-accent;
+    color: $security-accent;
+}
+
+.stability-colour-outline {
+    border-color: $stability-accent;
+    color: $stability-accent;
+}

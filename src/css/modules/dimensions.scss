@@ -49,9 +49,6 @@
     }
 
     .dimension-infographic__btn {
-        background-color: $black;
-        color: $affordability-accent;
-        border: 1px solid $affordability-accent;
         width: 90%;
         display: block;
         margin: 0 auto;
@@ -59,6 +56,7 @@
         font-size: 16px;
         text-align: left;
         text-decoration: underline;
+        @extend .dimension-colours-outline;
     }
 
     .dimension-infographic__btn-small {
@@ -96,7 +94,7 @@
             background-color: $darker-grey;
 
             .progress-bar {
-                background-color: $affordability-accent;
+                @extend .dimension-colours;
             }
         }
 
@@ -113,10 +111,6 @@
         transition: background-color .5s ease;
         box-shadow: none;
     }
-
-    .btn.active {
-        background-color: $affordability-accent;
-    }
 }
 
 .dimension-chart__buttons {
@@ -127,6 +121,10 @@
         margin-right: 10px;
         background-color: white;
         border: 1px solid $grey;
+
+        &.active {
+            @extend .dimension-colours;
+        }
     }
 }
 
@@ -187,5 +185,27 @@
 
     .dimension--stability & {
         @extend .stability-colour;
+    }
+}
+
+.dimension-colours-outline {
+    .dimension--affordability & {
+        @extend .affordability-colour-outline;
+    }
+
+    .dimension--decent & {
+        @extend .decent-colour-outline;
+    }
+
+    .dimension--neighbourhood & {
+        @extend .neighbourhood-colour-outline;
+    }
+
+    .dimension--security & {
+        @extend .security-colour-outline;
+    }
+
+    .dimension--stability & {
+        @extend .stability-colour-outline;
     }
 }

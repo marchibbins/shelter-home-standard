@@ -67,7 +67,7 @@ export default class Base extends React.Component {
                         className="dimension-infographic__img img-responsive"/>
                     <img src="/dist/img/infographic2.jpg"
                         className="dimension-infographic__img img-responsive"/>
-                    <button className="dimension-infographic__btn btn btn-primary">
+                    <button className="dimension-infographic__btn btn btn-outline">
                         Infographic on {this.props.dimension.toLowerCase()}
                         <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
                     </button>
