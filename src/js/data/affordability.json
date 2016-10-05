@@ -1,54 +1,72 @@
-[
-    {
-        "title": "Affordability by household income",
-        "values": [
-            {
-                "label": "Up to £9,499",
-                "percent": 40,
-                "active": true
-            },
-            {
-                "label": "£9,500–17,499",
-                "percent": 70
-            },
-            {
-                "label": "£17,500–29,999",
-                "percent": 80,
-                "active": true
-            },
-            {
-                "label": "£30,000–49,999",
-                "percent": 65
-            },
-            {
-                "label": "£50,000 or more",
-                "percent": 65
-            }
+{
+    "dimension": "Affordability",
+    "fail": 43,
+    "criteria": {
+        "essential": [
+            "Lorem ipsum dolor sit amet",
+            "Ut enim ad minim veniam",
+            "Duis aute irure dolor in",
+            "Excepteur sint occaecat cupidatat non"
+        ],
+        "tradeable": [
+            "Lorem ipsum dolor sit amet",
+            "Ut enim ad minim veniam",
+            "Duis aute irure dolor in",
+            "Excepteur sint occaecat cupidatat non"
         ]
     },
-    {
-        "title": "Affordability by tenure",
-        "values": [
-            {
-                "label": "Homeowner",
-                "percent": 60
-            },
-            {
-                "label": "Renter",
-                "percent": 70
-            },
-            {
-                "label": "Social renter",
-                "percent": 80
-            },
-            {
-                "label": "Living with parents",
-                "percent": 65
-            },
-            {
-                "label": "Temporary",
-                "percent": 65
-            }
-        ]
-    }
-];
+    "attributes": [
+        {
+            "title": "Affordability by household income",
+            "values": [
+                {
+                    "label": "Up to £9,499",
+                    "percent": 40,
+                    "active": true
+                },
+                {
+                    "label": "£9,500–17,499",
+                    "percent": 70
+                },
+                {
+                    "label": "£17,500–29,999",
+                    "percent": 80,
+                    "active": true
+                },
+                {
+                    "label": "£30,000–49,999",
+                    "percent": 65
+                },
+                {
+                    "label": "£50,000 or more",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Affordability by tenure",
+            "values": [
+                {
+                    "label": "Homeowner",
+                    "percent": 60
+                },
+                {
+                    "label": "Renter",
+                    "percent": 70
+                },
+                {
+                    "label": "Social renter",
+                    "percent": 80
+                },
+                {
+                    "label": "Living with parents",
+                    "percent": 65
+                },
+                {
+                    "label": "Temporary",
+                    "percent": 65
+                }
+            ]
+        }
+    ]
+};
