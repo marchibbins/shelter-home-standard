@@ -1,0 +1,135 @@
+{
+    "dimension": "Stability",
+    "fail": 43,
+    "criteria": {
+        "essential": [
+            "Lorem ipsum dolor sit amet",
+            "Ut enim ad minim veniam",
+            "Duis aute irure dolor in",
+            "Excepteur sint occaecat cupidatat non"
+        ],
+        "tradeable": [
+            "Lorem ipsum dolor sit amet",
+            "Ut enim ad minim veniam",
+            "Duis aute irure dolor in",
+            "Excepteur sint occaecat cupidatat non"
+        ]
+    },
+    "attributes": [
+        {
+            "title": "Stability by household income",
+            "values": [
+                {
+                    "label": "Up to £9,499",
+                    "percent": 40,
+                    "active": true
+                },
+                {
+                    "label": "£9,500–17,499",
+                    "percent": 70
+                },
+                {
+                    "label": "£17,500–29,999",
+                    "percent": 80,
+                    "active": true
+                },
+                {
+                    "label": "£30,000–49,999",
+                    "percent": 65
+                },
+                {
+                    "label": "£50,000 or more",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Stability by tenure",
+            "values": [
+                {
+                    "label": "Own outright",
+                    "percent": 36
+                },
+                {
+                    "label": "Own with mortgage",
+                    "percent": 72
+                },
+                {
+                    "label": "Social renting",
+                    "percent": 68,
+                    "active": true
+                },
+                {
+                    "label": "Private renting",
+                    "percent": 52
+                }
+            ]
+        },
+        {
+            "title": "Stability by age",
+            "values": [
+                {
+                    "label": "A",
+                    "percent": 60
+                },
+                {
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
+                },
+                {
+                    "label": "C",
+                    "percent": 65
+                },
+                {
+                    "label": "D",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Stability by social group",
+            "values": [
+                {
+                    "label": "A",
+                    "percent": 60
+                },
+                {
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
+                },
+                {
+                    "label": "C",
+                    "percent": 65
+                },
+                {
+                    "label": "D",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Stability by other",
+            "values": [
+                {
+                    "label": "A",
+                    "percent": 60
+                },
+                {
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
+                },
+                {
+                    "label": "C",
+                    "percent": 65
+                },
+                {
+                    "label": "D",
+                    "percent": 65
+                }
+            ]
+        }
+    ]
+};

@@ -26,7 +26,7 @@ export default class Footer extends React.Component {
                             <NavItem className="navitem--large text-uppercase">Stability</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/decency">
-                            <NavItem className="navitem--large text-uppercase">Decenct conditions</NavItem>
+                            <NavItem className="navitem--large text-uppercase">Decent conditions</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/neighbourhood">
                             <NavItem className="navitem--large text-uppercase">Neighbourhood</NavItem>
