@@ -15,23 +15,23 @@
     }
 
     &.btn--affordability {
-        @extend .affordability-colour;
+        @include accent-color($affordability-accent, white);
     }
 
     &.btn--decent {
-        @extend .decent-colour;
+        @include accent-color($decent-accent, $black);
     }
 
     &.btn--neighbourhood {
-        @extend .neighbourhood-colour;
+        @include accent-color($neighbourhood-accent, $black);
     }
 
     &.btn--security {
-        @extend .security-colour;
+        @include accent-color($security-accent, $black);
     }
 
     &.btn--stability {
-        @extend .stability-colour;
+        @include accent-color($stability-accent, $black);
     }
 }
 

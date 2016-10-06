@@ -197,52 +197,52 @@
 
 .dimension-colours {
     .dimension--lhs & {
-        @extend .lhs-colour;
+        @include accent-color($lhs-accent, $black);
     }
 
     .dimension--affordability & {
-        @extend .affordability-colour;
+        @include accent-color($affordability-accent, white);
     }
 
     .dimension--decent & {
-        @extend .decent-colour;
+        @include accent-color($decent-accent, $black);
     }
 
     .dimension--neighbourhood & {
-        @extend .neighbourhood-colour;
+        @include accent-color($neighbourhood-accent, $black);
     }
 
     .dimension--security & {
-        @extend .security-colour;
+        @include accent-color($security-accent, $black);
     }
 
     .dimension--stability & {
-        @extend .stability-colour;
+        @include accent-color($stability-accent, $black);
     }
 }
 
 .dimension-colours-outline {
     .dimension--lhs & {
-        @extend .lhs-colour-outline;
+        @include accent-outline($lhs-accent, $lhs-accent);
     }
 
     .dimension--affordability & {
-        @extend .affordability-colour-outline;
+        @include accent-outline($affordability-accent, $affordability-accent);
     }
 
     .dimension--decent & {
-        @extend .decent-colour-outline;
+        @include accent-outline($decent-accent, $decent-accent);
     }
 
     .dimension--neighbourhood & {
-        @extend .neighbourhood-colour-outline;
+        @include accent-outline($neighbourhood-accent, $neighbourhood-accent);
     }
 
     .dimension--security & {
-        @extend .security-colour-outline;
+        @include accent-outline($security-accent, $security-accent);
     }
 
     .dimension--stability & {
-        @extend .stability-colour-outline;
+        @include accent-outline($stability-accent, $stability-accent);
     }
 }
