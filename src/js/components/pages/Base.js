@@ -34,16 +34,18 @@ export default class Base extends React.Component {
         ];
 
         return (
-            <article className={`dimension dimension--${this.props.dimension.toLowerCase()}`}>
+            <article className={`dimension dimension--${this.props.slug || this.props.name.split(' ')[0].toLowerCase()}`}>
+                {this.props.fail &&
                 <p className="dimension-strapline">
                     <span className="dimension-strapline__img">
                         <span className="sr-only">{this.props.fail}%</span></span> of
-                    all homes do not meet the {this.props.dimension.toLowerCase()} Living Home Standard</p>
+                    all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>}
 
-                <h1 className="dimension-title">{this.props.dimension}</h1>
+                <h1 className="dimension-title">{this.props.name}</h1>
                 <section className="dimension-section">{this.props.intro}</section>
 
-                <Accordion className="full-width">
+                {this.props.criteria &&
+                    <Accordion className="full-width">
                     <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
                         className="dimension-criteria panel--arrows" eventKey={1}>
                         <ol className="list-unstyled">
@@ -60,7 +62,21 @@ export default class Base extends React.Component {
                             ))}
                         </ol>
                     </Panel>
-                </Accordion>
+                </Accordion>}
+
+                {!this.props.criteria &&
+                <div className="dimension-explore">
+                    <ul className="list-unstyled">
+                        {dimensions.map((dimension, i) => {
+                            let slug = dimension.split(' ')[0].toLowerCase();
+                            return (
+                                <Link key={i} to={`/${dimension.toLowerCase()}`}
+                                    className={`btn btn-primary btn--${slug}`}>
+                                    {dimension}</Link>
+                            );
+                        })}
+                    </ul>
+                </div>}
 
                 <div className="dimension-infographic full-width">
                     <img src="/dist/img/infographic1.jpg"
@@ -68,7 +84,7 @@ export default class Base extends React.Component {
                     <img src="/dist/img/infographic2.jpg"
                         className="dimension-infographic__img img-responsive"/>
                     <button className="dimension-infographic__btn btn btn-outline">
-                        Infographic on {this.props.dimension.toLowerCase()}
+                        Infographic on {this.props.name.toLowerCase()}
                         <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
                     </button>
                 </div>
@@ -100,18 +116,20 @@ export default class Base extends React.Component {
                 </Accordion>
 
                 <ul className="list-unstyled dimension-downloads full-width">
+                    {this.props.fullLink &&
                     <li>
                         <a href={this.props.fullLink}
                             className="btn btn-primary btn--download btn--full-width">
                             Download the full report
                         </a>
-                    </li>
+                    </li>}
+                    {this.props.chapterLink &&
                     <li>
                         <a href={this.props.chapterLink}
                             className="btn btn-secondary btn--download btn--full-width">
-                            Download the {this.props.dimension.toLowerCase()} chapter
+                            Download the {this.props.name.toLowerCase()} chapter
                         </a>
-                    </li>
+                    </li>}
                 </ul>
 
                 <section className="dimension-section">{this.props.caseStudy}</section>
@@ -126,7 +144,7 @@ export default class Base extends React.Component {
                     <h4 className="dimension-explore__title">Explore other dimensions</h4>
                     <ul className="list-unstyled">
                         {dimensions.map((dimension, i) => {
-                            if (dimension.toLowerCase() !== this.props.dimension.toLowerCase()) {
+                            if (dimension.toLowerCase() !== this.props.name.toLowerCase()) {
                                 let slug = dimension.split(' ')[0].toLowerCase();
                                 return (
                                     <Link key={i} to={`/${dimension.toLowerCase()}`}

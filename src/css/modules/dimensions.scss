@@ -11,30 +11,43 @@
     line-height: 22px;
     margin: 0;
 
+    .dimension--lhs & {
+        margin-bottom: -20px;
+        font-size: 16px;
+    }
+
     .dimension-strapline__img {
         display: block;
         width: 150px;
         height: 140px;
         margin-bottom: 10px;
 
+        .dimension--lhs & {
+            width: 264px;
+            height: 254px;
+            margin-bottom: 15px;
+            margin-top: 80px;
+            background: url(/dist/img/lhs-stat.jpg);
+        }
+
         .dimension--affordability & {
-            background: url(/dist/img/affordability-logo.jpg);
+            background: url(/dist/img/affordability-stat.jpg);
         }
 
         .dimension--decent & {
-            background: url(/dist/img/decent-logo.jpg);
+            background: url(/dist/img/decent-stat.jpg);
         }
 
         .dimension--neighbourhood & {
-            background: url(/dist/img/neighbourhood-logo.jpg);
+            background: url(/dist/img/neighbourhood-stat.jpg);
         }
 
         .dimension--security & {
-            background: url(/dist/img/security-logo.jpg);
+            background: url(/dist/img/security-stat.jpg);
         }
 
         .dimension--stability & {
-            background: url(/dist/img/stability-logo.jpg);
+            background: url(/dist/img/stability-stat.jpg);
         }
     }
 }
@@ -183,6 +196,10 @@
 }
 
 .dimension-colours {
+    .dimension--lhs & {
+        @extend .lhs-colour;
+    }
+
     .dimension--affordability & {
         @extend .affordability-colour;
     }
@@ -205,6 +222,10 @@
 }
 
 .dimension-colours-outline {
+    .dimension--lhs & {
+        @extend .lhs-colour-outline;
+    }
+
     .dimension--affordability & {
         @extend .affordability-colour-outline;
     }

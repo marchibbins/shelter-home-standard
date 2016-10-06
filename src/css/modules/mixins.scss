@@ -8,6 +8,10 @@
     color: $color;
 }
 
+.lhs-colour {
+    @include accent-color($lhs-accent, $black);
+}
+
 .affordability-colour {
     @include accent-color($affordability-accent, white);
 }
@@ -17,7 +21,7 @@
 }
 
 .neighbourhood-colour {
-    @include accent-color($neighbourhood-accent, white);
+    @include accent-color($neighbourhood-accent, $black);
 }
 
 .security-colour {
@@ -26,6 +30,10 @@
 
 .stability-colour {
     @include accent-color($stability-accent, $black);
+}
+
+.lhs-colour-outline {
+    @include accent-outline($lhs-accent, $lhs-accent);
 }
 
 .affordability-colour-outline {

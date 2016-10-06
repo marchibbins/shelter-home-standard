@@ -34,7 +34,7 @@ export default class Decent extends React.Component {
             );
 
         return (
-            <Base dimension={data.dimension}
+            <Base name={data.dimension}
                 fail={data.fail}
                 attributes={data.attributes}
                 criteria={data.criteria}
