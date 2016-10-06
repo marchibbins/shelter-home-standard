@@ -47,23 +47,86 @@
             "title": "Affordability by tenure",
             "values": [
                 {
-                    "label": "Homeowner",
+                    "label": "Own outright",
+                    "percent": 36
+                },
+                {
+                    "label": "Own with mortgage",
+                    "percent": 72
+                },
+                {
+                    "label": "Social renting",
+                    "percent": 68,
+                    "active": true
+                },
+                {
+                    "label": "Private renting",
+                    "percent": 52
+                }
+            ]
+        },
+        {
+            "title": "Affordability by age",
+            "values": [
+                {
+                    "label": "A",
                     "percent": 60
                 },
                 {
-                    "label": "Renter",
-                    "percent": 70
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
                 },
                 {
-                    "label": "Social renter",
-                    "percent": 80
-                },
-                {
-                    "label": "Living with parents",
+                    "label": "C",
                     "percent": 65
                 },
                 {
-                    "label": "Temporary",
+                    "label": "D",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Affordability by social group",
+            "values": [
+                {
+                    "label": "A",
+                    "percent": 60
+                },
+                {
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
+                },
+                {
+                    "label": "C",
+                    "percent": 65
+                },
+                {
+                    "label": "D",
+                    "percent": 65
+                }
+            ]
+        },
+        {
+            "title": "Affordability by other",
+            "values": [
+                {
+                    "label": "A",
+                    "percent": 60
+                },
+                {
+                    "label": "B",
+                    "percent": 70,
+                    "active": true
+                },
+                {
+                    "label": "C",
+                    "percent": 65
+                },
+                {
+                    "label": "D",
                     "percent": 65
                 }
             ]
