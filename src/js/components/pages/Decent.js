@@ -2,9 +2,9 @@ import React from 'react';
 
 import Base from './Base';
 
-import data from '../../data/decency';
+import data from '../../data/decent';
 
-export default class Decency extends React.Component {
+export default class Decent extends React.Component {
 
     render () {
         const lorem = (

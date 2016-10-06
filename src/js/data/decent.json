@@ -17,7 +17,7 @@
     },
     "attributes": [
         {
-            "title": "Decency by household income",
+            "title": "Decent conditions by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "title": "Decency by tenure",
+            "title": "Decent conditions by tenure",
             "values": [
                 {
                     "label": "Own outright",
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "title": "Decency by age",
+            "title": "Decent conditions by age",
             "values": [
                 {
                     "label": "A",
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "title": "Decency by social group",
+            "title": "Decent conditions by social group",
             "values": [
                 {
                     "label": "A",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "title": "Decency by other",
+            "title": "Decent conditions by other",
             "values": [
                 {
                     "label": "A",

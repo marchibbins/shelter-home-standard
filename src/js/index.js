@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-route
 import App from './components/App';
 import Home from './components/Home';
 import Affordability from './components/pages/Affordability';
-import Decency from './components/pages/Decency';
+import Decent from './components/pages/Decent';
 import Neighbourhood from './components/pages/Neighbourhood';
 import Security from './components/pages/Security';
 import Stability from './components/pages/Stability';
@@ -20,7 +20,7 @@ ReactDOM.render(
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="/affordability" component={Affordability}/>
-            <Route path="/decency" component={Decency}/>
+            <Route path="/decent" component={Decent}/>
             <Route path="/neighbourhood" component={Neighbourhood}/>
             <Route path="/security" component={Security}/>
             <Route path="/stability" component={Stability}/>
