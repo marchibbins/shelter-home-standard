@@ -1,9 +1,19 @@
 .dimension {
     padding-top: 34px;
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 
 .dimension-section {
     margin-bottom: 50px;
+}
+
+.dimension-stat {
+    margin-bottom: 75px;
+    float: right;
 }
 
 .dimension-strapline {
@@ -55,6 +65,11 @@
 .dimension-title {
     font-size: 22px;
     margin: 30px 0;
+
+    @media (min-width: 992px) {
+        margin-top: 120px;
+        font-size: 32px;
+    }
 }
 
 .dimension-criteria {

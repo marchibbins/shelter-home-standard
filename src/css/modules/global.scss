@@ -28,4 +28,10 @@ p {
 
         @extend .dimension-colours;
     }
+
+    .columns {
+        @media (min-width: 992px) {
+            column-count: 2;
+        }
+    }
 }

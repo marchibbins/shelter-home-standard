@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Panel, ProgressBar } from 'react-bootstrap';
+import { Accordion, Col, Row, Panel, ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router';
 
 export default class Base extends React.Component {
@@ -36,13 +36,21 @@ export default class Base extends React.Component {
         return (
             <article className={`dimension dimension--${this.props.slug || this.props.name.split(' ')[0].toLowerCase()}`}>
                 {this.props.fail &&
-                <p className="dimension-strapline">
+                <p className="dimension-strapline hidden-md hidden-lg">
                     <span className="dimension-strapline__img">
                         <span className="sr-only">{this.props.fail}%</span></span> of
                     all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>}
 
-                <h1 className="dimension-title">{this.props.name}</h1>
-                <section className="dimension-section">{this.props.intro}</section>
+                <Row>
+                    <Col md={6}>
+                        <h1 className="dimension-title">{this.props.name}</h1>
+                        <section className="dimension-section">{this.props.intro}</section>
+                    </Col>
+                    <Col md={6} className="hidden-xs hidden-sm">
+                        <img className="dimension-stat"
+                            src={`/dist/img/${this.props.name.split(' ')[0].toLowerCase()}-full-stat.jpg`}/>
+                    </Col>
+                </Row>
 
                 {this.props.criteria &&
                     <Accordion className="full-width">
