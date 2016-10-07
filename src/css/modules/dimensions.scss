@@ -72,9 +72,15 @@
     background-color: $black;
     padding-bottom: 38px;
     margin-bottom: 28px;
+    text-align: center;
 
     .dimension-infographic__img {
         margin: 0 auto;
+
+        @media (min-width: 992px) {
+            width: 485px;
+            display: inline-block;
+        }
     }
 
     .dimension-infographic__btn {
