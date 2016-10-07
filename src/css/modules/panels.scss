@@ -3,9 +3,14 @@
 
     .panel {
         border: none;
+        padding: 0;
 
         + .panel {
             margin-top: 2px;
+
+            @media (min-width: 992px) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -64,6 +69,9 @@
         font-size: 14px;
 
         > a {
+            display: block;
+            cursor: pointer;
+
             &:hover,
             &:focus,
             &:active {

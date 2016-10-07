@@ -7,7 +7,8 @@ export default class Base extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            attributes: this.props.attributes
+            attributes: this.props.attributes,
+            windowWidth: window.innerWidth
         };
     }
 
@@ -17,6 +18,18 @@ export default class Base extends React.Component {
             attr = attributes[objIndex].values[valueIndex];
         attr.active = attr.active === true ? false : true;
         this.setState(attributes);
+    }
+
+    handleResize () {
+        this.setState({windowWidth: window.innerWidth});
+    }
+
+    componentDidMount () {
+        window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount () {
+        window.removeEventListener('resize', this.handleResize.bind(this));
     }
 
     panelHeading (title, subheading = null, align = 'left') {
@@ -53,9 +66,9 @@ export default class Base extends React.Component {
                 </Row>
 
                 {this.props.criteria &&
-                    <Accordion className="full-width">
+                <Accordion className="full-width row">
                     <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
-                        className="dimension-criteria panel--arrows" eventKey={1}>
+                        className="dimension-criteria panel--arrows col-md-6 col-lg-6" eventKey={1}>
                         <ol className="list-unstyled">
                             {this.props.criteria.essential.map((criteria, i) => (
                                 <li key={i}>{criteria}</li>
@@ -63,7 +76,8 @@ export default class Base extends React.Component {
                         </ol>
                     </Panel>
                     <Panel header={this.panelHeading('Tradeable Criteria', 'Lorem ipsum dolor sit amet')}
-                        className="dimension-criteria panel--arrows" eventKey={2}>
+                        className="dimension-criteria panel--arrows col-md-6 col-lg-6"
+                            eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
                         <ol className="list-unstyled">
                             {this.props.criteria.tradeable.map((criteria, i) => (
                                 <li key={i}>{criteria}</li>
