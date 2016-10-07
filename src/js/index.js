@@ -9,6 +9,7 @@ import Decent from './components/pages/Decent';
 import Neighbourhood from './components/pages/Neighbourhood';
 import Security from './components/pages/Security';
 import Stability from './components/pages/Stability';
+import Copy from './components/pages/Copy';
 
 const handleUpdate = function () {
     window.scrollTo(0, 0);
@@ -24,7 +25,15 @@ ReactDOM.render(
             <Route path="/neighbourhood" component={Neighbourhood}/>
             <Route path="/security" component={Security}/>
             <Route path="/stability" component={Stability}/>
-            <Redirect from='*' to='/' />
+            <Route path="/great-home-debate" component={Copy}/>
+            <Route path="/executive-summary" component={Copy}/>
+            <Route path="/foreword-campbell-ross" component={Copy}/>
+            <Route path="/foreword-british-gas" component={Copy}/>
+            <Route path="/foreword-ipsos-mori" component={Copy}/>
+            <Route path="/shelter-british-gas" component={Copy}/>
+            <Route path="/contributors" component={Copy}/>
+            <Route path="/contact" component={Copy}/>
+            <Redirect from='*' to='/'/>
         </Route>
     </Router>,
 
