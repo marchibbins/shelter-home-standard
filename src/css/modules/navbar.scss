@@ -8,6 +8,14 @@
     > .container {
         position: relative;
     }
+
+    .nav {
+        .active {
+            > a, > a:hover, > a:focus {
+                background: none;
+            }
+        }
+    }
 }
 
 .navbar-collapse {
@@ -21,6 +29,25 @@
 
 .navbar-inverse {
     background-color: $black;
+}
+
+
+.nav {
+
+    .footer &,
+    .navbar & {
+        .navitem--primary a {
+            color: $brand-red;
+        }
+
+        .navitem--secondary a {
+            color: $dark-grey;
+        }
+
+        .navitem--large a {
+            font-size: 16px;
+        }
+    }
 }
 
 // Always use collapsed menu

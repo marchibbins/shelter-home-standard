@@ -36,11 +36,13 @@ export default class Header extends React.Component {
                     <Nav>
                         <LinkContainer to="/">
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">The Living Home Standard</NavItem>
+                                className="text-uppercase navitem--primary">
+                                    The Living Home Standard</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/great-home-debate">
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">The Great Home Debate</NavItem>
+                                className="text-uppercase navitem--secondary">
+                                    The Great Home Debate</NavItem>
                         </LinkContainer>
 
                         <LinkContainer to="/affordability">

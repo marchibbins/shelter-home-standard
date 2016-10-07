@@ -8,13 +8,15 @@ export default class App extends React.Component {
 
     render () {
         return (
-            <Grid>
+            <div>
                 <Header/>
-                <main>
-                    {this.props.children}
-                </main>
+                <Grid>
+                    <main>
+                        {this.props.children}
+                    </main>
+                </Grid>
                 <Footer/>
-            </Grid>
+            </div>
         );
     }
 

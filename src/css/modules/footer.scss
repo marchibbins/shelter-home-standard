@@ -1,12 +1,17 @@
 .footer {
     background-color: $black;
     color: white;
-    padding: 48px 25px 30px;
+    padding: 48px 20px 30px;
 
     .nav-pills {
         a {
             color: white;
             padding: 8px 0;
+
+            &:focus,
+            &:hover {
+                background-color: transparent;
+            }
         }
 
         .active {
@@ -14,25 +19,13 @@
                 background: none;
             }
         }
-
-        .navitem--primary a {
-            color: $brand-red;
-        }
-
-        .navitem--secondary a {
-            color: $dark-grey;
-        }
-
-        .navitem--large a {
-            font-size: 16px;
-        }
     }
 }
 
 .logo-footer {
     background-color: $brand-red;
     color: white;
-    padding: 25px 25px 10px;
+    padding: 25px 20px 10px;
 
     .logo {
         margin-bottom: 10px;
