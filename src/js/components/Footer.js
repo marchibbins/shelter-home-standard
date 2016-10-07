@@ -32,25 +32,25 @@ export default class Footer extends React.Component {
                             <NavItem className="navitem--large text-uppercase">Neighbourhood</NavItem>
                         </LinkContainer>
 
-                        <LinkContainer to="/">
+                        <LinkContainer to="/executive-summary">
                             <NavItem className="text-uppercase">Executive summary</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/foreword-campbell-ross">
                             <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Ross</span></NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/foreword-british-gas">
                             <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">British Gas</span></NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/foreword-ipsos-mori">
                             <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">IPSOS MORI</span></NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/shelter-british-gas">
                             <NavItem className="text-uppercase">Shelter and British Gas</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/contributors">
                             <NavItem className="text-uppercase">Contributors</NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/contact">
                             <NavItem className="text-uppercase">Contact</NavItem>
                         </LinkContainer>
                     </Nav>

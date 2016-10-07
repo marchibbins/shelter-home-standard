@@ -4,6 +4,10 @@
     .navbar-brand {
         height: 120px;
     }
+
+    > .container {
+        position: relative;
+    }
 }
 
 .navbar-collapse {
@@ -17,4 +21,83 @@
 
 .navbar-inverse {
     background-color: $black;
+}
+
+// Always use collapsed menu
+.navbar-header {
+    float: none;
+}
+
+.navbar-left,
+.navbar-right {
+    float: none !important;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 18px;
+}
+
+.navbar-collapse.collapse {
+    display: none !important;
+}
+
+.navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+}
+
+.navbar-nav > li {
+    float: none;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.collapse.in {
+    display: block !important;
+}
+
+// Position drawer
+.navbar-drawer {
+    background-color: $black;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        margin-top: 0;
+    }
+
+    .navbar-drawer {
+        position: absolute;
+        right: 25px;
+        width: 50%;
+        text-align: right;
+
+        .navbar-fixed-top & {
+            max-height: none;
+        }
+    }
+
+    .navbar-nav > li {
+        > a {
+            padding: 8px 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-drawer {
+        width: 35%;
+    }
 }

@@ -32,27 +32,68 @@ export default class Header extends React.Component {
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
-                <Navbar.Collapse>
+                <Navbar.Collapse className="navbar-drawer">
                     <Nav>
+                        <LinkContainer to="/">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">The Living Home Standard</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/great-home-debate">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">The Great Home Debate</NavItem>
+                        </LinkContainer>
+
                         <LinkContainer to="/affordability">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Affordability</NavItem>
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Affordability</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/security">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Security</NavItem>
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Security</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/stability">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Stability</NavItem>
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Stability</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/decent">
-                            <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Decent conditions</NavItem>
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Decent conditions</NavItem>
                         </LinkContainer>
                         <LinkContainer to="/neighbourhood">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Neighbourhood</NavItem>
+                        </LinkContainer>
+
+                        <LinkContainer to="/executive-summary">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Executive summary</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/foreword-campbell-ross">
                             <NavItem onClick={this.closeNavbar.bind(this)}>
-                                Neighbourhood</NavItem>
+                                <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Ross</span>
+                            </NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/foreword-british-gas">
+                            <NavItem onClick={this.closeNavbar.bind(this)}>
+                                <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">British Gas</span>
+                            </NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/foreword-ipsos-mori">
+                            <NavItem onClick={this.closeNavbar.bind(this)}>
+                                <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Ipsos MORI</span>
+                            </NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/shelter-british-gas">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Shelter and British Gas</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/contributors">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Contributors</NavItem>
+                        </LinkContainer>
+                        <LinkContainer to="/contact">
+                            <NavItem onClick={this.closeNavbar.bind(this)}
+                                className="text-uppercase">Contact</NavItem>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
