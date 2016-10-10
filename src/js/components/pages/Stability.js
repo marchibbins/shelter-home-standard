@@ -13,6 +13,12 @@ export default class Stability extends React.Component {
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
             ),
+            columns = (
+                <p className="columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            ),
             caseStudy = (
                 <div>
                     <div className="full-width">
@@ -39,7 +45,7 @@ export default class Stability extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={lorem}
-                info={lorem}
+                info={columns}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}
