@@ -67,25 +67,29 @@ export default class Base extends React.Component {
                 </Grid>
 
                 {this.props.criteria &&
-                <Accordion>
-                    <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
-                        className="dimension-criteria panel--arrows col-md-6 col-lg-6" eventKey={1}>
-                        <ol className="list-unstyled">
-                            {this.props.criteria.essential.map((criteria, i) => (
-                                <li key={i}>{criteria}</li>
-                            ))}
-                        </ol>
-                    </Panel>
-                    <Panel header={this.panelHeading('Tradeable Criteria', 'Lorem ipsum dolor sit amet')}
-                        className="dimension-criteria panel--arrows col-md-6 col-lg-6"
-                            eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
-                        <ol className="list-unstyled">
-                            {this.props.criteria.tradeable.map((criteria, i) => (
-                                <li key={i}>{criteria}</li>
-                            ))}
-                        </ol>
-                    </Panel>
-                </Accordion>}
+                <div className="dimension-criteria">
+                    <Grid className="container--wide">
+                        <Accordion>
+                            <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
+                                className="panel--arrows col-md-6 col-lg-6" eventKey={1}>
+                                <ol className="list-unstyled">
+                                    {this.props.criteria.essential.map((criteria, i) => (
+                                        <li key={i}>{criteria}</li>
+                                    ))}
+                                </ol>
+                            </Panel>
+                            <Panel header={this.panelHeading('Tradeable Criteria', 'Lorem ipsum dolor sit amet')}
+                                className="panel--arrows col-md-6 col-lg-6"
+                                    eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
+                                <ol className="list-unstyled">
+                                    {this.props.criteria.tradeable.map((criteria, i) => (
+                                        <li key={i}>{criteria}</li>
+                                    ))}
+                                </ol>
+                            </Panel>
+                        </Accordion>
+                    </Grid>
+                </div>}
 
                 {!this.props.criteria &&
                 <Grid>
@@ -118,51 +122,56 @@ export default class Base extends React.Component {
                     <section className="dimension-section">{this.props.info}</section>
                 </Grid>
 
-                <PanelGroup>
-                    {this.state.attributes.map((panel, i) => (
-                        <Panel key={i} header={this.panelHeading(panel.title, null, 'right')}
-                            className="dimension-chart panel--dark panel--arrows"
-                            eventKey={i} collapsible defaultExpanded={true}>
-                            <Col md={6}>
-                                <ul className="list-unstyled">
-                                    {panel.values.map((value, j) => (
-                                        <li key={j}>
-                                            <span className="sr-only">{value.label}</span>
-                                            <ProgressBar now={value.percent} label={value.percent + '%'}
-                                                className={value.active ? 'active': ''}/>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </Col>
-                            <Col md={6}>
-                                <div className="dimension-chart__buttons">
-                                    <div className="dimension-chart__filter">Filter:</div>
-                                    {panel.values.map((value, k) => (
-                                        <button className={'btn' + (value.active ? ' active' : '')}
-                                            key={k} onClick={this.handleAttrClick.bind(this, i, k)}>{value.label}</button>
-                                    ))}
-                                </div>
-                            </Col>
-                        </Panel>
-                    ))}
-                </PanelGroup>
+                <Grid className="container--wide">
+                    <PanelGroup>
+                        {this.state.attributes.map((panel, i) => (
+                            <Panel key={i} header={this.panelHeading(panel.title, null, 'right')}
+                                className="dimension-chart panel--dark panel--arrows"
+                                eventKey={i} collapsible defaultExpanded={true}>
+                                <Col md={6}>
+                                    <ul className="list-unstyled">
+                                        {panel.values.map((value, j) => (
+                                            <li key={j}>
+                                                <span className="sr-only">{value.label}</span>
+                                                <ProgressBar now={value.percent} label={value.percent + '%'}
+                                                    className={value.active ? 'active': ''}/>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </Col>
+                                <Col md={6}>
+                                    <div className="dimension-chart__buttons">
+                                        <div className="dimension-chart__filter">Filter:</div>
+                                        {panel.values.map((value, k) => (
+                                            <button className={'btn' + (value.active ? ' active' : '')}
+                                                key={k} onClick={this.handleAttrClick.bind(this, i, k)}>{value.label}</button>
+                                        ))}
+                                    </div>
+                                </Col>
+                            </Panel>
+                        ))}
+                    </PanelGroup>
+                </Grid>
 
-                <ul className="list-unstyled dimension-downloads">
-                    {this.props.fullLink &&
-                    <li>
-                        <a href={this.props.fullLink}
-                            className="btn btn-primary btn--download btn--full-width">
-                            Download the full report
-                        </a>
-                    </li>}
-                    {this.props.chapterLink &&
-                    <li>
-                        <a href={this.props.chapterLink}
-                            className="btn btn-secondary btn--download btn--full-width">
-                            Download the {this.props.name.toLowerCase()} chapter
-                        </a>
-                    </li>}
-                </ul>
+                {(this.props.fullLink || this.props.chapterLink) &&
+                <div className="dimension-downloads">
+                    <Grid className="container--wide">
+                        {this.props.fullLink &&
+                        <Col md={6}>
+                            <a href={this.props.fullLink}
+                                className="btn btn-primary btn--download btn--full-width">
+                                Download the full report
+                            </a>
+                        </Col>}
+                        {this.props.chapterLink &&
+                        <Col md={6}>
+                            <a href={this.props.chapterLink}
+                                className="btn btn-secondary btn--download btn--full-width">
+                                Download the {this.props.name.toLowerCase()} chapter
+                            </a>
+                        </Col>}
+                    </Grid>
+                </div>}
 
                 <Grid>
                     <section className="dimension-section">{this.props.caseStudy}</section>

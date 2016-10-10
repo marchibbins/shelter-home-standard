@@ -1,6 +1,6 @@
 .dimension {
     @media (min-width: 992px) {
-        padding-top: 34px;
+        padding-top: 55px;
     }
 
     p {
@@ -25,7 +25,7 @@
 
 .dimension-strapline {
     font-weight: bold;
-    margin: 0;
+    margin: 35px 0 0;
 
     .dimension & {
         line-height: 20px;
@@ -77,20 +77,35 @@
     margin: 32px 0 30px;
 
     @media (min-width: 992px) {
-        margin-top: 120px;
+        margin-top: 115px;
         font-size: 32px;
     }
 }
 
 .dimension-criteria {
+    background: $light-grey;
     margin: 0;
+
+    @media (min-width: 992px) {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: $grey;
+        }
+    }
 
     .panel-title {
         font-size: 18px;
     }
 
-    .panel-body {
-        background-color: $light-grey;
+    .panel {
+        background: transparent;
     }
 
     li {
@@ -141,8 +156,20 @@
         }
     }
 
-    .col-md-6 {
-        padding: 0;
+    .panel-heading {
+        position: relative;
+
+        @media (min-width: 992px) {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 100%;
+                width: 100%;
+                height: 100%;
+                background: inherit;
+            }
+        }
     }
 
     .panel-body {
@@ -205,6 +232,21 @@
 
 .dimension-downloads {
     margin-bottom: 0;
+
+    @media (min-width: 992px) {
+        position: relative;
+        background-color: $dark-grey;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: $black;
+        }
+    }
 }
 
 .dimension-blockquote {
