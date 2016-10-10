@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Col, Row, Panel, ProgressBar } from 'react-bootstrap';
+import { Accordion, Col, Row, Panel, PanelGroup, ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router';
 
 export default class Base extends React.Component {
@@ -113,29 +113,34 @@ export default class Base extends React.Component {
 
                 <section className="dimension-section">{this.props.info}</section>
 
-                <Accordion className="full-width" defaultActiveKey={0}>
+                <PanelGroup className="full-width" defaultActiveKey={0}>
                     {this.state.attributes.map((panel, i) => (
                         <Panel key={i} header={this.panelHeading(panel.title, null, 'right')}
-                            className="dimension-chart panel--dark panel--arrows" eventKey={i}>
-                            <ul className="list-unstyled">
-                                {panel.values.map((value, j) => (
-                                    <li key={j}>
-                                        <span className="sr-only">{value.label}</span>
-                                        <ProgressBar now={value.percent} label={value.percent + '%'}
-                                            className={value.active ? 'active': ''}/>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="dimension-chart__buttons">
-                                <div className="dimension-chart__filter">Filter:</div>
-                                {panel.values.map((value, k) => (
-                                    <button className={'btn' + (value.active ? ' active' : '')}
-                                        key={k} onClick={this.handleAttrClick.bind(this, i, k)}>{value.label}</button>
-                                ))}
-                            </div>
+                            className="dimension-chart panel--dark panel--arrows"
+                            eventKey={i} collapsible defaultExpanded={true}>
+                            <Col md={6}>
+                                <ul className="list-unstyled">
+                                    {panel.values.map((value, j) => (
+                                        <li key={j}>
+                                            <span className="sr-only">{value.label}</span>
+                                            <ProgressBar now={value.percent} label={value.percent + '%'}
+                                                className={value.active ? 'active': ''}/>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </Col>
+                            <Col md={6}>
+                                <div className="dimension-chart__buttons">
+                                    <div className="dimension-chart__filter">Filter:</div>
+                                    {panel.values.map((value, k) => (
+                                        <button className={'btn' + (value.active ? ' active' : '')}
+                                            key={k} onClick={this.handleAttrClick.bind(this, i, k)}>{value.label}</button>
+                                    ))}
+                                </div>
+                            </Col>
                         </Panel>
                     ))}
-                </Accordion>
+                </PanelGroup>
 
                 <ul className="list-unstyled dimension-downloads full-width">
                     {this.props.fullLink &&
