@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -10,11 +9,9 @@ export default class App extends React.Component {
         return (
             <div>
                 <Header/>
-                <Grid>
-                    <main>
-                        {this.props.children}
-                    </main>
-                </Grid>
+                <main>
+                    {this.props.children}
+                </main>
                 <Footer/>
             </div>
         );

@@ -27,7 +27,7 @@
                     height: 16px;
                     position: absolute;
                     top: 2px;
-                    right: 0;
+                    right: 2px;
                     background: url(/dist/img/arrow-down.jpg);
                 }
 
@@ -52,17 +52,18 @@
         background-color: $grey;
         border-radius: 0;
         color: $text-color;
+        font-weight: bold;
     }
 
     .panel--dark .panel-heading {
         background-color: $dark-grey;
         color: white;
-        font-weight: bold;
     }
 
     .panel-subheading {
         font-size: 12px;
         line-height: 20px;
+        font-weight: normal;
     }
 
     .panel-title {

@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
             <footer>
                 <div className="footer">
                     <Grid>
-                        <Nav className="full-width" bsStyle="pills" stacked>
+                        <Nav bsStyle="pills" stacked>
                             <LinkContainer to="/">
                                 <NavItem className="navitem--primary text-uppercase">The Living Home Standard</NavItem>
                             </LinkContainer>
@@ -59,7 +59,7 @@ export default class Footer extends React.Component {
                 </div>
                 <div className="logo-footer">
                     <Grid>
-                        <ul className="list-unstyled full-width">
+                        <ul className="list-unstyled">
                             <li className="logo"><img src="/dist/img/shelter-logo.jpg" alt="Shelter"/></li>
                             <li className="logo"><img src="/dist/img/ipsos-mori-logo.jpg" alt="Ipsos MORI"/></li>
                             <li className="logo"><img src="/dist/img/british-gas-logo.jpg" alt="British Gas"/></li>

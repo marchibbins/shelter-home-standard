@@ -30,10 +30,12 @@ export default class Home extends React.Component {
                     consequat.</p>
             ),
             caseStudy = (
-                <div>
-                    <img src="/dist/img/ghd-logo.jpg" className="img-responsive"/>
+                <div className="dimension-case">
+                    <div className="dimension-case__img">
+                        <img src="/dist/img/ghd-logo.jpg" className="img-responsive"/>
+                    </div>
 
-                    <h3>The Great Home Debate</h3>
+                    <h3 className="dimension-case__title">The Great Home Debate</h3>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

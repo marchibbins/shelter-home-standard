@@ -13,19 +13,19 @@ export default class Affordability extends React.Component {
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
             ),
-            columns = (
-                <p className="columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            explainer = (
+                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
             ),
             caseStudy = (
-                <div>
-                    <div className="full-width">
+                <div className="dimension-case">
+                    <div className="dimension-case__img">
                         <img src="http://placehold.it/500x500/" className="img-responsive"/>
                     </div>
 
-                    <h3>Renee's Story</h3>
+                    <h3 className="dimension-case__title">Renee's Story</h3>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -45,7 +45,7 @@ export default class Affordability extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={lorem}
-                info={columns}
+                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}
