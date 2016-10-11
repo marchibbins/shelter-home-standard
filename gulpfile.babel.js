@@ -114,6 +114,7 @@ gulp.task('serve', () => {
             return [
                 history(),
                 modrewrite([
+                    '/livinghomestandard/assets/(.*) /dist/$1',
                     '^(.*?)\.min\.css$ $1.css',
                     '^(.*?)\.min\.js$ $1.js'
                 ])

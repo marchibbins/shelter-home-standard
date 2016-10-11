@@ -28,22 +28,22 @@
                     position: absolute;
                     top: 2px;
                     right: 2px;
-                    background: url(/dist/img/arrow-down.jpg);
+                    background: url(/livinghomestandard/assets/img/arrow-down.jpg);
                 }
 
                 &[aria-expanded="true"]:after {
-                    background: url(/dist/img/arrow-up.jpg);
+                    background: url(/livinghomestandard/assets/img/arrow-up.jpg);
                 }
             }
         }
 
         &.panel--dark .panel-title a {
             &:after {
-                background: url(/dist/img/arrow-white-down.jpg);
+                background: url(/livinghomestandard/assets/img/arrow-white-down.jpg);
             }
 
             &[aria-expanded="true"]:after {
-                background: url(/dist/img/arrow-white-up.jpg);
+                background: url(/livinghomestandard/assets/img/arrow-white-up.jpg);
             }
         }
     }

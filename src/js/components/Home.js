@@ -32,7 +32,7 @@ export default class Home extends React.Component {
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
-                        <img src="/dist/img/ghd-logo.jpg" className="img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/ghd-logo.jpg" className="img-responsive"/>
                     </div>
 
                     <h3 className="dimension-case__title">The Great Home Debate</h3>

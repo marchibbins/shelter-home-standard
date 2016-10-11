@@ -61,7 +61,7 @@ export default class Base extends React.Component {
                         </Col>
                         <Col md={6} className="hidden-xs hidden-sm">
                             <img className="dimension-stat"
-                                src={`/dist/img/${this.props.name.split(' ')[0].toLowerCase()}-full-stat.jpg`}/>
+                                src={`/livinghomestandard/assets/img/${this.props.name.split(' ')[0].toLowerCase()}-full-stat.jpg`}/>
                         </Col>
                     </Row>
                 </Grid>
@@ -108,9 +108,9 @@ export default class Base extends React.Component {
                 </Grid>}
 
                 <div className="dimension-infographic">
-                    <img src="/dist/img/infographic1.jpg"
+                    <img src="/livinghomestandard/assets/img/infographic1.jpg"
                         className="dimension-infographic__img img-responsive"/>
-                    <img src="/dist/img/infographic2.jpg"
+                    <img src="/livinghomestandard/assets/img/infographic2.jpg"
                         className="dimension-infographic__img img-responsive"/>
                     <button className="dimension-infographic__btn btn btn-outline">
                         Infographic on {this.props.name.toLowerCase()}

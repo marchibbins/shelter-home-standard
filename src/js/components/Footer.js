@@ -60,9 +60,9 @@ export default class Footer extends React.Component {
                 <div className="logo-footer">
                     <Grid>
                         <ul className="list-unstyled">
-                            <li className="logo"><img src="/dist/img/shelter-logo.jpg" alt="Shelter"/></li>
-                            <li className="logo"><img src="/dist/img/ipsos-mori-logo.jpg" alt="Ipsos MORI"/></li>
-                            <li className="logo"><img src="/dist/img/british-gas-logo.jpg" alt="British Gas"/></li>
+                            <li className="logo"><img src="/livinghomestandard/assets/img/shelter-logo.jpg" alt="Shelter"/></li>
+                            <li className="logo"><img src="/livinghomestandard/assets/img/ipsos-mori-logo.jpg" alt="Ipsos MORI"/></li>
+                            <li className="logo"><img src="/livinghomestandard/assets/img/british-gas-logo.jpg" alt="British Gas"/></li>
                             <li className="info">
                                 Charity Number 263710 (England &amp; Wales);<br/>
                                 SC002327 (Scotland)<br/>
