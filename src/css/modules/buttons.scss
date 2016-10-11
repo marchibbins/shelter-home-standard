@@ -23,7 +23,7 @@
     }
 
     &.btn--neighbourhood {
-        @include accent-color($neighbourhood-accent, $black);
+        @include accent-color($neighbourhood-accent, white);
     }
 
     &.btn--security {

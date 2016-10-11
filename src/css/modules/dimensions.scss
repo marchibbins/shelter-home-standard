@@ -80,6 +80,39 @@
         margin-top: 115px;
         font-size: 32px;
     }
+
+    @media (min-width: 1200px) {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -24px;
+            left: -80px;
+            width: 60px;
+            height: 56px;
+
+            .dimension--affordability & {
+                background: url(/livinghomestandard/assets/img/affordability-icon.jpg);
+            }
+
+            .dimension--decent & {
+                background: url(/livinghomestandard/assets/img/decent-icon.jpg);
+            }
+
+            .dimension--neighbourhood & {
+                background: url(/livinghomestandard/assets/img/neighbourhood-icon.jpg);
+            }
+
+            .dimension--security & {
+                background: url(/livinghomestandard/assets/img/security-icon.jpg);
+            }
+
+            .dimension--stability & {
+                background: url(/livinghomestandard/assets/img/stability-icon.jpg);
+            }
+        }
+    }
 }
 
 .dimension-criteria {
@@ -181,6 +214,10 @@
         margin-top: 10px;
         padding: 15px 5px;
         background-color: $lighter-grey;
+
+        @media (min-width: 992px) {
+            min-height: 240px;
+        }
     }
 
     .progress {
@@ -273,6 +310,13 @@
 
         img {
             width: 100%;
+
+            @media (min-width: 992px) {
+                float: right;
+                margin-left: 40px;
+                margin-bottom: 40px;
+                width: 48%;
+            }
         }
     }
 }
@@ -284,6 +328,10 @@
 
     .dimension-recommends__title {
         margin-bottom: 25px;
+
+        @media (min-width: 992px) {
+            font-size: 36px;
+        }
     }
 
     @extend .dimension-colours;
@@ -292,14 +340,28 @@
 .dimension-explore {
     margin-bottom: 25px;
 
+    @media (min-width: 992px) {
+        padding: 80px 0 110px;
+        background: url(/livinghomestandard/assets/img/explore-logo.jpg) 760px center no-repeat;
+    }
+
     .dimension-explore__title {
         font-size: 16px;
         margin: -10px 0 15px;
+
+        @media (min-width: 992px) {
+            font-size: 18px;
+        }
     }
 
     .btn {
         margin-bottom: 10px;
         margin-right: 10px;
+
+        @media (min-width: 992px) {
+            font-size: 18px;
+            padding: 14px 16px 14px;
+        }
     }
 }
 
@@ -317,7 +379,7 @@
     }
 
     .dimension--neighbourhood & {
-        @include accent-color($neighbourhood-accent, $black);
+        @include accent-color($neighbourhood-accent, white);
     }
 
     .dimension--security & {
