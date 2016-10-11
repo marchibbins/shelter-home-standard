@@ -107,7 +107,7 @@ export default class Base extends React.Component {
                     </div>
                 </Grid>}
 
-                <div className="dimension-infographic">
+                <div className="dimension-infographic clearfix">
                     <img src="/livinghomestandard/assets/img/infographic1.jpg"
                         className="dimension-infographic__img img-responsive"/>
                     <img src="/livinghomestandard/assets/img/infographic2.jpg"

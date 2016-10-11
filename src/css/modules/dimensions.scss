@@ -138,6 +138,11 @@
         text-align: left;
         text-decoration: underline;
         @extend .dimension-colours-outline;
+
+        @media (min-width: 992px) {
+            max-width: 400px;
+            float: right;
+        }
     }
 
     .dimension-infographic__btn-small {
