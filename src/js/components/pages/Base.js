@@ -108,14 +108,18 @@ export default class Base extends React.Component {
                 </Grid>}
 
                 <div className="dimension-infographic clearfix">
-                    <img src="/livinghomestandard/assets/img/infographic1.jpg"
-                        className="dimension-infographic__img img-responsive"/>
-                    <img src="/livinghomestandard/assets/img/infographic2.jpg"
-                        className="dimension-infographic__img img-responsive"/>
-                    <button className="dimension-infographic__btn btn btn-outline">
-                        Infographic on {this.props.name.toLowerCase()}
-                        <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
-                    </button>
+                    <Grid>
+                        <img src="/livinghomestandard/assets/img/infographic1.jpg"
+                            className="dimension-infographic__img img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/infographic2.jpg"
+                            className="dimension-infographic__img img-responsive"/>
+                    </Grid>
+                    <Grid>
+                        <button className="dimension-infographic__btn btn btn-outline">
+                            Infographic on {this.props.name.toLowerCase()}
+                            <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
+                        </button>
+                    </Grid>
                 </div>
 
                 <Grid>
