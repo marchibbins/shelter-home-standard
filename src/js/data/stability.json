@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 19.3,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 9.5
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 7.0
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 6.9
+                },
+                {
+                    "label": "£50,000+",
+                    "percent": 6.4,
                     "active": true
-                },
-                {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Stability by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
-                },
-                {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned with a mortgage",
+                    "percent": 4.0,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "Owned without a mortgage",
+                    "percent": 4.9
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 15.9
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 24.5,
+                    "active": true
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 11.7
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Stability by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
+                    "label": "16–24",
+                    "percent": 13.9
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "25–34",
+                    "percent": 14.4,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "35–44",
+                    "percent": 13.6
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "45–54",
+                    "percent": 8.5
+                },
+                {
+                    "label": "55–59",
+                    "percent": 5.0,
+                    "active": true
+                },
+                {
+                    "label": "60–64",
+                    "percent": 7.1
+                },
+                {
+                    "label": "65+",
+                    "percent": 6.7
                 }
             ]
         },
         {
-            "title": "Stability by social group",
+            "title": "Stability by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
+                    "percent": 13.3
                 },
                 {
                     "label": "B",
-                    "percent": 70,
+                    "percent": 6.6,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "C1",
+                    "percent": 9.2
+                },
+                {
+                    "label": "C2",
+                    "percent": 10.7
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Stability by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
+                    "percent": 11.9
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "E",
+                    "percent": 19.4,
                     "active": true
-                },
-                {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
                 }
             ]
         }

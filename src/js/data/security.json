@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 18.8,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 13.2
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 11.6
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 7.3,
                     "active": true
                 },
                 {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
+                    "label": "£50,000+",
+                    "percent": 9.0
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Security by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
+                    "label": "Owned with a mortgage",
+                    "percent": 9.4
                 },
                 {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned without a mortgage",
+                    "percent": 4.7,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "LA rented",
+                    "percent": 22.0
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 16.1
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 23.3,
+                    "active": true
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Security by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
+                    "label": "16–24",
+                    "percent": 11.9
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "25–34",
+                    "percent": 17.4,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "35–44",
+                    "percent": 17.2
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "45–54",
+                    "percent": 7.9
+                },
+                {
+                    "label": "55–59",
+                    "percent": 12.3
+                },
+                {
+                    "label": "60–64",
+                    "percent": 5.4
+                },
+                {
+                    "label": "65+",
+                    "percent": 5.3,
+                    "active": true
                 }
             ]
         },
         {
-            "title": "Security by social group",
+            "title": "Security by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
+                    "percent": 8.3
                 },
                 {
                     "label": "B",
-                    "percent": 70,
+                    "percent": 7.0,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "C1",
+                    "percent": 10.4
+                },
+                {
+                    "label": "C2",
+                    "percent": 12.0
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Security by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
+                    "percent": 14.0
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "E",
+                    "percent": 18.4,
                     "active": true
-                },
-                {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
                 }
             ]
         }

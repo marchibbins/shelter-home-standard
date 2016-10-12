@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 26.4,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 22.4
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 21.3
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 15.5
+                },
+                {
+                    "label": "£50,000+",
+                    "percent": 11.2,
                     "active": true
-                },
-                {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Decent conditions by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
+                    "label": "Owned with a mortgage",
+                    "percent": 12.9
                 },
                 {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned without a mortgage",
+                    "percent": 10.6,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "LA rented",
+                    "percent": 28.9,
+                    "active": true
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 27.5
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 28.6
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Decent conditions by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
+                    "label": "16–24",
+                    "percent": 20.5
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "25–34",
+                    "percent": 23.3
+                },
+                {
+                    "label": "35–44",
+                    "percent": 24.1,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "45–54",
+                    "percent": 13.5
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "55–59",
+                    "percent": 13.5
+                },
+                {
+                    "label": "60–64",
+                    "percent": 13.9
+                },
+                {
+                    "label": "65+",
+                    "percent": 11.9,
+                    "active": true
                 }
             ]
         },
         {
-            "title": "Decent conditions by social group",
+            "title": "Decent conditions by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
+                    "percent": 16.7
                 },
                 {
                     "label": "B",
-                    "percent": 70,
+                    "percent": 13.9,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "C1",
+                    "percent": 17.6
+                },
+                {
+                    "label": "C2",
+                    "percent": 16.0
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Decent conditions by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
+                    "percent": 19.8
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "E",
+                    "percent": 27.1,
                     "active": true
-                },
-                {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
                 }
             ]
         }

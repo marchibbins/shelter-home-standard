@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 35.4,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 27.9
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 22.4
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 22.5
+                },
+                {
+                    "label": "£50,000+",
+                    "percent": 17.4,
                     "active": true
-                },
-                {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Affordability by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
+                    "label": "Owned with a mortgage",
+                    "percent": 27.5
                 },
                 {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned without a mortgage",
+                    "percent": 3.9,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "LA rented",
+                    "percent": 47.8
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 48.2,
+                    "active": true
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 47.0
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Affordability by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
+                    "label": "16–24",
+                    "percent": 31.8
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "25–34",
+                    "percent": 39.8,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "35–44",
+                    "percent": 39.3
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "45–54",
+                    "percent": 31.0
+                },
+                {
+                    "label": "55–59",
+                    "percent": 21.4
+                },
+                {
+                    "label": "60–64",
+                    "percent": 14.7
+                },
+                {
+                    "label": "65+",
+                    "percent": 9.6,
+                    "active": true
                 }
             ]
         },
         {
-            "title": "Affordability by social group",
+            "title": "Affordability by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
-                },
-                {
-                    "label": "B",
-                    "percent": 70,
+                    "percent": 17.9,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "B",
+                    "percent": 18.8
+                },
+                {
+                    "label": "C1",
+                    "percent": 23.0
+                },
+                {
+                    "label": "C2",
+                    "percent": 30.9
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Affordability by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
-                },
-                {
-                    "label": "B",
-                    "percent": 70,
+                    "percent": 40.9,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
+                    "label": "E",
+                    "percent": 35.4
                 }
             ]
         }

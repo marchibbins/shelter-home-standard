@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 10.0,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 6.5
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 3.1
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 3.8
+                },
+                {
+                    "label": "£50,000+",
+                    "percent": 2.1,
                     "active": true
-                },
-                {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Neighbourhood by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
-                },
-                {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned with a mortgage",
+                    "percent": 1.9,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "Owned without a mortgage",
+                    "percent": 2.6
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 13.6,
+                    "active": true
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 7.0
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 10.7
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Neighbourhood by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
-                },
-                {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "16–24",
+                    "percent": 7.5,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "25–34",
+                    "percent": 6.9
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "35–44",
+                    "percent": 5.8
+                },
+                {
+                    "label": "45–54",
+                    "percent": 3.7
+                },
+                {
+                    "label": "55–59",
+                    "percent": 2.7
+                },
+                {
+                    "label": "60–64",
+                    "percent": 4.0
+                },
+                {
+                    "label": "65+",
+                    "percent": 1.8,
+                    "active": true
                 }
             ]
         },
         {
-            "title": "Neighbourhood by social group",
+            "title": "Neighbourhood by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
+                    "percent": 2.5
                 },
                 {
                     "label": "B",
-                    "percent": 70,
+                    "percent": 2.0,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "C1",
+                    "percent": 4.4
+                },
+                {
+                    "label": "C2",
+                    "percent": 5.8
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Neighbourhood by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
+                    "percent": 5.2
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "E",
+                    "percent": 9.9,
                     "active": true
-                },
-                {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
                 }
             ]
         }
