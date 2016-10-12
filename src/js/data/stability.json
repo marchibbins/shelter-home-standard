@@ -1,6 +1,6 @@
 {
     "dimension": "Stability",
-    "fail": 43,
+    "fail": 36.7,
     "criteria": {
         "essential": [
             "Lorem ipsum dolor sit amet",

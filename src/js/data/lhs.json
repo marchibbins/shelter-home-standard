@@ -1,6 +1,6 @@
 {
     "dimension": "The Living Home Standard",
-    "fail": 43,
+    "fail": 43.2,
     "criteria": {
         "essential": [
             "Lorem ipsum dolor sit amet",
@@ -21,25 +21,25 @@
             "values": [
                 {
                     "label": "Up to £9,499",
-                    "percent": 40,
+                    "percent": 54.6,
                     "active": true
                 },
                 {
-                    "label": "£9,500–17,499",
-                    "percent": 70
+                    "label": "£9,500–£17,499",
+                    "percent": 46.8
                 },
                 {
-                    "label": "£17,500–29,999",
-                    "percent": 80,
+                    "label": "£17,500–£29,999",
+                    "percent": 42.4
+                },
+                {
+                    "label": "£30,000–£49,999",
+                    "percent": 38.8
+                },
+                {
+                    "label": "£50,000+",
+                    "percent": 30.8,
                     "active": true
-                },
-                {
-                    "label": "£30,000–49,999",
-                    "percent": 65
-                },
-                {
-                    "label": "£50,000 or more",
-                    "percent": 65
                 }
             ]
         },
@@ -47,21 +47,26 @@
             "title": "Living Home Standard by tenure",
             "values": [
                 {
-                    "label": "Own outright",
-                    "percent": 36
+                    "label": "Owned with a mortgage",
+                    "percent": 38.3
                 },
                 {
-                    "label": "Own with mortgage",
-                    "percent": 72
-                },
-                {
-                    "label": "Social renting",
-                    "percent": 68,
+                    "label": "Owned without a mortgage",
+                    "percent": 19.5,
                     "active": true
                 },
                 {
-                    "label": "Private renting",
-                    "percent": 52
+                    "label": "LA rented",
+                    "percent": 68.4
+                },
+                {
+                    "label": "Private rented",
+                    "percent": 68.5,
+                    "active": true
+                },
+                {
+                    "label": "HA rented",
+                    "percent": 66.2
                 }
             ]
         },
@@ -69,65 +74,65 @@
             "title": "Living Home Standard by age",
             "values": [
                 {
-                    "label": "A",
-                    "percent": 60
+                    "label": "16–24",
+                    "percent": 48.4
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "25–34",
+                    "percent": 58.2,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "35–44",
+                    "percent": 54.4
                 },
                 {
-                    "label": "D",
-                    "percent": 65
+                    "label": "45–54",
+                    "percent": 41.9
+                },
+                {
+                    "label": "55–59",
+                    "percent": 35.1
+                },
+                {
+                    "label": "60–64",
+                    "percent": 34.0
+                },
+                {
+                    "label": "65+",
+                    "percent": 26.8,
+                    "active": true
                 }
             ]
         },
         {
-            "title": "Living Home Standard by social group",
+            "title": "Living Home Standard by social grade",
             "values": [
                 {
                     "label": "A",
-                    "percent": 60
+                    "percent": 35.1
                 },
                 {
                     "label": "B",
-                    "percent": 70,
+                    "percent": 32.8,
                     "active": true
                 },
                 {
-                    "label": "C",
-                    "percent": 65
+                    "label": "C1",
+                    "percent": 40.3
+                },
+                {
+                    "label": "C2",
+                    "percent": 45.9
                 },
                 {
                     "label": "D",
-                    "percent": 65
-                }
-            ]
-        },
-        {
-            "title": "Living Home Standard by other",
-            "values": [
-                {
-                    "label": "A",
-                    "percent": 60
+                    "percent": 54.1
                 },
                 {
-                    "label": "B",
-                    "percent": 70,
+                    "label": "E",
+                    "percent": 57.6,
                     "active": true
-                },
-                {
-                    "label": "C",
-                    "percent": 65
-                },
-                {
-                    "label": "D",
-                    "percent": 65
                 }
             ]
         }

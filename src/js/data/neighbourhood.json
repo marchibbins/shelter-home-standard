@@ -1,6 +1,6 @@
 {
     "dimension": "Neighbourhood",
-    "fail": 43,
+    "fail": 40.5,
     "criteria": {
         "essential": [
             "Lorem ipsum dolor sit amet",
