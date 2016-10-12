@@ -91,7 +91,7 @@ export default class Base extends React.Component {
                     </Grid>
                 </div>}
 
-                {!this.props.criteria &&
+                {this.props.slug == 'lhs' &&
                 <Grid>
                     <div className="dimension-explore">
                         <ul className="list-unstyled">
@@ -189,7 +189,8 @@ export default class Base extends React.Component {
                     </Grid>
                 </section>
 
-                <div className="dimension-section dimension-explore">
+                {this.props.slug !== 'lhs' &&
+                <div className="dimension-section dimension-explore dimension-explore--footer">
                     <Grid>
                         <h4 className="dimension-explore__title">Explore other dimensions</h4>
                         <ul className="list-unstyled">
@@ -205,7 +206,7 @@ export default class Base extends React.Component {
                             })}
                         </ul>
                     </Grid>
-                </div>
+                </div>}
             </article>
         );
     }

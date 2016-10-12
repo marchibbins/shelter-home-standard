@@ -340,11 +340,6 @@
 .dimension-explore {
     margin-bottom: 25px;
 
-    @media (min-width: 992px) {
-        padding: 80px 0 110px;
-        background: url(/livinghomestandard/assets/img/explore-logo.jpg) 760px center no-repeat;
-    }
-
     .dimension-explore__title {
         font-size: 16px;
         margin: -10px 0 15px;
@@ -362,6 +357,13 @@
             font-size: 18px;
             padding: 14px 16px 14px;
         }
+    }
+}
+
+.dimension-explore--footer {
+    @media (min-width: 992px) {
+        padding: 80px 0 110px;
+        background: url(/livinghomestandard/assets/img/explore-logo.jpg) 760px center no-repeat;
     }
 }
 
