@@ -52,7 +52,7 @@ export default class Base extends React.Component {
                     {this.props.fail &&
                     <p className="dimension-strapline hidden-md hidden-lg">
                         <span className="dimension-strapline__img">
-                            <span className="sr-only">{this.props.fail}%</span></span> of
+                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
                         all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>}
                     <Row>
                         <Col md={6}>
@@ -137,7 +137,7 @@ export default class Base extends React.Component {
                                         {panel.values.map((value, j) => (
                                             <li key={j}>
                                                 <span className="sr-only">{value.label}</span>
-                                                <ProgressBar now={value.percent} label={value.percent + '%'}
+                                                <ProgressBar now={Math.round(value.percent)} label={Math.round(value.percent) + '%'}
                                                     className={value.active ? 'active': ''}/>
                                             </li>
                                         ))}
