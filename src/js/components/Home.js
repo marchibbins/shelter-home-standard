@@ -27,8 +27,11 @@ export default class Home extends React.Component {
             ),
             caseStudy = (
                 <div className="dimension-case">
+                    <div className="dimension-case__img hidden-xs hidden-sm">
+                        <img src="http://placehold.it/500x200/"/>
+                    </div>
                     <div className="dimension-case__img">
-                        <img src="/livinghomestandard/assets/img/ghd-logo.jpg" className="img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/ghd-logo.jpg"/>
                     </div>
 
                     <h3 className="dimension-case__title">The Great Home Debate</h3>
@@ -42,7 +45,7 @@ export default class Home extends React.Component {
 
                     <p><a href="#" className="read-more">Read more</a></p>
 
-                    <img src="http://placehold.it/500x200/" className="img-responsive"/>
+                    <img src="http://placehold.it/500x200/" className="img-responsive hidden-md hidden-lg"/>
                 </div>
             );
 
