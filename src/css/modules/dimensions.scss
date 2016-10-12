@@ -181,7 +181,30 @@
             right: 12px;
             width: 36px;
             height: 39px;
-            background: url(/livinghomestandard/assets/img/expand.jpg);
+
+            .dimension--lhs & {
+                background: url(/livinghomestandard/assets/img/lhs-expand.jpg);
+            }
+
+            .dimension--affordability & {
+                background: url(/livinghomestandard/assets/img/affordability-expand.jpg);
+            }
+
+            .dimension--decent & {
+                background: url(/livinghomestandard/assets/img/decent-expand.jpg);
+            }
+
+            .dimension--neighbourhood & {
+                background: url(/livinghomestandard/assets/img/neighbourhood-expand.jpg);
+            }
+
+            .dimension--security & {
+                background: url(/livinghomestandard/assets/img/security-expand.jpg);
+            }
+
+            .dimension--stability & {
+                background: url(/livinghomestandard/assets/img/stability-expand.jpg);
+            }
         }
 
         @media (min-width: 992px) {
