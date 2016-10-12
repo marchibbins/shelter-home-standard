@@ -17,10 +17,6 @@ export default class Home extends React.Component {
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.</p>
-                    <p className="dimension-strapline">
-                        <span className="dimension-strapline__img">
-                            <span className="sr-only">{data.fail}%</span></span> of
-                    all homes do not meet the Living Home Standard</p>
                 </div>
             ),
             lorem = (
@@ -52,6 +48,7 @@ export default class Home extends React.Component {
 
         return (
             <Base name={data.dimension}
+                fail={data.fail}
                 slug="lhs"
                 attributes={data.attributes}
                 intro={intro}

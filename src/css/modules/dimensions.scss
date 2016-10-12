@@ -32,7 +32,8 @@
     }
 
     .dimension--lhs & {
-        margin-bottom: -20px;
+        margin-top: 0;
+        margin-bottom: 40px;
         font-size: 16px;
     }
 
@@ -46,7 +47,6 @@
             width: 264px;
             height: 254px;
             margin-bottom: 15px;
-            margin-top: 80px;
             background: url(/livinghomestandard/assets/img/lhs-stat.jpg);
         }
 
@@ -79,6 +79,11 @@
     @media (min-width: 992px) {
         margin-top: 115px;
         font-size: 32px;
+
+        .dimension--lhs & {
+            margin-top: 0;
+            font-size: 34px;
+        }
     }
 
     @media (min-width: 1200px) {
@@ -149,7 +154,7 @@
 
 .dimension-infographic {
     background-color: $black;
-    padding: 5px 15px 38px;
+    padding: 5px 0 38px;
     margin-bottom: 28px;
     text-align: center;
 
@@ -371,6 +376,10 @@
 
 .dimension-explore {
     margin-bottom: 25px;
+
+    .dimension--lhs & {
+        text-align: center;
+    }
 
     .dimension-explore__title {
         font-size: 16px;

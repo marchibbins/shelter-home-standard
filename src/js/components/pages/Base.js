@@ -48,12 +48,30 @@ export default class Base extends React.Component {
 
         return (
             <article className={`dimension dimension--${this.props.slug || this.props.name.split(' ')[0].toLowerCase()}`}>
+                {this.props.slug === 'lhs' &&
                 <Grid>
-                    {this.props.fail &&
+                    <Row>
+                        <Col md={6}>
+                            <h1 className="dimension-title">{this.props.name}</h1>
+                            <section className="dimension-section">{this.props.intro}</section>
+                        </Col>
+                        <Col md={6} className="hidden-xs hidden-sm">
+                            <img className="dimension-stat"
+                                src={`/livinghomestandard/assets/img/lhs-full-stat.jpg`}/>
+                        </Col>
+                    </Row>
                     <p className="dimension-strapline hidden-md hidden-lg">
                         <span className="dimension-strapline__img">
                             <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
-                        all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>}
+                        all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
+                </Grid>}
+
+                {this.props.slug !== 'lhs' &&
+                <Grid>
+                    <p className="dimension-strapline hidden-md hidden-lg">
+                        <span className="dimension-strapline__img">
+                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
+                        all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
                     <Row>
                         <Col md={6}>
                             <h1 className="dimension-title">{this.props.name}</h1>
@@ -64,7 +82,23 @@ export default class Base extends React.Component {
                                 src={`/livinghomestandard/assets/img/${this.props.name.split(' ')[0].toLowerCase()}-full-stat.jpg`}/>
                         </Col>
                     </Row>
-                </Grid>
+                </Grid>}
+
+                {this.props.slug === 'lhs' &&
+                <Grid>
+                    <div className="dimension-explore">
+                        <ul className="list-unstyled">
+                            {dimensions.map((dimension, i) => {
+                                let slug = dimension.split(' ')[0].toLowerCase();
+                                return (
+                                    <Link key={i} to={`/${slug}`}
+                                        className={`btn btn-primary btn--${slug}`}>
+                                        {dimension}</Link>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </Grid>}
 
                 {this.props.criteria &&
                 <div className="dimension-criteria">
@@ -90,22 +124,6 @@ export default class Base extends React.Component {
                         </Accordion>
                     </Grid>
                 </div>}
-
-                {this.props.slug == 'lhs' &&
-                <Grid>
-                    <div className="dimension-explore">
-                        <ul className="list-unstyled">
-                            {dimensions.map((dimension, i) => {
-                                let slug = dimension.split(' ')[0].toLowerCase();
-                                return (
-                                    <Link key={i} to={`/${slug}`}
-                                        className={`btn btn-primary btn--${slug}`}>
-                                        {dimension}</Link>
-                                );
-                            })}
-                        </ul>
-                    </div>
-                </Grid>}
 
                 <div className="dimension-infographic clearfix">
                     <Grid>
