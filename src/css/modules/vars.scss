@@ -8,9 +8,26 @@ $lighter-grey: #fbfbfb;
 $text-color: $black;
 $brand-red: #ed1c22;
 
-$lhs-accent: #90d4d5;
-$affordability-accent: #e30713;
-$decent-accent: #90d4d5;
-$neighbourhood-accent: #20b3c5;
-$security-accent: #c8c92f;
-$stability-accent: #c8c5b2;
+$affordability-accent: #ed1c24;
+$affordability-dark: #c9242b;
+$affordability-darker: #9f1d21;
+
+$decent-accent: #92d4d5;
+$decent-dark: #89b0b2;
+$decent-darker: #576062;
+
+$neighbourhood-accent: #21bac0;
+$neighbourhood-dark: #b4dfe1;
+$neighbourhood-darker: #0b8186;
+
+$security-accent: #bbc647;
+$security-dark: #d5d98f;
+$security-darker: #7d835f;
+
+$stability-accent: #bbbba9;
+$stability-dark: #dfded5;
+$stability-darker: #9e9e95;
+
+$lhs-accent: $decent-accent;
+$lhs-dark: $decent-dark;
+$lhs-darker: $decent-darker;

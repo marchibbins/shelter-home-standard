@@ -241,13 +241,12 @@
         transition: background-color .5s ease;
 
         &.active {
-            background-color: $darker-grey;
+            @extend .dimension-colours-bg;
 
             .progress-bar {
                 @extend .dimension-colours;
             }
         }
-
     }
 
     .progress-bar {
@@ -379,27 +378,53 @@
 
 .dimension-colours {
     .dimension--lhs & {
-        @include accent-color($lhs-accent, $black);
+        @include accent-color($lhs-accent, $lhs-dark, $black);
     }
 
     .dimension--affordability & {
-        @include accent-color($affordability-accent, white);
+        @include accent-color($affordability-accent, $affordability-dark, white);
     }
 
     .dimension--decent & {
-        @include accent-color($decent-accent, $black);
+        @include accent-color($decent-accent, $decent-dark, $black);
     }
 
     .dimension--neighbourhood & {
-        @include accent-color($neighbourhood-accent, white);
+        @include accent-color($neighbourhood-accent, $neighbourhood-dark, white);
     }
 
     .dimension--security & {
-        @include accent-color($security-accent, $black);
+        @include accent-color($security-accent, $security-dark, $black);
     }
 
     .dimension--stability & {
-        @include accent-color($stability-accent, $black);
+        @include accent-color($stability-accent, $stability-dark, $black);
+    }
+}
+
+.dimension-colours-bg {
+    .dimension--lhs & {
+        background-color: $lhs-dark;
+    }
+
+    .dimension--affordability & {
+        background-color: $affordability-dark;
+    }
+
+    .dimension--decent & {
+        background-color: $decent-dark;
+    }
+
+    .dimension--neighbourhood & {
+        background-color: $neighbourhood-dark;
+    }
+
+    .dimension--security & {
+        background-color: $security-dark;
+    }
+
+    .dimension--stability & {
+        background-color: $stability-dark;
     }
 }
 

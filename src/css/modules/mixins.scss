@@ -1,6 +1,15 @@
-@mixin accent-color($bg, $color) {
+@mixin accent-color($bg, $bg2, $color) {
     background: $bg;
     color: $color;
+
+    &.btn {
+        &:hover,
+        &:active,
+        &:focus {
+            background: $bg2;
+            color: $color;
+        }
+    }
 }
 
 @mixin accent-outline($border, $color) {
