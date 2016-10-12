@@ -98,7 +98,7 @@ export default class Base extends React.Component {
                             {dimensions.map((dimension, i) => {
                                 let slug = dimension.split(' ')[0].toLowerCase();
                                 return (
-                                    <Link key={i} to={`/${dimension.toLowerCase()}`}
+                                    <Link key={i} to={`/${slug}`}
                                         className={`btn btn-primary btn--${slug}`}>
                                         {dimension}</Link>
                                 );
@@ -197,7 +197,7 @@ export default class Base extends React.Component {
                                 if (dimension.toLowerCase() !== this.props.name.toLowerCase()) {
                                     let slug = dimension.split(' ')[0].toLowerCase();
                                     return (
-                                        <Link key={i} to={`/${dimension.toLowerCase()}`}
+                                        <Link key={i} to={`/${slug}`}
                                             className={`btn btn-primary btn--${slug}`}>
                                             {dimension}</Link>
                                     );
