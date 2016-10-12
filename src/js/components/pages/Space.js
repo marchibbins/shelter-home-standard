@@ -2,9 +2,9 @@ import React from 'react';
 
 import Base from './Base';
 
-import data from '../../data/security';
+import data from '../../data/space';
 
-export default class Security extends React.Component {
+export default class Space extends React.Component {
 
     render () {
         const lorem = (

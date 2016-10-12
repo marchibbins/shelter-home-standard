@@ -1,5 +1,5 @@
 {
-    "dimension": "Security",
+    "dimension": "Space",
     "fail": 36.1,
     "criteria": {
         "essential": [
@@ -17,7 +17,7 @@
     },
     "attributes": [
         {
-            "title": "Security by household income",
+            "title": "Space by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "title": "Security by tenure",
+            "title": "Space by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "title": "Security by age",
+            "title": "Space by age",
             "values": [
                 {
                     "label": "16–24",
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "title": "Security by social grade",
+            "title": "Space by social grade",
             "values": [
                 {
                     "label": "A",

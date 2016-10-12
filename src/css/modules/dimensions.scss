@@ -62,8 +62,8 @@
             background: url(/livinghomestandard/assets/img/neighbourhood-stat.jpg);
         }
 
-        .dimension--security & {
-            background: url(/livinghomestandard/assets/img/security-stat.jpg);
+        .dimension--space & {
+            background: url(/livinghomestandard/assets/img/space-stat.jpg);
         }
 
         .dimension--stability & {
@@ -104,8 +104,8 @@
                 background: url(/livinghomestandard/assets/img/neighbourhood-icon.jpg);
             }
 
-            .dimension--security & {
-                background: url(/livinghomestandard/assets/img/security-icon.jpg);
+            .dimension--space & {
+                background: url(/livinghomestandard/assets/img/space-icon.jpg);
             }
 
             .dimension--stability & {
@@ -198,8 +198,8 @@
                 background: url(/livinghomestandard/assets/img/neighbourhood-expand.jpg);
             }
 
-            .dimension--security & {
-                background: url(/livinghomestandard/assets/img/security-expand.jpg);
+            .dimension--space & {
+                background: url(/livinghomestandard/assets/img/space-expand.jpg);
             }
 
             .dimension--stability & {
@@ -416,8 +416,8 @@
         @include accent-color($neighbourhood-accent, $neighbourhood-dark, white);
     }
 
-    .dimension--security & {
-        @include accent-color($security-accent, $security-dark, $black);
+    .dimension--space & {
+        @include accent-color($space-accent, $space-dark, $black);
     }
 
     .dimension--stability & {
@@ -442,8 +442,8 @@
         background-color: $neighbourhood-dark;
     }
 
-    .dimension--security & {
-        background-color: $security-dark;
+    .dimension--space & {
+        background-color: $space-dark;
     }
 
     .dimension--stability & {
@@ -468,8 +468,8 @@
         @include accent-outline($neighbourhood-accent, $neighbourhood-accent);
     }
 
-    .dimension--security & {
-        @include accent-outline($security-accent, $security-accent);
+    .dimension--space & {
+        @include accent-outline($space-accent, $space-accent);
     }
 
     .dimension--stability & {

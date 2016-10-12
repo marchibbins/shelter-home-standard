@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Affordability from './components/pages/Affordability';
 import Decent from './components/pages/Decent';
 import Neighbourhood from './components/pages/Neighbourhood';
-import Security from './components/pages/Security';
+import Space from './components/pages/Space';
 import Stability from './components/pages/Stability';
 import Copy from './components/pages/Copy';
 
@@ -23,7 +23,7 @@ ReactDOM.render(
             <Route path="/affordability" component={Affordability}/>
             <Route path="/decent" component={Decent}/>
             <Route path="/neighbourhood" component={Neighbourhood}/>
-            <Route path="/security" component={Security}/>
+            <Route path="/space" component={Space}/>
             <Route path="/stability" component={Stability}/>
             <Route path="/great-home-debate" component={Copy}/>
             <Route path="/executive-summary" component={Copy}/>

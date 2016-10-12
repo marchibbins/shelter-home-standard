@@ -26,8 +26,8 @@
         @include accent-color($neighbourhood-accent, $neighbourhood-dark, white);
     }
 
-    &.btn--security {
-        @include accent-color($security-accent, $security-dark, $black);
+    &.btn--space {
+        @include accent-color($space-accent, $space-dark, $black);
     }
 
     &.btn--stability {
