@@ -10,6 +10,7 @@ export default class Base extends React.Component {
             attributes: this.props.attributes,
             windowWidth: window.innerWidth
         };
+        this.handleResize = this.handleResize.bind(this);
     }
 
     handleAttrClick (objIndex, valueIndex, event) {
@@ -25,11 +26,11 @@ export default class Base extends React.Component {
     }
 
     componentDidMount () {
-        window.addEventListener('resize', this.handleResize.bind(this));
+        window.addEventListener('resize', this.handleResize);
     }
 
     componentWillUnmount () {
-        window.removeEventListener('resize', this.handleResize.bind(this));
+        window.removeEventListener('resize', this.handleResize);
     }
 
     panelHeading (title, subheading = null, align = 'left') {
