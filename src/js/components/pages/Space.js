@@ -16,7 +16,7 @@ export default class Space extends React.Component {
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
-                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/casestudy-space.jpg" className="img-responsive"/>
                     </div>
 
                     <h3 className="dimension-case__title">April lives in a two bedroom maisonette with her fiancé and their three children</h3>

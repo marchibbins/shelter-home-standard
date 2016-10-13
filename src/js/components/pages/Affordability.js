@@ -16,7 +16,7 @@ export default class Affordability extends React.Component {
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
-                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/casestudy-affordability.jpg" className="img-responsive"/>
                     </div>
 
                     <h3 className="dimension-case__title">Lou lives in a one bedroom flat with her two children</h3>

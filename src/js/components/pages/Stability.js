@@ -16,7 +16,7 @@ export default class Stability extends React.Component {
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
-                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
+                        <img src="/livinghomestandard/assets/img/casestudy-stability.jpg" className="img-responsive"/>
                     </div>
 
                     <h3 className="dimension-case__title">Amanda, Bournemouth</h3>

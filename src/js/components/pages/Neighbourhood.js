@@ -14,10 +14,6 @@ export default class Neighbourhood extends React.Component {
             ),
             caseStudy = (
                 <div className="dimension-case">
-                    <div className="dimension-case__img">
-                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
-                    </div>
-
                     <h3 className="dimension-case__title">Rowena rents with her three children</h3>
 
                     <p>My children and I are living in our fifth private rental house. The first one, we thought would be secure, was sold after 5 years with only 3 months’ notice. The only thing we could afford was another private rental 10 miles away. I was desperate to keep the kids at the same school. The 40-mile round trip to school every day was expensive and exhausting.</p>

@@ -15,10 +15,6 @@ export default class Decent extends React.Component {
             ),
             caseStudy = (
                 <div className="dimension-case">
-                    <div className="dimension-case__img">
-                        <img src="http://placehold.it/500x500/" className="img-responsive"/>
-                    </div>
-
                     <h3 className="dimension-case__title">Hayley is a single mum and full time police officer</h3>
 
                     <p>I struggled to find somewhere for us to live as lots of agents don’t like that I’m a single mum. So when I found this property I jumped at it, even though it was clear that some repair work needed doing. My estate agents assured me the work would be completed. The front door had a glass panel missing, every curtain was covered in mould and the guttering needed replacing.</p>
