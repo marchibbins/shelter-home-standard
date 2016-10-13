@@ -38,8 +38,7 @@
                 },
                 {
                     "label": "£50,000+",
-                    "percent": 30.8,
-                    "active": true
+                    "percent": 30.8
                 }
             ]
         },
@@ -52,8 +51,7 @@
                 },
                 {
                     "label": "Owned without a mortgage",
-                    "percent": 19.5,
-                    "active": true
+                    "percent": 19.5
                 },
                 {
                     "label": "LA rented",
@@ -100,8 +98,7 @@
                 },
                 {
                     "label": "65+",
-                    "percent": 26.8,
-                    "active": true
+                    "percent": 26.8
                 }
             ]
         },
@@ -114,8 +111,7 @@
                 },
                 {
                     "label": "B",
-                    "percent": 32.8,
-                    "active": true
+                    "percent": 32.8
                 },
                 {
                     "label": "C1",

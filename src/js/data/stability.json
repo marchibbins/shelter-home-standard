@@ -36,8 +36,7 @@
                 },
                 {
                     "label": "£50,000+",
-                    "percent": 6.4,
-                    "active": true
+                    "percent": 6.4
                 }
             ]
         },
@@ -46,8 +45,7 @@
             "values": [
                 {
                     "label": "Owned with a mortgage",
-                    "percent": 4.0,
-                    "active": true
+                    "percent": 4.0
                 },
                 {
                     "label": "Owned without a mortgage",
@@ -90,8 +88,7 @@
                 },
                 {
                     "label": "55–59",
-                    "percent": 5.0,
-                    "active": true
+                    "percent": 5.0
                 },
                 {
                     "label": "60–64",
@@ -112,8 +109,7 @@
                 },
                 {
                     "label": "B",
-                    "percent": 6.6,
-                    "active": true
+                    "percent": 6.6
                 },
                 {
                     "label": "C1",
