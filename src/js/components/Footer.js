@@ -2,6 +2,8 @@ import React from 'react';
 import { Col, Grid, Nav, NavItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
+import { URLS } from '../config';
+
 export default class Footer extends React.Component {
 
     render () {
@@ -11,45 +13,45 @@ export default class Footer extends React.Component {
                     <Grid>
                         <Col md={6}>
                             <Nav bsStyle="pills" stacked>
-                                <LinkContainer to="/">
+                                <LinkContainer to={`${URLS.baseUrl}`}>
                                     <NavItem className="navitem--primary text-uppercase">The Living Home Standard</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/great-home-debate">
+                                <LinkContainer to={`${URLS.baseUrl}/great-home-debate`}>
                                     <NavItem className="navitem--secondary text-uppercase">The Great Home Debate</NavItem>
                                 </LinkContainer>
 
-                                <LinkContainer to="/affordability">
+                                <LinkContainer to={`${URLS.baseUrl}/affordability`}>
                                     <NavItem className="navitem--large text-uppercase">Affordability</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/space">
+                                <LinkContainer to={`${URLS.baseUrl}/space`}>
                                     <NavItem className="navitem--large text-uppercase">Space</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/stability">
+                                <LinkContainer to={`${URLS.baseUrl}/stability`}>
                                     <NavItem className="navitem--large text-uppercase">Stability</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/decent">
+                                <LinkContainer to={`${URLS.baseUrl}/decent`}>
                                     <NavItem className="navitem--large text-uppercase">Decent conditions</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/neighbourhood">
+                                <LinkContainer to={`${URLS.baseUrl}/neighbourhood`}>
                                     <NavItem className="navitem--large text-uppercase">Neighbourhood</NavItem>
                                 </LinkContainer>
                             </Nav>
                         </Col>
                         <Col md={6}>
                             <Nav bsStyle="pills" stacked>
-                                <LinkContainer to="/executive-summary">
+                                <LinkContainer to={`${URLS.baseUrl}/executive-summary`}>
                                     <NavItem className="text-uppercase">Executive summary</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/foreword-campbell-ross">
+                                <LinkContainer to={`${URLS.baseUrl}/foreword-campbell-ross`}>
                                     <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Ross</span></NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/foreword-british-gas">
+                                <LinkContainer to={`${URLS.baseUrl}/foreword-british-gas`}>
                                     <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">British Gas</span></NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/foreword-ipsos-mori">
+                                <LinkContainer to={`${URLS.baseUrl}/foreword-ipsos-mori`}>
                                     <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">IPSOS MORI</span></NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/contact">
+                                <LinkContainer to={`${URLS.baseUrl}/contact`}>
                                     <NavItem className="text-uppercase">Contact</NavItem>
                                 </LinkContainer>
                             </Nav>

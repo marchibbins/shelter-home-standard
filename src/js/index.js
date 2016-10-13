@@ -11,6 +11,8 @@ import Space from './components/pages/Space';
 import Stability from './components/pages/Stability';
 import Copy from './components/pages/Copy';
 
+import { URLS } from './config';
+
 const handleUpdate = function () {
     window.scrollTo(0, 0);
 };
@@ -18,20 +20,20 @@ const handleUpdate = function () {
 ReactDOM.render(
 
     <Router history={browserHistory} onUpdate={handleUpdate}>
-        <Route path="/" component={App}>
+        <Route path={URLS.baseUrl} component={App}>
             <IndexRoute component={Home}/>
-            <Route path="/affordability" component={Affordability}/>
-            <Route path="/decent" component={Decent}/>
-            <Route path="/neighbourhood" component={Neighbourhood}/>
-            <Route path="/space" component={Space}/>
-            <Route path="/stability" component={Stability}/>
-            <Route path="/great-home-debate" component={Copy}/>
-            <Route path="/executive-summary" component={Copy}/>
-            <Route path="/foreword-campbell-ross" component={Copy}/>
-            <Route path="/foreword-british-gas" component={Copy}/>
-            <Route path="/foreword-ipsos-mori" component={Copy}/>
-            <Route path="/contact" component={Copy}/>
-            <Redirect from='*' to='/'/>
+            <Route path={`${URLS.baseUrl}/affordability`} component={Affordability}/>
+            <Route path={`${URLS.baseUrl}/decent`} component={Decent}/>
+            <Route path={`${URLS.baseUrl}/neighbourhood`} component={Neighbourhood}/>
+            <Route path={`${URLS.baseUrl}/space`} component={Space}/>
+            <Route path={`${URLS.baseUrl}/stability`} component={Stability}/>
+            <Route path={`${URLS.baseUrl}/great-home-debate`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/executive-summary`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/foreword-campbell-ross`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/foreword-british-gas`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/foreword-ipsos-mori`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/contact`} component={Copy}/>
+            <Redirect from='*' to={URLS.baseUrl}/>
         </Route>
     </Router>,
 

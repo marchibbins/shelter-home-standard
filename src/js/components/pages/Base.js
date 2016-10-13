@@ -2,6 +2,8 @@ import React from 'react';
 import { Accordion, Col, Grid, Row, Panel, PanelGroup, ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router';
 
+import { URLS } from '../../config';
+
 export default class Base extends React.Component {
 
     constructor (props) {
@@ -92,7 +94,7 @@ export default class Base extends React.Component {
                             {dimensions.map((dimension, i) => {
                                 let slug = dimension.split(' ')[0].toLowerCase();
                                 return (
-                                    <Link key={i} to={`/${slug}`}
+                                    <Link key={i} to={`${URLS.baseUrl}/${slug}`}
                                         className={`btn btn-primary btn--${slug}`}>
                                         {dimension}</Link>
                                 );
@@ -229,7 +231,7 @@ export default class Base extends React.Component {
                                 if (dimension.toLowerCase() !== this.props.name.toLowerCase()) {
                                     let slug = dimension.split(' ')[0].toLowerCase();
                                     return (
-                                        <Link key={i} to={`/${slug}`}
+                                        <Link key={i} to={`${URLS.baseUrl}/${slug}`}
                                             className={`btn btn-primary btn--${slug}`}>
                                             {dimension}</Link>
                                     );
