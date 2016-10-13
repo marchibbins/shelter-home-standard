@@ -49,12 +49,6 @@ export default class Footer extends React.Component {
                                 <LinkContainer to="/foreword-ipsos-mori">
                                     <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">IPSOS MORI</span></NavItem>
                                 </LinkContainer>
-                                <LinkContainer to="/shelter-british-gas">
-                                    <NavItem className="text-uppercase">Shelter and British Gas</NavItem>
-                                </LinkContainer>
-                                <LinkContainer to="/contributors">
-                                    <NavItem className="text-uppercase">Contributors</NavItem>
-                                </LinkContainer>
                                 <LinkContainer to="/contact">
                                     <NavItem className="text-uppercase">Contact</NavItem>
                                 </LinkContainer>

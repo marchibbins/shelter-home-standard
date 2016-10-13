@@ -30,8 +30,6 @@ ReactDOM.render(
             <Route path="/foreword-campbell-ross" component={Copy}/>
             <Route path="/foreword-british-gas" component={Copy}/>
             <Route path="/foreword-ipsos-mori" component={Copy}/>
-            <Route path="/shelter-british-gas" component={Copy}/>
-            <Route path="/contributors" component={Copy}/>
             <Route path="/contact" component={Copy}/>
             <Redirect from='*' to='/'/>
         </Route>

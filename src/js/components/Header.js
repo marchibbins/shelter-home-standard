@@ -86,14 +86,6 @@ export default class Header extends React.Component {
                                 <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Ipsos MORI</span>
                             </NavItem>
                         </LinkContainer>
-                        <LinkContainer to="/shelter-british-gas">
-                            <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Shelter and British Gas</NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/contributors">
-                            <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Contributors</NavItem>
-                        </LinkContainer>
                         <LinkContainer to="/contact">
                             <NavItem onClick={this.closeNavbar.bind(this)}
                                 className="text-uppercase">Contact</NavItem>
