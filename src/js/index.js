@@ -10,6 +10,7 @@ import Neighbourhood from './components/pages/Neighbourhood';
 import Space from './components/pages/Space';
 import Stability from './components/pages/Stability';
 import Copy from './components/pages/Copy';
+import Contact from './components/pages/Contact';
 
 import { URLS } from './config';
 
@@ -32,7 +33,7 @@ ReactDOM.render(
             <Route path={`${URLS.baseUrl}/foreword-campbell-ross`} component={Copy}/>
             <Route path={`${URLS.baseUrl}/foreword-british-gas`} component={Copy}/>
             <Route path={`${URLS.baseUrl}/foreword-ipsos-mori`} component={Copy}/>
-            <Route path={`${URLS.baseUrl}/contact`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/contact`} component={Contact}/>
             <Redirect from='*' to={URLS.baseUrl}/>
         </Route>
     </Router>,
