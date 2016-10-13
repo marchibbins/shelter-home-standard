@@ -179,12 +179,17 @@ export default class Base extends React.Component {
                 <div className="dimension-downloads">
                     <Grid className="container--wide">
                         {this.props.fullLink &&
-                        <Col md={6}>
-                            <a href={this.props.fullLink}
-                                className="btn btn-primary btn--download btn--full-width">
-                                Download the full report
-                            </a>
-                        </Col>}
+                        <div>
+                            {!this.props.chapterLink &&
+                                <Col md={6}></Col>
+                            }
+                            <Col md={6}>
+                                <a href={this.props.fullLink}
+                                    className="btn btn-primary btn--download btn--full-width">
+                                    Download the full report
+                                </a>
+                            </Col>
+                        </div>}
                         {this.props.chapterLink &&
                         <Col md={6}>
                             <a href={this.props.chapterLink}

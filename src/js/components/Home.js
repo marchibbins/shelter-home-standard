@@ -20,8 +20,8 @@ export default class Home extends React.Component {
                         consequat.</p>
                 </div>
             ),
-            lorem = (
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            explainer = (
+                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
@@ -56,7 +56,7 @@ export default class Home extends React.Component {
                 slug="lhs"
                 attributes={data.attributes}
                 intro={intro}
-                info={lorem}
+                info={explainer}
                 fullLink="#"
                 caseStudy={caseStudy}
                 digest={<Digest/>}/>

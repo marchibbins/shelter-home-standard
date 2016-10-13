@@ -173,7 +173,7 @@
         display: block;
         margin: 0 auto;
         max-width: 400px;
-        padding: 8px 12px;
+        padding: 8px 54px 8px 12px;
         font-size: 16px;
         text-align: left;
         text-decoration: underline;
@@ -312,6 +312,10 @@
 .dimension-downloads {
     margin-bottom: 0;
 
+    > .container--wide {
+        padding: 0;
+    }
+
     @media (min-width: 992px) {
         position: relative;
         background-color: $dark-grey;
@@ -320,7 +324,7 @@
             content: '';
             position: absolute;
             top: 0;
-            right: 50%;
+            right: 48%;
             width: 100%;
             height: 100%;
             background-color: $black;
@@ -343,7 +347,9 @@
     }
 
     .dimension-case__img {
-        margin: 0 -15px;
+        @media (max-width: 991px) {
+            margin: 0 -15px;
+        }
 
         img {
             max-width: 100%;
@@ -434,7 +440,7 @@
 
         &.active {
             a, a:hover, a:focus {
-                background-color: $neighbourhood-accent;
+                background-color: $space-accent;
             }
         }
     }
@@ -474,7 +480,7 @@
         }
 
         &.active {
-            background-color: $neighbourhood-accent;
+            background-color: $space-accent;
 
             &:after {
                 background: url(/livinghomestandard/assets/img/arrow-white-up.jpg);
@@ -486,8 +492,10 @@
 .dimension-explore {
     margin-bottom: 25px;
 
-    .dimension--lhs & {
-        text-align: center;
+    @media (min-width: 992px) {
+        .dimension--lhs & {
+            text-align: center;
+        }
     }
 
     .dimension-explore__title {
