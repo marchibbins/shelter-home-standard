@@ -531,11 +531,11 @@
     }
 
     .dimension--neighbourhood & {
-        @include accent-color($neighbourhood-accent, $neighbourhood-dark, white);
+        @include accent-color($neighbourhood-accent, $neighbourhood-dark, $black);
     }
 
     .dimension--space & {
-        @include accent-color($space-accent, $space-dark, $black);
+        @include accent-color($space-accent, $space-dark, white);
     }
 
     .dimension--stability & {
