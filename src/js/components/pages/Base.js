@@ -199,13 +199,22 @@ export default class Base extends React.Component {
                     <section className="dimension-section">{this.props.caseStudy}</section>
                 </Grid>
 
+                {this.props.recommends &&
                 <section className="dimension-recommends">
                     <Grid>
                         <h3 className="dimension-recommends__title">Shelter recommends</h3>
                         {this.props.recommends}
                         <p><a href={this.props.recommendsLink} className="read-more">Read more</a></p>
                     </Grid>
-                </section>
+                </section>}
+
+                {this.props.digest &&
+                <section className="dimension-digest">
+                    <Grid>
+                        <strong>Digest from:</strong>
+                        {this.props.digest}
+                    </Grid>
+                </section>}
 
                 {this.props.slug !== 'lhs' &&
                 <div className="dimension-section dimension-explore dimension-explore--footer">

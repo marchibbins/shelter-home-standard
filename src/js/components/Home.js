@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Base from './pages/Base';
+import Digest from './Digest';
 
 import data from '../data/lhs';
 
@@ -58,8 +59,7 @@ export default class Home extends React.Component {
                 info={lorem}
                 fullLink="#"
                 caseStudy={caseStudy}
-                recommends={lorem}
-                recommendsLink="#"/>
+                digest={<Digest/>}/>
         );
     }
 

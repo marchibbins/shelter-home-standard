@@ -376,6 +376,113 @@
     @extend .dimension-colours;
 }
 
+.dimension-digest {
+    background: $decent-accent;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+
+    #digest {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 991px) {
+        .nav {
+            display: none;
+        }
+        .dimension-digest__panel {
+            display: block !important;
+            opacity: 1;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .dimension-digest__button {
+            display: none;
+        }
+
+        .dimension-digest__panel .collapse {
+            display: block;
+            height: auto !important;
+        }
+    }
+
+    .tab-content {
+        margin: 0 -15px;
+    }
+
+    .nav-pills > li {
+        > a {
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 0;
+            padding: 22px 0;
+            color: white;
+            background: none;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 100%;
+                background: inherit;
+            }
+        }
+
+        &.active {
+            a, a:hover, a:focus {
+                background-color: $neighbourhood-accent;
+            }
+        }
+    }
+
+    .dimension-digest__panel {
+        padding: 0 15px;
+
+        .lead {
+            font-size: 18px;
+
+            @media (min-width: 992px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .dimension-digest__button {
+        color: white;
+        background-color: transparent;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 15px;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 16px;
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            background: url(/livinghomestandard/assets/img/arrow-white-down.jpg);
+        }
+
+        &.active {
+            background-color: $neighbourhood-accent;
+
+            &:after {
+                background: url(/livinghomestandard/assets/img/arrow-white-up.jpg);
+            }
+        }
+    }
+}
+
 .dimension-explore {
     margin-bottom: 25px;
 
