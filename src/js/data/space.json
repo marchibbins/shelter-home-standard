@@ -3,16 +3,21 @@
     "fail": 36.1,
     "criteria": {
         "essential": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "The number of bedrooms in the home is adequate for all members of the household",
+            "There is enough space to allow all members of the household to have privacy, for example when they wish to be alone",
+            "There is enough space for all members of the household to comfortably spend time together in the same room",
+            "There is adequate space to prepare and cook food",
+            "There is adequate space to store essential items, such as a reasonable amount of clothes, towels and bedding",
         ],
         "tradeable": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "A home must meet 3 of 7 of these statements to meet the Living Home Standard",
+            "There are enough bathroom facilities for everyone living in the household to be able to use them at a time suitable for their needs",
+            "The home has access to outdoor space, for example a private or shared garden, or balcony",
+            "There is enough space to have visitors during the day or evening",
+            "There is enough space for members of the household to study or do work or homework if they need to",
+            "There is enough space for a guest to stay overnight, for instance on a sofa or sofa bed",
+            "There is enough space to store domestic items like vacuum cleaners and ironing boards to keep them out of the way",
+            "There is enough space to store some personal belongings, such as books or children’s toys"
         ]
     },
     "attributes": [

@@ -3,16 +3,23 @@
     "fail": 31.2,
     "criteria": {
         "essential": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "The home can be heated safely and effectively",
+            "The home has hot and cold running water",
+            "The home is free from safety hazards such as faulty wiring or fire risks",
+            "The home is structurally sound with no important defects to the roof and/or walls",
+            "The home has a toilet, and a bath and/or shower",
+            "The home feels physically secure (for example with adequate locks on doors and windows)",
+            "The home is free from pest problems",
+            "The home is free from mould or damp problems",
+            "The home is suitable for the current age and/or disability related needs of everyone in the household",
+            "There are electrical sockets in the main living areas, kitchen and bedroom(s)"
         ],
         "tradeable": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "A home must meet 2 of 4 of these statements to meet the Living Home Standard.",
+            "The home is free from outside noise that regularly disrupts sleep or daily activities",
+            "The home has enough natural light in the main living areas, kitchen and bedroom(s)",
+            "Able to dry laundry in the home without causing mould or damp problems",
+            "It is possible to access the internet from the home or get an internet connection if needed"
         ]
     },
     "attributes": [

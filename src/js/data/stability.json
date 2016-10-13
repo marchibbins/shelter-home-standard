@@ -3,16 +3,14 @@
     "fail": 36.7,
     "criteria": {
         "essential": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "The household has enough control over how long they can live in the home"
         ],
         "tradeable": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
+            "A home must meet 2 of 4 of these statements to meet the Living Home Standard.",
+            "If ever given notice to leave the home, the household feel they would be given enough notice to secure somewhere else suitable to live",
+            "Able to stay in the home long enough to feel part of the local community if wanted",
+            "Can make changes to the interior of the home such as decorating, if wanted",
+            "Able to keep a pet in the home or garden if wanted"
         ]
     },
     "attributes": [
