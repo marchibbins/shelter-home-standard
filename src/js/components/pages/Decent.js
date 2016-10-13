@@ -43,6 +43,9 @@ export default class Decent extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={intro}
+                infographic1="domain_decent.svg"
+                infographic2="domain_decent_quote.svg"
+                infographicLink="#"
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"

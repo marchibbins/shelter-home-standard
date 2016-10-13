@@ -43,6 +43,9 @@ export default class Stability extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={intro}
+                infographic1="domain_stability.svg"
+                infographic2="domain_stability_quote.svg"
+                infographicLink="#"
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"

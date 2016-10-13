@@ -39,35 +39,35 @@
 
     .dimension-strapline__img {
         display: block;
-        width: 150px;
+        width: 140px;
         height: 140px;
         margin-bottom: 12px;
 
         .dimension--lhs & {
-            width: 264px;
-            height: 254px;
+            width: 250px;
+            height: 250px;
             margin-bottom: 15px;
-            background: url(/livinghomestandard/assets/img/lhs-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-home-mobile.svg);
         }
 
         .dimension--affordability & {
-            background: url(/livinghomestandard/assets/img/affordability-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-affordability-mobile.svg);
         }
 
         .dimension--decent & {
-            background: url(/livinghomestandard/assets/img/decent-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-decent-mobile.svg);
         }
 
         .dimension--neighbourhood & {
-            background: url(/livinghomestandard/assets/img/neighbourhood-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-neighbourhood-mobile.svg);
         }
 
         .dimension--space & {
-            background: url(/livinghomestandard/assets/img/space-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-space-mobile.svg);
         }
 
         .dimension--stability & {
-            background: url(/livinghomestandard/assets/img/stability-stat.jpg);
+            background: url(/livinghomestandard/assets/img/lhs-house-stability-mobile.svg);
         }
     }
 }
@@ -94,27 +94,27 @@
             position: absolute;
             top: -24px;
             left: -80px;
-            width: 60px;
+            width: 56px;
             height: 56px;
 
             .dimension--affordability & {
-                background: url(/livinghomestandard/assets/img/affordability-icon.jpg);
+                background: url(/livinghomestandard/assets/img/lhs-house-affordability-mobile.svg);
             }
 
             .dimension--decent & {
-                background: url(/livinghomestandard/assets/img/decent-icon.jpg);
+                background: url(/livinghomestandard/assets/img/lhs-house-decent-mobile.svg);
             }
 
             .dimension--neighbourhood & {
-                background: url(/livinghomestandard/assets/img/neighbourhood-icon.jpg);
+                background: url(/livinghomestandard/assets/img/lhs-house-neighbourhood-mobile.svg);
             }
 
             .dimension--space & {
-                background: url(/livinghomestandard/assets/img/space-icon.jpg);
+                background: url(/livinghomestandard/assets/img/lhs-house-space-mobile.svg);
             }
 
             .dimension--stability & {
-                background: url(/livinghomestandard/assets/img/stability-icon.jpg);
+                background: url(/livinghomestandard/assets/img/lhs-house-stability-mobile.svg);
             }
         }
     }
@@ -154,12 +154,13 @@
 
 .dimension-infographic {
     background-color: $black;
-    padding: 5px 0 38px;
+    padding: 35px 0 38px;
     margin-bottom: 28px;
     text-align: center;
 
     .dimension-infographic__img {
         margin: 0 auto;
+        padding: 20px;
 
         @media (min-width: 992px) {
             width: 470px;
@@ -183,32 +184,32 @@
             content: '';
             position: absolute;
             top: 8px;
-            right: 12px;
-            width: 36px;
-            height: 39px;
+            right: 8px;
+            width: 40px;
+            height: 40px;
 
             .dimension--lhs & {
-                background: url(/livinghomestandard/assets/img/lhs-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-lhs.svg);
             }
 
             .dimension--affordability & {
-                background: url(/livinghomestandard/assets/img/affordability-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-affordability.svg);
             }
 
             .dimension--decent & {
-                background: url(/livinghomestandard/assets/img/decent-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-decent.svg);
             }
 
             .dimension--neighbourhood & {
-                background: url(/livinghomestandard/assets/img/neighbourhood-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-neighbourhood.svg);
             }
 
             .dimension--space & {
-                background: url(/livinghomestandard/assets/img/space-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-space.svg);
             }
 
             .dimension--stability & {
-                background: url(/livinghomestandard/assets/img/stability-expand.jpg);
+                background: url(/livinghomestandard/assets/img/icon-fullscreen-stability.svg);
             }
         }
 
@@ -386,7 +387,7 @@
     background: $decent-accent;
     font-size: 16px;
     line-height: 24px;
-    padding: 10px 0;
+    padding: 20px 0;
 
     #digest {
         margin-top: 10px;
@@ -436,6 +437,19 @@
                 right: 100%;
                 background: inherit;
             }
+
+            @media (min-width: 992px) {
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    top: 22px;
+                    right: 5px;
+                    background: url(/livinghomestandard/assets/img/icon-arrow-right-white.svg);
+                }
+            }
         }
 
         &.active {
@@ -472,18 +486,18 @@
             content: '';
             display: block;
             width: 25px;
-            height: 16px;
+            height: 25px;
             position: absolute;
             top: 12px;
             right: 15px;
-            background: url(/livinghomestandard/assets/img/arrow-white-down.jpg);
+            background: url(/livinghomestandard/assets/img/icon-arrow-down-white.svg);
         }
 
         &.active {
             background-color: $space-accent;
 
             &:after {
-                background: url(/livinghomestandard/assets/img/arrow-white-up.jpg);
+                background: url(/livinghomestandard/assets/img/icon-arrow-up-white.svg);
             }
         }
     }
@@ -521,7 +535,7 @@
 .dimension-explore--footer {
     @media (min-width: 992px) {
         padding: 80px 0 110px;
-        background: url(/livinghomestandard/assets/img/explore-logo.jpg) 760px center no-repeat;
+        background: url(/livinghomestandard/assets/img/lhs-house.svg) 760px center no-repeat;
     }
 }
 

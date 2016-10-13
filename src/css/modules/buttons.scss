@@ -50,13 +50,13 @@
     &:after {
         content: '';
         display: block;
-        width: 35px;
+        width: 30px;
         height: 30px;
         position: absolute;
         top: 50%;
         margin-top: -15px;
-        right: 10px;
-        background: url(/livinghomestandard/assets/img/download.jpg);
+        right: 15px;
+        background: url(/livinghomestandard/assets/img/icon-download-white.svg);
     }
 
     &.hover,

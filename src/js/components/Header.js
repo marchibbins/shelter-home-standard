@@ -27,7 +27,8 @@ export default class Header extends React.Component {
                 <Navbar.Header>
                     <Navbar.Brand>
                         <Link to="/" onClick={this.closeNavbar.bind(this)}>
-                            <img alt="Home standard" src="/livinghomestandard/assets/img/logo.jpg"/>
+                            <img alt="Home standard" width="200" height="80"
+                                src="/livinghomestandard/assets/img/living-home-standard.svg"/>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle/>

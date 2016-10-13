@@ -43,9 +43,12 @@ export default class Home extends React.Component {
             <Base name={data.dimension}
                 fail={data.fail}
                 slug="lhs"
-                attributes={data.attributes}
                 intro={intro}
+                infographic1="home_map.svg"
+                infographic2="home_stats.svg"
+                infographicLink="#"
                 info={explainer}
+                attributes={data.attributes}
                 fullLink="#"
                 caseStudy={caseStudy}
                 digest={<Digest/>}/>

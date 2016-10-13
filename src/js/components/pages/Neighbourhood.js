@@ -42,6 +42,9 @@ export default class Neighbourhood extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={intro}
+                infographic1="domain_neighbourhood.svg"
+                infographic2="domain_neighbourhood_quote.svg"
+                infographicLink="#"
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"

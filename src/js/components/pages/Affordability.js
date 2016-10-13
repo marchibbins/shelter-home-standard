@@ -43,6 +43,9 @@ export default class Affordability extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={intro}
+                infographic1="domain_affordability.svg"
+                infographic2="domain_affordability_quote.svg"
+                infographicLink="#"
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"

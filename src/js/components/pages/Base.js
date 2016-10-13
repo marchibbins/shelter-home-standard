@@ -58,7 +58,7 @@ export default class Base extends React.Component {
                         </Col>
                         <Col md={6} className="hidden-xs hidden-sm">
                             <img className="dimension-stat"
-                                src={`/livinghomestandard/assets/img/lhs-full-stat.jpg`}/>
+                                src="/livinghomestandard/assets/img/lhs-house-home-stat.svg"/>
                         </Col>
                     </Row>
                     <p className="dimension-strapline hidden-md hidden-lg">
@@ -80,7 +80,7 @@ export default class Base extends React.Component {
                         </Col>
                         <Col md={6} className="hidden-xs hidden-sm">
                             <img className="dimension-stat"
-                                src={`/livinghomestandard/assets/img/${this.props.name.split(' ')[0].toLowerCase()}-full-stat.jpg`}/>
+                                src={`/livinghomestandard/assets/img/lhs-house-${this.props.name.split(' ')[0].toLowerCase()}-stat.svg`}/>
                         </Col>
                     </Row>
                 </Grid>}
@@ -128,16 +128,16 @@ export default class Base extends React.Component {
 
                 <div className="dimension-infographic clearfix">
                     <Grid>
-                        <img src="/livinghomestandard/assets/img/infographic1.jpg"
+                        <img src={`/livinghomestandard/assets/img/${this.props.infographic1}`}
                             className="dimension-infographic__img img-responsive"/>
-                        <img src="/livinghomestandard/assets/img/infographic2.jpg"
+                        <img src={`/livinghomestandard/assets/img/${this.props.infographic2}`}
                             className="dimension-infographic__img img-responsive"/>
                     </Grid>
                     <Grid>
-                        <button className="dimension-infographic__btn btn btn-outline">
+                        <a href={this.props.infographicLink} className="dimension-infographic__btn btn btn-outline">
                             Infographic on {this.props.name.toLowerCase()}
                             <span className="dimension-infographic__btn-small">Lorem ipsum dolor sit amet</span>
-                        </button>
+                        </a>
                     </Grid>
                 </div>
 

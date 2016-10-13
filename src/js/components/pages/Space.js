@@ -43,6 +43,9 @@ export default class Space extends React.Component {
                 attributes={data.attributes}
                 criteria={data.criteria}
                 intro={intro}
+                infographic1="domain_space.svg"
+                infographic2="domain_space_quote.svg"
+                infographicLink="#"
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"

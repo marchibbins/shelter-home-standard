@@ -25,26 +25,26 @@
                     content: '';
                     display: block;
                     width: 25px;
-                    height: 16px;
+                    height: 25px;
                     position: absolute;
-                    top: 2px;
-                    right: 2px;
-                    background: url(/livinghomestandard/assets/img/arrow-down.jpg);
+                    top: 0;
+                    right: 5px;
+                    background: url(/livinghomestandard/assets/img/icon-arrow-down-black.svg);
                 }
 
                 &[aria-expanded="true"]:after {
-                    background: url(/livinghomestandard/assets/img/arrow-up.jpg);
+                    background: url(/livinghomestandard/assets/img/icon-arrow-up-black.svg);
                 }
             }
         }
 
         &.panel--dark .panel-title a {
             &:after {
-                background: url(/livinghomestandard/assets/img/arrow-white-down.jpg);
+                background: url(/livinghomestandard/assets/img/icon-arrow-down-white.svg);
             }
 
             &[aria-expanded="true"]:after {
-                background: url(/livinghomestandard/assets/img/arrow-white-up.jpg);
+                background: url(/livinghomestandard/assets/img/icon-arrow-up-white.svg);
             }
         }
     }
