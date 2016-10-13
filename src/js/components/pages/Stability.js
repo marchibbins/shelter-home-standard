@@ -13,12 +13,6 @@ export default class Stability extends React.Component {
                     <p>Throughout our research, the public saw stability as an issue primarily affecting renters, not homeowners. Naturally, this presented some challenges in developing a measure that applies to everyone. However, the final attributes attempt to reconcile this as far as possible.</p>
                 </div>
             ),
-            explainer = (
-                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            ),
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
@@ -46,7 +40,6 @@ export default class Stability extends React.Component {
                 infographic1="domain_stability.svg"
                 infographic2="domain_stability_quote.svg"
                 infographicLink="#"
-                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}

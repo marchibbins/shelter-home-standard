@@ -141,10 +141,6 @@ export default class Base extends React.Component {
                     </Grid>
                 </div>
 
-                <Grid>
-                    <section className="dimension-section">{this.props.info}</section>
-                </Grid>
-
                 <Grid className="container--wide">
                     <PanelGroup>
                         {this.state.attributes.map((panel, i) => (

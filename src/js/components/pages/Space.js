@@ -13,12 +13,6 @@ export default class Space extends React.Component {
                     <p>Not having enough space was thought to have a negative impact on relationships and cause stress. Adequate space was felt to be crucial for wellbeing.</p>
                 </div>
             ),
-            explainer = (
-                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            ),
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
@@ -46,7 +40,6 @@ export default class Space extends React.Component {
                 infographic1="domain_space.svg"
                 infographic2="domain_space_quote.svg"
                 infographicLink="#"
-                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}

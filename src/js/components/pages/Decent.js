@@ -13,12 +13,6 @@ export default class Decent extends React.Component {
                     <p>The public were quick to reach a consensus on many aspects of decency, although coming to an agreement on the exact definitions of what is and is not acceptable was sometimes the source of intense debate.</p>
                 </div>
             ),
-            explainer = (
-                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            ),
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
@@ -46,7 +40,6 @@ export default class Decent extends React.Component {
                 infographic1="domain_decent.svg"
                 infographic2="domain_decent_quote.svg"
                 infographicLink="#"
-                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}

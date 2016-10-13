@@ -12,12 +12,6 @@ export default class Neighbourhood extends React.Component {
                     <p>This dimension was introduced because the public identified their neighbourhood as being important to their understanding of home. Issues around location were originally discussed as part of affordability, as location obviously affects housing costs.  However, it became clear that neighbourhood deserved to be considered separately, as it contained other elements that people considered extremely important.</p>
                 </div>
             ),
-            explainer = (
-                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            ),
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
@@ -45,7 +39,6 @@ export default class Neighbourhood extends React.Component {
                 infographic1="domain_neighbourhood.svg"
                 infographic2="domain_neighbourhood_quote.svg"
                 infographicLink="#"
-                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}

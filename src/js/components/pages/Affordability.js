@@ -13,12 +13,6 @@ export default class Affordability extends React.Component {
                     <p>To create a measure for affordability, we looked at the impact of housing costs on people’s lives. We asked the public to tell us what trade-offs people should not have to make in order to pay their rent or mortgage.</p>
                 </div>
             ),
-            explainer = (
-                <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            ),
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img">
@@ -46,7 +40,6 @@ export default class Affordability extends React.Component {
                 infographic1="domain_affordability.svg"
                 infographic2="domain_affordability_quote.svg"
                 infographicLink="#"
-                info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}
