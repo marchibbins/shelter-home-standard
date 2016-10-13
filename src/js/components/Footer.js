@@ -64,13 +64,14 @@ export default class Footer extends React.Component {
                 </div>
                 <div className="logo-footer">
                     <Grid>
-                        <ul className="list-unstyled">
+                        <ul className="list-unstyled logo-footer__logos">
                             <li className="logo"><img src="/livinghomestandard/assets/img/shelter-logo.jpg" alt="Shelter"/></li>
                             <li className="logo"><img src="/livinghomestandard/assets/img/ipsos-mori-logo.jpg" alt="Ipsos MORI"/></li>
                             <li className="logo"><img src="/livinghomestandard/assets/img/british-gas-logo.jpg" alt="British Gas"/></li>
-                            <li className="info">
-                                Charity Number 263710 (England &amp; Wales);<br/>
-                                SC002327 (Scotland)<br/>
+                        </ul>
+                        <ul className="list-unstyled logo-footer__info">
+                            <li>
+                                Charity Number 263710 (England &amp; Wales); SC002327 (Scotland)<br/>
                                 88 Old Street London EC1V 9HU
                             </li>
                         </ul>

@@ -24,20 +24,33 @@
 }
 
 .logo-footer {
-    background-color: $brand-red;
-    color: white;
+    background-color: white;
     padding: 25px 0 10px;
 
     .logo {
         margin-bottom: 10px;
 
-        &:first-child {
-            margin: 15px 0 20px;
+        @media (max-width: 991px) {
+            &:first-child {
+                margin: 15px 0 20px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 15px;
         }
     }
 
-    .info {
-        margin-top: 40px;
+    .logo-footer__logos {
+        @media (min-width: 992px) {
+            float: right;
+        }
+    }
+
+    .logo-footer__info {
+        margin-top: 25px;
         line-height: 22px;
     }
 }
