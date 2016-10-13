@@ -7,11 +7,10 @@ import data from '../../data/neighbourhood';
 export default class Neighbourhood extends React.Component {
 
     render () {
-        const lorem = (
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+        const intro = (
+                <div>
+                    <p>This dimension was introduced because the public identified their neighbourhood as being important to their understanding of home. Issues around location were originally discussed as part of affordability, as location obviously affects housing costs.  However, it became clear that neighbourhood deserved to be considered separately, as it contained other elements that people considered extremely important.</p>
+                </div>
             ),
             explainer = (
                 <p className="columns"><strong>Lorem ipsum dolor sit amet</strong> consectetur adipisicing elit, sed do eiusmod
@@ -25,18 +24,16 @@ export default class Neighbourhood extends React.Component {
                         <img src="http://placehold.it/500x500/" className="img-responsive"/>
                     </div>
 
-                    <h3 className="dimension-case__title">Renee's Story</h3>
+                    <h3 className="dimension-case__title">Rowena rents with her three children</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>My children and I are living in our fifth private rental house. The first one, we thought would be secure, was sold after 5 years with only 3 months’ notice. The only thing we could afford was another private rental 10 miles away. I was desperate to keep the kids at the same school. The 40-mile round trip to school every day was expensive and exhausting.</p>
+                    <p>I found us another rental closer to the kids’ school. The house is pretty clapped out but moving schools played havoc with the older kids’ education. I’m a single parent. All I want to do is provide a secure roof over my kids’ heads so they can concentrate on what should be a stress-free childhood, spent building a solid foundation for a successful adult life.</p>
 
-                    <blockquote className="dimension-blockquote">&ldquo;Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit&rdquo;</blockquote>
+                    <blockquote className="dimension-blockquote">&ldquo;Our future is very uncertain and I feel we have no idea where we might end up.&rdquo;</blockquote>
                 </div>
+            ),
+            recommends = (
+                <p>Improving neighbourhoods by encouraging <strong>alternative forms of housing developments</strong> which give communities more control over the quality and kinds of housing in their area.</p>
             );
 
         return (
@@ -44,13 +41,12 @@ export default class Neighbourhood extends React.Component {
                 fail={data.fail}
                 attributes={data.attributes}
                 criteria={data.criteria}
-                intro={lorem}
+                intro={intro}
                 info={explainer}
                 chapterLink="#"
                 fullLink="#"
                 caseStudy={caseStudy}
-                recommends={lorem}
-                recommendsLink="#"/>
+                recommends={recommends}/>
         );
     }
 

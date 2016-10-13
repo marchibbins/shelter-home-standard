@@ -210,7 +210,9 @@ export default class Base extends React.Component {
                     <Grid>
                         <h3 className="dimension-recommends__title">Shelter recommends</h3>
                         {this.props.recommends}
-                        <p><a href={this.props.recommendsLink} className="read-more">Read more</a></p>
+
+                        {this.props.recommendsLink &&
+                        <p><a href={this.props.recommendsLink} className="read-more">Read more</a></p>}
                     </Grid>
                 </section>}
 
