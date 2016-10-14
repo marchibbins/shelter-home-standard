@@ -10,6 +10,7 @@ import Neighbourhood from './components/pages/Neighbourhood';
 import Space from './components/pages/Space';
 import Stability from './components/pages/Stability';
 import Copy from './components/pages/Copy';
+import GreatHomeDebate from './components/pages/GreatHomeDebate';
 import ForewordShelter from './components/pages/ForewordShelter';
 import ForewordBritishGas from './components/pages/ForewordBritishGas';
 import ForewordIpsosMori from './components/pages/ForewordIpsosMori';
@@ -31,7 +32,7 @@ ReactDOM.render(
             <Route path={`${URLS.baseUrl}/neighbourhood`} component={Neighbourhood}/>
             <Route path={`${URLS.baseUrl}/space`} component={Space}/>
             <Route path={`${URLS.baseUrl}/stability`} component={Stability}/>
-            <Route path={`${URLS.baseUrl}/great-home-debate`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/great-home-debate`} component={GreatHomeDebate}/>
             <Route path={`${URLS.baseUrl}/executive-summary`} component={Copy}/>
             <Route path={`${URLS.baseUrl}/foreword-campbell-robb`} component={ForewordShelter}/>
             <Route path={`${URLS.baseUrl}/foreword-british-gas`} component={ForewordBritishGas}/>

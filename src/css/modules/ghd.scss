@@ -1,0 +1,26 @@
+.ghd {
+    .embed-responsive {
+        margin-bottom: 20px;
+    }
+}
+
+.ghd__title {
+    margin-bottom: 50px;
+}
+
+.ghd__quote {
+    background-color: $dark-blue;
+    color: white;
+    padding: 20px 5px 55px;
+
+    blockquote {
+        padding: 0;
+        border: none;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+.ghd__img {
+    margin: 0 -15px;
+}
