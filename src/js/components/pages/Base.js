@@ -17,9 +17,12 @@ export default class Base extends React.Component {
 
     handleAttrClick (objIndex, valueIndex, event) {
         event.preventDefault();
-        let attributes = this.state.attributes,
-            attr = attributes[objIndex].values[valueIndex];
-        attr.active = attr.active === true ? false : true;
+        let attributes = this.state.attributes;
+        attributes[objIndex].values.map(value => {
+            value['active'] = false;
+            return value;
+        });
+        attributes[objIndex].values[valueIndex].active = true;
         this.setState(attributes);
     }
 

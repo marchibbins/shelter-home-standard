@@ -4,9 +4,13 @@
 
     &.btn {
         &:hover,
-        &:active,
-        &:focus {
+        &:active {
             background: $bg2;
+            color: $color;
+        }
+
+        &:focus {
+            background: $bg;
             color: $color;
         }
     }

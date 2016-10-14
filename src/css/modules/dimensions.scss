@@ -300,6 +300,7 @@
         border: 1px solid $grey;
 
         &.active {
+            cursor: default;
             @extend .dimension-colours;
         }
     }
