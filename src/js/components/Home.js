@@ -23,7 +23,7 @@ export default class Home extends React.Component {
             caseStudy = (
                 <div className="dimension-case">
                     <div className="dimension-case__img hidden-xs hidden-sm">
-                        <img src="http://placehold.it/500x200/"/>
+                        <img src="/livinghomestandard/assets/img/great-home-debate.jpg"/>
                     </div>
                     <div className="dimension-case__img">
                         <img src="/livinghomestandard/assets/img/ghd-logo.jpg"/>
@@ -35,7 +35,7 @@ export default class Home extends React.Component {
 
                     <p>We wanted to speak to as many people as possible to help us shape new standards for homes in the 21st Century. Through thousands of conversations, we explored what makes a place feel like a home and what people prioritise when it comes to things like size and location.</p>
 
-                    <img src="http://placehold.it/500x200/" className="img-responsive hidden-md hidden-lg"/>
+                    <img src="/livinghomestandard/assets/img/great-home-debate.jpg" className="img-responsive hidden-md hidden-lg"/>
                 </div>
             );
 
