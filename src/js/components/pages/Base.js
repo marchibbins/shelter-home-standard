@@ -218,7 +218,7 @@ export default class Base extends React.Component {
                 {this.props.slug !== 'lhs' &&
                 <div className="dimension-section dimension-explore dimension-explore--footer">
                     <Grid>
-                        <h4 className="dimension-explore__title">Explore other dimensions</h4>
+                        <h4 className="dimension-explore__title">Explore the Living Home Standard's other dimensions</h4>
                         <ul className="list-unstyled">
                             {dimensions.map((dimension, i) => {
                                 if (dimension.toLowerCase() !== this.props.name.toLowerCase()) {
