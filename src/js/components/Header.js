@@ -50,23 +50,23 @@ export default class Header extends React.Component {
 
                         <LinkContainer to={`${URLS.baseUrl}/affordability`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Affordability</NavItem>
+                                className="text-uppercase navitem--large">Affordability</NavItem>
                         </LinkContainer>
                         <LinkContainer to={`${URLS.baseUrl}/space`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Space</NavItem>
+                                className="text-uppercase navitem--large">Space</NavItem>
                         </LinkContainer>
                         <LinkContainer to={`${URLS.baseUrl}/stability`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Stability</NavItem>
+                                className="text-uppercase navitem--large">Stability</NavItem>
                         </LinkContainer>
                         <LinkContainer to={`${URLS.baseUrl}/decent`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Decent conditions</NavItem>
+                                className="text-uppercase navitem--large">Decent conditions</NavItem>
                         </LinkContainer>
                         <LinkContainer to={`${URLS.baseUrl}/neighbourhood`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}
-                                className="text-uppercase">Neighbourhood</NavItem>
+                                className="text-uppercase navitem--large">Neighbourhood</NavItem>
                         </LinkContainer>
 
                         <LinkContainer to={`${URLS.baseUrl}/executive-summary`}>

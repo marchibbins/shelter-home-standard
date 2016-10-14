@@ -46,11 +46,15 @@
         .navitem--secondary a {
             color: $dark-grey;
         }
-
-        .navitem--large a {
-            font-size: 16px;
-        }
     }
+}
+
+.navbar .navitem--large a {
+    font-size: 16px;
+}
+
+.footer .navitem--large a {
+    font-size: 18px;
 }
 
 // Always use collapsed menu
