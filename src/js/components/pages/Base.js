@@ -107,7 +107,7 @@ export default class Base extends React.Component {
                 <div className="dimension-criteria">
                     <Grid className="container--wide">
                         <Accordion>
-                            <Panel header={this.panelHeading('Essential Criteria', 'Lorem ipsum dolor sit amet')}
+                            <Panel header={this.panelHeading('Essential Criteria')}
                                 className="panel--arrows col-md-6 col-lg-6" eventKey={1}>
                                 <ol className="list-unstyled">
                                     {this.props.criteria.essential.map((criteria, i) => (
@@ -115,7 +115,7 @@ export default class Base extends React.Component {
                                     ))}
                                 </ol>
                             </Panel>
-                            <Panel header={this.panelHeading('Tradeable Criteria', 'Lorem ipsum dolor sit amet')}
+                            <Panel header={this.panelHeading('Tradeable Criteria')}
                                 className="panel--arrows col-md-6 col-lg-6"
                                     eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
                                 <ol className="list-unstyled">
