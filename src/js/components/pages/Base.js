@@ -114,7 +114,7 @@ export default class Base extends React.Component {
                                     ))}
                                 </ol>
                             </Panel>
-                            <Panel header={this.panelHeading('Tradeable Criteria')}
+                            <Panel header={this.panelHeading('Tradable Criteria')}
                                 className="panel--arrows col-md-6 col-lg-6"
                                     eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
                                 <ol className="list-unstyled">

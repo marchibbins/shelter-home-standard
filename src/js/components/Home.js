@@ -12,6 +12,7 @@ export default class Home extends React.Component {
                 <div>
                     <p>The Living Home Standard has been created by the public, for the public, to define what an acceptable home should provide. It looks at what we should all be able to expect from our home in order to secure our wellbeing and provide a foundation from which we can build and live our lives.</p>
                     <p>The Standard is the product of nine months of research undertaken by Ipsos MORI on behalf of Shelter and British Gas, and involved discussion groups, workshops and quantitative surveys as well as an online community. The result is a list of 39 attributes which define the Living Home Standard, split between essentials that all homes must meet and tradables which take account of differing needs and priorities between households.  It is a standard that applies to all homes, irrespective of their tenure, size or age.</p>
+                    <p>The Living Home Standard is made up of five dimensions:</p>
                 </div>
             ),
             explainer = (
