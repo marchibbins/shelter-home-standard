@@ -42,8 +42,8 @@ export default class Footer extends React.Component {
                                 <LinkContainer to={`${URLS.baseUrl}/executive-summary`}>
                                     <NavItem className="text-uppercase">Executive summary</NavItem>
                                 </LinkContainer>
-                                <LinkContainer to={`${URLS.baseUrl}/foreword-campbell-ross`}>
-                                    <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Ross</span></NavItem>
+                                <LinkContainer to={`${URLS.baseUrl}/foreword-campbell-robb`}>
+                                    <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Robb</span></NavItem>
                                 </LinkContainer>
                                 <LinkContainer to={`${URLS.baseUrl}/foreword-british-gas`}>
                                     <NavItem><span className="text-uppercase">Foreword</span> by <span className="text-uppercase">British Gas</span></NavItem>

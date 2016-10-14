@@ -46,7 +46,7 @@ export default class Digest extends React.Component {
                                         <p className="lead">&ldquo;Developed by the public for the public, this ground-breaking piece of work amplifies Shelter’s vision of a home for everyone&rdquo;</p>
                                         <p>We wanted to mark our 50th anniversary by reconnecting society with a united vision that we need to strive for – something more than a roof over our heads. Because while a roof is a necessity, it’s far from enough.</p>
                                         <p>With the Living Wage as inspiration, we wanted something that would raise the bar for homes in this country. We’ve been able to take a holistic look at home, and provide an ambitious but realistic definition of what the British public believe everyone needs from a home in order to live rather than just get by.</p>
-                                        <p><Link to={`${URLS.baseUrl}/foreword-campbell-ross`} className="read-more">Read more</Link></p>
+                                        <p><Link to={`${URLS.baseUrl}/foreword-campbell-robb`} className="read-more">Read more</Link></p>
                                     </div>
                                 </Collapse>
                             </Tab.Pane>

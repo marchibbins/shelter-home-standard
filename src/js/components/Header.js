@@ -73,9 +73,9 @@ export default class Header extends React.Component {
                             <NavItem onClick={this.closeNavbar.bind(this)}
                                 className="text-uppercase">Executive summary</NavItem>
                         </LinkContainer>
-                        <LinkContainer to={`${URLS.baseUrl}/foreword-campbell-ross`}>
+                        <LinkContainer to={`${URLS.baseUrl}/foreword-campbell-robb`}>
                             <NavItem onClick={this.closeNavbar.bind(this)}>
-                                <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Ross</span>
+                                <span className="text-uppercase">Foreword</span> by <span className="text-uppercase">Campbell Robb</span>
                             </NavItem>
                         </LinkContainer>
                         <LinkContainer to={`${URLS.baseUrl}/foreword-british-gas`}>
