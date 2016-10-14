@@ -67,13 +67,17 @@ export default class Base extends React.Component {
                         </Col>
                     </Row>
                     <p className="dimension-strapline hidden-md hidden-lg">
-                        <span className="img-responsive dimension-strapline__img"></span></p>
+                        <span className="dimension-strapline__img">
+                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
+                            all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
                 </Grid>}
 
                 {this.props.slug !== 'lhs' &&
                 <Grid>
                     <p className="dimension-strapline hidden-md hidden-lg">
-                        <span className="dimension-strapline__img"></span></p>
+                        <span className="dimension-strapline__img">
+                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
+                            all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
                     <Row>
                         <Col md={6}>
                             <h1 className="dimension-title">{this.props.name}</h1>
