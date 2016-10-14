@@ -9,7 +9,7 @@ import Decent from './components/pages/Decent';
 import Neighbourhood from './components/pages/Neighbourhood';
 import Space from './components/pages/Space';
 import Stability from './components/pages/Stability';
-import Copy from './components/pages/Copy';
+import ExecutiveSummary from './components/pages/ExecutiveSummary';
 import GreatHomeDebate from './components/pages/GreatHomeDebate';
 import ForewordShelter from './components/pages/ForewordShelter';
 import ForewordBritishGas from './components/pages/ForewordBritishGas';
@@ -34,7 +34,7 @@ ReactDOM.render(
             <Route path={`${URLS.baseUrl}/space`} component={Space}/>
             <Route path={`${URLS.baseUrl}/stability`} component={Stability}/>
             <Route path={`${URLS.baseUrl}/great-home-debate`} component={GreatHomeDebate}/>
-            <Route path={`${URLS.baseUrl}/executive-summary`} component={Copy}/>
+            <Route path={`${URLS.baseUrl}/executive-summary`} component={ExecutiveSummary}/>
             <Route path={`${URLS.baseUrl}/foreword-campbell-robb`} component={ForewordShelter}/>
             <Route path={`${URLS.baseUrl}/foreword-british-gas`} component={ForewordBritishGas}/>
             <Route path={`${URLS.baseUrl}/foreword-ipsos-mori`} component={ForewordIpsosMori}/>

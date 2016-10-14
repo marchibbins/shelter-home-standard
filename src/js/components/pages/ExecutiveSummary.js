@@ -1,13 +1,13 @@
 import React from 'react';
 import { Grid } from 'react-bootstrap';
 
-export default class Copy extends React.Component {
+export default class ExecutiveSummary extends React.Component {
 
     render () {
         return (
             <Grid>
                 <article>
-                    <h1>Lorem ipum</h1>
+                    <h1>Executive Summary</h1>
                     <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
