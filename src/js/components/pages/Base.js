@@ -67,7 +67,7 @@ export default class Base extends React.Component {
                         </Col>
                     </Row>
                     <p className="dimension-strapline hidden-md hidden-lg">
-                        <span className="dimension-strapline__img"></span></p>
+                        <span className="img-responsive dimension-strapline__img"></span></p>
                 </Grid>}
 
                 {this.props.slug !== 'lhs' &&
@@ -80,7 +80,7 @@ export default class Base extends React.Component {
                             <section className="dimension-section">{this.props.intro}</section>
                         </Col>
                         <Col md={6} className="hidden-xs hidden-sm">
-                            <img className="dimension-stat"
+                            <img className="img-responsive dimension-stat"
                                 src={`/livinghomestandard/assets/img/lhs-house-${this.props.name.split(' ')[0].toLowerCase()}-stat.svg`}/>
                         </Col>
                     </Row>
