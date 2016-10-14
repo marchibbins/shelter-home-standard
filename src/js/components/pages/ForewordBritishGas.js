@@ -7,14 +7,14 @@ export default class ForewordBritishGas extends React.Component {
         return (
             <Grid>
                 <article>
+                    <h1>Foreword</h1>
+                    <h2>British Gas</h2>
                     <Row>
                         <Col md={5} mdPush={7}>
                             <img className="img-responsive"
                                 src="/livinghomestandard/assets/img/foreword-sawjit-sambhi.jpg"/>
                         </Col>
                         <Col md={7} mdPull={5}>
-                            <h1>Foreword</h1>
-                            <h2>British Gas</h2>
                             <p>At British Gas we share a belief with Shelter, that we should all have a safe, decent and warm place to call home. Working together for four years, we’ve raised over &pound;1million and helped to improve living standards for thousands of families.</p>
                             <p>Our focus has been on improving standards in the private rented sector and we’re proud of all we have achieved together through sharing our expertise and knowledge.</p>
                             <ul>
