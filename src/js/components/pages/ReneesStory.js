@@ -29,6 +29,10 @@ export default class ReneesStory extends React.Component {
                          
                         <p><strong>‘Stability’:</strong> We decorated immediately. It was a sign that we had finally won the stability we had fought for, and which is another of the key themes to come through. I got my GCSEs in the end - five As, one A* and three Bs. People say it’s a miracle but I tell them: “No, it’s mum.” How she stayed strong, I will never know. But she made sure we had what I think is the most important word to emerge from the Great Home Debate: ‘love’.</p>
                     </Col>
+                    <Col md={5} className="hidden-xs hidden-sm">
+                        <img className="img-responsive"
+                            src="/livinghomestandard/assets/img/renee.jpg"/>
+                    </Col>
                 </article>
             </Grid>
         );

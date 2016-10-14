@@ -35,6 +35,9 @@ export default class GreatHomeDebate extends React.Component {
                     </Grid>
                 </div>
                 <Grid>
+                    <div className="ghd__img">
+                        <img src="/livinghomestandard/assets/img/renee_fullwidth.jpg" className="img-responsive"/>
+                    </div>
                     <h2>What does home mean to you?</h2>
                     <p><strong>By Renee Stephenson, 18, London</strong></p>
                     <p>For sixteen frightening months, my family were homeless. My single mother taught us kids that our ‘home’ was in our love for each other, not the sordid temporary accommodation we had found ourselves in.</p>
