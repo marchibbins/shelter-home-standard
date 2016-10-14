@@ -14,6 +14,7 @@ import GreatHomeDebate from './components/pages/GreatHomeDebate';
 import ForewordShelter from './components/pages/ForewordShelter';
 import ForewordBritishGas from './components/pages/ForewordBritishGas';
 import ForewordIpsosMori from './components/pages/ForewordIpsosMori';
+import ReneesStory from './components/pages/ReneesStory';
 import Contact from './components/pages/Contact';
 
 import { URLS } from './config';
@@ -37,6 +38,7 @@ ReactDOM.render(
             <Route path={`${URLS.baseUrl}/foreword-campbell-robb`} component={ForewordShelter}/>
             <Route path={`${URLS.baseUrl}/foreword-british-gas`} component={ForewordBritishGas}/>
             <Route path={`${URLS.baseUrl}/foreword-ipsos-mori`} component={ForewordIpsosMori}/>
+            <Route path={`${URLS.baseUrl}/renees-story`} component={ReneesStory}/>
             <Route path={`${URLS.baseUrl}/contact`} component={Contact}/>
             <Redirect from='*' to={URLS.baseUrl}/>
         </Route>

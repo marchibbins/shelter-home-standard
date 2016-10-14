@@ -1,5 +1,8 @@
 import React from 'react';
 import { Col, Grid, Row } from 'react-bootstrap';
+import { Link } from 'react-router';
+
+import { URLS } from '../../config';
 
 export default class GreatHomeDebate extends React.Component {
 
@@ -35,7 +38,7 @@ export default class GreatHomeDebate extends React.Component {
                     <h2>What does home mean to you?</h2>
                     <p><strong>By Renee Stephenson, 18, London</strong></p>
                     <p>For sixteen frightening months, my family were homeless. My single mother taught us kids that our ‘home’ was in our love for each other, not the sordid temporary accommodation we had found ourselves in.</p>
-                    <p><a href="#" className="read-more">Read more</a></p>
+                    <p><Link to={`${URLS.baseUrl}/renees-story`} className="read-more">Read more</Link></p>
                </Grid>
             </article>
         );
