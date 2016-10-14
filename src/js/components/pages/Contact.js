@@ -9,7 +9,7 @@ export default class Copy extends React.Component {
                 <article>
                     <h1>Contact</h1>
                     <Row>
-                        <Col md={4}>
+                        <Col sm={6} md={3}>
                             <div>
                                 <p><img src="/livinghomestandard/assets/img/contact-campbell-robb.jpg" className="img-responsive"/></p>
                                 <h3>Campbell Robb</h3>
@@ -20,8 +20,7 @@ export default class Copy extends React.Component {
                                 </p>
                             </div>
                         </Col>
-
-                        <Col md={4}>
+                        <Col sm={6} md={3}>
                             <div>
                                 <p><img src="/livinghomestandard/assets/img/contact-roger-harding.jpg" className="img-responsive"/></p>
                                 <h3>Roger Harding</h3>
@@ -32,9 +31,7 @@ export default class Copy extends React.Component {
                                 </p>
                             </div>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col md={4}>
+                        <Col sm={6} md={3}>
                             <div>
                                 <p><img src="/livinghomestandard/assets/img/contact-hilary-burkitt.jpg" className="img-responsive"/></p>
                                 <h3>Hilary Burkitt</h3>
@@ -45,8 +42,7 @@ export default class Copy extends React.Component {
                                 </p>
                             </div>
                         </Col>
-
-                        <Col md={4}>
+                        <Col sm={6} md={3}>
                             <div>
                                 <p><img src="/livinghomestandard/assets/img/contact-steve-akehurst.jpg" className="img-responsive"/></p>
                                 <h3>Steve Akehurst</h3>
