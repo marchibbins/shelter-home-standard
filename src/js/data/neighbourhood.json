@@ -14,7 +14,7 @@
     },
     "attributes": [
         {
-            "title": "Neighbourhood by household income",
+            "title": "Percentage failing Neighbourhood by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "title": "Neighbourhood by tenure",
+            "title": "Percentage failing Neighbourhood by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -66,7 +66,7 @@
             ]
         },
         {
-            "title": "Neighbourhood by age",
+            "title": "Percentage failing Neighbourhood by age",
             "values": [
                 {
                     "label": "16–24",
@@ -100,7 +100,7 @@
             ]
         },
         {
-            "title": "Neighbourhood by social grade",
+            "title": "Percentage failing Neighbourhood by social grade",
             "values": [
                 {
                     "label": "A",

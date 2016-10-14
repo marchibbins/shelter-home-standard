@@ -15,7 +15,7 @@
     },
     "attributes": [
         {
-            "title": "Stability by household income",
+            "title": "Percentage failing Stability by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -41,7 +41,7 @@
             ]
         },
         {
-            "title": "Stability by tenure",
+            "title": "Percentage failing Stability by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "title": "Stability by age",
+            "title": "Percentage failing Stability by age",
             "values": [
                 {
                     "label": "16–24",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "title": "Stability by social grade",
+            "title": "Percentage failing Stability by social grade",
             "values": [
                 {
                     "label": "A",

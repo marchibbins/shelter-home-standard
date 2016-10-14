@@ -24,7 +24,7 @@
     },
     "attributes": [
         {
-            "title": "Decent conditions by household income",
+            "title": "Percentage failing Decent conditions by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -50,7 +50,7 @@
             ]
         },
         {
-            "title": "Decent conditions by tenure",
+            "title": "Percentage failing Decent conditions by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -76,7 +76,7 @@
             ]
         },
         {
-            "title": "Decent conditions by age",
+            "title": "Percentage failing Decent conditions by age",
             "values": [
                 {
                     "label": "16–24",
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "title": "Decent conditions by social grade",
+            "title": "Percentage failing Decent conditions by social grade",
             "values": [
                 {
                     "label": "A",

@@ -17,7 +17,7 @@
     },
     "attributes": [
         {
-            "title": "Living Home Standard by household income",
+            "title": "Percentage failing the Living Home Standard by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "title": "Living Home Standard by tenure",
+            "title": "Percentage failing the Living Home Standard by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "title": "Living Home Standard by age",
+            "title": "Percentage failing the Living Home Standard by age",
             "values": [
                 {
                     "label": "16–24",
@@ -103,7 +103,7 @@
             ]
         },
         {
-            "title": "Living Home Standard by social grade",
+            "title": "Percentage failing the Living Home Standard by social grade",
             "values": [
                 {
                     "label": "A",

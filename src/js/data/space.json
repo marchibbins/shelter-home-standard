@@ -22,7 +22,7 @@
     },
     "attributes": [
         {
-            "title": "Space by household income",
+            "title": "Percentage failing Space by household income",
             "values": [
                 {
                     "label": "Up to £9,499",
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "title": "Space by tenure",
+            "title": "Percentage failing Space by tenure",
             "values": [
                 {
                     "label": "Owned with a mortgage",
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "title": "Space by age",
+            "title": "Percentage failing Space by age",
             "values": [
                 {
                     "label": "16–24",
@@ -108,7 +108,7 @@
             ]
         },
         {
-            "title": "Space by social grade",
+            "title": "Percentage failing Space by social grade",
             "values": [
                 {
                     "label": "A",
