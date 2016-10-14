@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
+import { Col, Grid } from 'react-bootstrap';
 
 export default class ForewordIpsosMori extends React.Component {
 
