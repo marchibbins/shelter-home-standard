@@ -30,12 +30,6 @@
     .logo {
         margin-bottom: 10px;
 
-        @media (max-width: 991px) {
-            &:first-child {
-                margin: 15px 0 20px;
-            }
-        }
-
         @media (min-width: 992px) {
             display: inline-block;
             vertical-align: bottom;
@@ -43,8 +37,17 @@
         }
     }
 
-    .logo-footer__logos {
-        @media (min-width: 992px) {
+    .logo--shelter {
+        @media (max-width: 991px) {
+            margin: 15px 0 20px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .logo-footer__logos {
+            float: right;
+        }
+        .logo--british-gas {
             float: right;
         }
     }

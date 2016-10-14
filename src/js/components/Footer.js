@@ -61,9 +61,9 @@ export default class Footer extends React.Component {
                 <div className="logo-footer">
                     <Grid>
                         <ul className="list-unstyled logo-footer__logos">
-                            <li className="logo"><img src="/livinghomestandard/assets/img/footer-logo-shelter.jpg" alt="Shelter"/></li>
-                            <li className="logo"><img src="/livinghomestandard/assets/img/footer-logo-ipsosmori.jpg" alt="Ipsos MORI"/></li>
-                            <li className="logo"><img src="/livinghomestandard/assets/img/footer-logo-britishgas.jpg" alt="British Gas"/></li>
+                            <li className="logo logo--shelter"><img src="/livinghomestandard/assets/img/footer-logo-shelter.jpg" alt="Shelter"/></li>
+                            <li className="logo logo--british-gas"><img src="/livinghomestandard/assets/img/footer-logo-britishgas.jpg" alt="British Gas"/></li>
+                            <li className="logo logo--ipsos-mori"><img src="/livinghomestandard/assets/img/footer-logo-ipsosmori.jpg" alt="Ipsos MORI"/></li>
                         </ul>
                         <ul className="list-unstyled logo-footer__info">
                             <li>
