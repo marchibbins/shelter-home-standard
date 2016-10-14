@@ -1,8 +1,10 @@
 import React from 'react';
 
 import Base from './Base';
+import MoreHomes from '../MoreHomes';
 
 import data from '../../data/affordability';
+import { URLS } from '../../config';
 
 export default class Affordability extends React.Component {
 
@@ -42,6 +44,7 @@ export default class Affordability extends React.Component {
                 chapterLink="living_home_standard_excerpt_affordability.pdf"
                 fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
+                extra={<MoreHomes/>}
                 recommends={recommends}/>
         );
     }

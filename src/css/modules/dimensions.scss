@@ -541,6 +541,17 @@
     }
 }
 
+.dimension-morehomes {
+    background-color: $black;
+    color: white;
+    padding: 15px;
+
+    .btn {
+        background: $brand-red;
+        color: white;
+    }
+}
+
 .dimension-colours {
     .dimension--lhs & {
         @include accent-color($lhs-accent, $lhs-dark, $black);

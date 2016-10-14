@@ -196,6 +196,9 @@ export default class Base extends React.Component {
                     <section className="dimension-section">{this.props.caseStudy}</section>
                 </Grid>
 
+                {this.props.extra &&
+                <section className="dimension-section">{this.props.extra}</section>}
+
                 {this.props.recommends &&
                 <section className="dimension-recommends">
                     <Grid>
