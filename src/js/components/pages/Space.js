@@ -39,9 +39,8 @@ export default class Space extends React.Component {
                 intro={intro}
                 infographic1="domain_space.svg"
                 infographic2="domain_space_quote.svg"
-                infographicLink="#"
-                chapterLink="#"
-                fullLink="#"
+                chapterLink="living_home_standard_excerpt_space.pdf"
+                fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
                 recommends={recommends}/>
         );

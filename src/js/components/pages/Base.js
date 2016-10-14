@@ -180,7 +180,7 @@ export default class Base extends React.Component {
                                 <Col md={6}></Col>
                             }
                             <Col md={6}>
-                                <a href={this.props.fullLink}
+                                <a href={`/livinghomestandard/assets/pdf/${this.props.fullLink}`}
                                     className="btn btn-primary btn--download btn--full-width">
                                     Download the full report
                                 </a>
@@ -188,7 +188,7 @@ export default class Base extends React.Component {
                         </div>}
                         {this.props.chapterLink &&
                         <Col md={6}>
-                            <a href={this.props.chapterLink}
+                            <a href={`/livinghomestandard/assets/pdf/${this.props.chapterLink}`}
                                 className="btn btn-secondary btn--download btn--full-width">
                                 Download the {this.props.name.toLowerCase()} chapter
                             </a>

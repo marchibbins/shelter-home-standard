@@ -34,9 +34,8 @@ export default class Neighbourhood extends React.Component {
                 intro={intro}
                 infographic1="domain_neighbourhood.svg"
                 infographic2="domain_neighbourhood_quote.svg"
-                infographicLink="#"
-                chapterLink="#"
-                fullLink="#"
+                chapterLink="living_home_standard_excerpt_neighbourhood.pdf"
+                fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
                 recommends={recommends}/>
         );

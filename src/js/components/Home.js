@@ -49,7 +49,7 @@ export default class Home extends React.Component {
                 infographicLink="#"
                 info={explainer}
                 attributes={data.attributes}
-                fullLink="#"
+                fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
                 digest={<Digest/>}/>
         );

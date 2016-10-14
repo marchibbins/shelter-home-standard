@@ -39,9 +39,8 @@ export default class Stability extends React.Component {
                 intro={intro}
                 infographic1="domain_stability.svg"
                 infographic2="domain_stability_quote.svg"
-                infographicLink="#"
-                chapterLink="#"
-                fullLink="#"
+                chapterLink="living_home_standard_excerpt_stability.pdf"
+                fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
                 recommends={recommends}/>
         );

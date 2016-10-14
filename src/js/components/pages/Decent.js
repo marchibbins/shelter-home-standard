@@ -35,9 +35,8 @@ export default class Decent extends React.Component {
                 intro={intro}
                 infographic1="domain_decent.svg"
                 infographic2="domain_decent_quote.svg"
-                infographicLink="#"
-                chapterLink="#"
-                fullLink="#"
+                chapterLink="living_home_standard_excerpt_decent.pdf"
+                fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}
                 recommends={recommends}/>
         );
