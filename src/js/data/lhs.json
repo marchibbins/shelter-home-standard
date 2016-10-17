@@ -1,20 +1,6 @@
 {
     "dimension": "The Living Home Standard",
     "fail": 43.2,
-    "criteria": {
-        "essential": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
-        ],
-        "tradeable": [
-            "Lorem ipsum dolor sit amet",
-            "Ut enim ad minim veniam",
-            "Duis aute irure dolor in",
-            "Excepteur sint occaecat cupidatat non"
-        ]
-    },
     "attributes": [
         {
             "title": "Percentage failing the Living Home Standard by household income",
