@@ -10,25 +10,19 @@ $text-color: $black;
 $brand-red: #ed1c22;
 
 $affordability-accent: #e30b17;
-$affordability-dark: #c9242b;
-$affordability-darker: #9f1d21;
+$affordability-dark: darken($affordability-accent, 20);
 
 $decent-accent: #a1d6d8;
-$decent-dark: #89b0b2;
-$decent-darker: #576062;
+$decent-dark: darken($decent-accent, 20);
 
 $neighbourhood-accent: #c9c5b2;
-$neighbourhood-dark: #dfded5;
-$neighbourhood-darker: #9e9e95;
+$neighbourhood-dark: darken($neighbourhood-accent, 20);
 
 $space-accent: #1eb5bf;
-$space-dark: #b4dfe1;
-$space-darker: #0b8186;
+$space-dark: darken($space-accent, 20);
 
 $stability-accent: #c3c530;
-$stability-dark: #d5d98f;
-$stability-darker: #7d835f;
+$stability-dark: darken($stability-accent, 20);
 
 $lhs-accent: $decent-accent;
-$lhs-dark: $decent-dark;
-$lhs-darker: $decent-darker;
+$lhs-dark: darken($lhs-accent, 20);
