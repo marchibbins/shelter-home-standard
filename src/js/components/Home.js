@@ -47,7 +47,7 @@ export default class Home extends React.Component {
                 intro={intro}
                 infographic1="home_map.svg"
                 infographic2="home_stats.svg"
-                infographicLink="#"
+                infographicLink="lhs_topline_results.pdf"
                 info={explainer}
                 attributes={data.attributes}
                 fullLink="living_home_standard_full_report.pdf"
