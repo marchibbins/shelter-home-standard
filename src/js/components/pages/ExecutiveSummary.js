@@ -56,14 +56,11 @@ export default class ExecutiveSummary extends React.Component {
                                     <li>The home is free from pest problems</li>
                                     <li>The home is free from mould or damp problems</li>
                                     <li>The home is suitable for the current age and/or disability related needs of everyone in the household</li>
-                                    <li>There is adequate space to store essential items, such as a reasonable amount of clothes, towels and bedding</li>
-                                    <li>There are enough bathroom facilities for everyone living in the household to be able to use them at a time suitable for their needs</li>
-                                    <li>The home has access to outdoor space, for example a private or shared garden, or balcony</li>
-                                    <li>There is enough space to have visitors during the day or evening</li>
-                                    <li>There is enough space for members of the household to study or do work or homework if they need to</li>
-                                    <li>There is enough space for a guest to stay overnight, for instance on a sofa or sofa bed</li>
-                                    <li>There is enough space to store domestic items like vacuum cleaners and ironing boards to keep them out of the way</li>
-                                    <li>There is enough space to store some personal belongings, such as books or children’s toys</li>
+                                    <li>There are electrical sockets in the main living areas, kitchen and bedroom(s)</li>
+                                    <li>The home is free from outside noise that regularly disrupts sleep or daily activities</li>
+                                    <li>The home has enough natural light in the main living areas, kitchen and bedroom(s)</li>
+                                    <li>Able to dry laundry in the home without causing mould or damp problems</li>
+                                    <li>It is possible to access the internet from the home or get an internet connection if needed</li>
                                 </ul>
                             </p>
 
@@ -77,7 +74,38 @@ export default class ExecutiveSummary extends React.Component {
                                     <li>Anyone in the household who works outside the home can usually reach their place of work in an hour or less</li>
                                </ul>
                             </p>
-                            </Col>
+
+                            <h3>Stability</h3>
+
+                            <p>
+                                <ul>
+                                    <li>The household has enough control over how long they can live in the home</li>
+                                    <li>If ever given notice to leave the home, the household feel they would be given enough notice to secure somewhere else suitable to live.</li>
+                                    <li>Able to stay in the home long enough to feel part of the local community if wanted</li>
+                                    <li>Can make changes to the interior of the home such as decorating, if wanted</li>
+                                    <li>Able to keep a pet in the home or garden if wanted</li>
+                               </ul>
+                            </p>
+
+                            <h3>Space</h3>
+
+                            <p>
+                                <ul>
+                                    <li>The number of bedrooms in the home is adequate for all members of the household</li>
+                                    <li>There is enough space to allow all members of the household to have privacy, for example when they wish to be alone</li>
+                                    <li>There is enough space for all members of the household to comfortably spend time together in the same room</li>
+                                    <li>There is adequate space to prepare and cook food</li>
+                                    <li>There is adequate space to store essential items, such as a reasonable amount of clothes, towels and bedding</li>
+                                    <li>There are enough bathroom facilities for everyone living in the household to be able to use them at a time suitable for their needs</li>
+                                    <li>The home has access to outdoor space, for example a private or shared garden, or balcony</li>
+                                    <li>There is enough space to have visitors during the day or evening</li>
+                                    <li>There is enough space for members of the household to study or do work or homework if they need to</li>
+                                    <li>There is enough space for a guest to stay overnight, for instance on a sofa or sofa bed</li>
+                                    <li>There is enough space to store domestic items like vacuum cleaners and ironing boards to keep them out of the way</li>
+                                    <li>There is enough space to store some personal belongings, such as books or children’s toys</li>
+                               </ul>
+                            </p>
+                        </Col>
                     </Row>
                 </article>
            </Grid>
