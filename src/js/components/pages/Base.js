@@ -144,6 +144,21 @@ export default class Base extends React.Component {
                     </Grid>
                 </div>
 
+                {this.props.slug === 'lhs' && this.props.fullLink &&
+                <div className="dimension-downloads dimension-downloads--top">
+                    <Grid className="container--wide">
+                        <div>
+                            <Col md={6}></Col>
+                            <Col md={6}>
+                                <a href={`/livinghomestandard/assets/pdf/${this.props.fullLink}`}
+                                    className="btn btn-primary btn--download btn--full-width">
+                                    Download the full report
+                                </a>
+                            </Col>
+                        </div>
+                    </Grid>
+                </div>}
+
                 <Grid className="container--wide">
                     <PanelGroup>
                         {this.state.attributes.map((panel, i) => (
