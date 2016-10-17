@@ -55,6 +55,10 @@ export default class Base extends React.Component {
             <article className={`dimension dimension--${this.props.slug || this.props.name.split(' ')[0].toLowerCase()}`}>
                 {this.props.slug === 'lhs' &&
                 <Grid>
+                    <p className="dimension-strapline hidden-md hidden-lg">
+                        <span className="dimension-strapline__img">
+                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
+                            all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
                     <Row>
                         <Col md={6}>
                             <h1 className="dimension-title">{this.props.name}</h1>
@@ -65,10 +69,6 @@ export default class Base extends React.Component {
                                 src="/livinghomestandard/assets/img/lhs-house-home-stat.svg"/>
                         </Col>
                     </Row>
-                    <p className="dimension-strapline hidden-md hidden-lg">
-                        <span className="dimension-strapline__img">
-                            <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
-                            all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
                 </Grid>}
 
                 {this.props.slug !== 'lhs' &&
