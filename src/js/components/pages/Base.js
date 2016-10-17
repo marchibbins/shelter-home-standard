@@ -114,7 +114,7 @@ export default class Base extends React.Component {
                                 className="panel--arrows col-md-6 col-lg-6" eventKey={1}>
                                 <ol className="list-unstyled">
                                     {this.props.criteria.essential.map((criteria, i) => (
-                                        <li key={i}>{criteria}</li>
+                                        <li key={i} className="point">{criteria}</li>
                                     ))}
                                 </ol>
                             </Panel>
@@ -123,7 +123,7 @@ export default class Base extends React.Component {
                                     eventKey={this.state.windowWidth >= 992 ? 1 : 2}>
                                 <ol className="list-unstyled">
                                     {this.props.criteria.tradeable.map((criteria, i) => (
-                                        <li key={i}>{criteria}</li>
+                                        <li key={i} className={i === 0 ? 'title' : 'point'}>{criteria}</li>
                                     ))}
                                 </ol>
                             </Panel>
