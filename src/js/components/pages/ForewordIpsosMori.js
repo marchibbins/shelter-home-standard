@@ -8,7 +8,7 @@ export default class ForewordIpsosMori extends React.Component {
             <Grid>
                 <article>
                     <h1>Foreword</h1>
-                    <h2>Ipsos MORI</h2>
+                    <h3>Ipsos MORI</h3>
                     <Row>
                         <Col md={7}>
                             <p>When Shelter first shared with us their ambitions to create the Living Home Standard we quickly understood that this would be a unique and challenging project, but one that we were excited to have the opportunity to be involved in.</p>

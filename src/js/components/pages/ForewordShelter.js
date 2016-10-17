@@ -8,7 +8,8 @@ export default class ForewordShelter extends React.Component {
             <Grid>
                 <article>
                     <h1>Foreword</h1>
-                    <h2>Campbell Robb, Chief Executive, Shelter</h2>
+                    <h3>Campbell Robb</h3>
+                    <h4>Chief Executive, Shelter</h4>
                     <Row>
                         <Col md={5} mdPush={7}>
                             <img className="img-responsive"
