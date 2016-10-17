@@ -91,7 +91,17 @@ export default class Base extends React.Component {
 
                 {this.props.slug === 'lhs' &&
                 <Grid>
+                    <Row>
+                        <Col md={1}/>
+                        <Col md={10}>
+                            <p className="embed-responsive embed-responsive-16by9">
+                                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/gLOYcuNfkJ8"></iframe>
+                            </p>
+                        </Col>
+                        <Col md={1}/>
+                    </Row>
                     <div className="dimension-explore">
+                        <p>The Living Home Standard is made up of five dimensions:</p>
                         <ul className="list-unstyled">
                             {dimensions.map((dimension, i) => {
                                 let slug = dimension.split(' ')[0].toLowerCase();
@@ -227,9 +237,7 @@ export default class Base extends React.Component {
                     <Grid>
                         <h3 className="dimension-recommends__title">Shelter recommends</h3>
                         {this.props.recommends}
-
-                        {this.props.recommendsLink &&
-                        <p><a href={this.props.recommendsLink} className="read-more">Read more</a></p>}
+                        <p><a href="/livinghomestandard/assets/pdf/lhs_shelter_recommends.pdf" className="read-more">Read more</a></p>
                     </Grid>
                 </section>}
 
