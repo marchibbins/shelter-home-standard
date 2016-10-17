@@ -41,6 +41,7 @@ export default class Affordability extends React.Component {
                 intro={intro}
                 infographic1="domain_affordability.svg"
                 infographic2="domain_affordability_quote.svg"
+                infographicLink="lhs_affordability_infographic.pdf"
                 chapterLink="living_home_standard_excerpt_affordability.pdf"
                 fullLink="living_home_standard_full_report.pdf"
                 caseStudy={caseStudy}

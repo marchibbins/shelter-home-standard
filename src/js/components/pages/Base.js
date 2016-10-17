@@ -138,6 +138,12 @@ export default class Base extends React.Component {
                         <img src={`/livinghomestandard/assets/img/${this.props.infographic2}`}
                             className="dimension-infographic__img img-responsive"/>
                     </Grid>
+                    {this.props.slug !== 'lhs' &&
+                    <Grid>
+                        <a href={`/livinghomestandard/assets/pdf/${this.props.infographicLink}`} className="dimension-infographic__btn btn btn-outline">
+                            Infographic on {this.props.name.toLowerCase()}
+                        </a>
+                    </Grid>}
                 </div>
 
                 <Grid className="container--wide">
