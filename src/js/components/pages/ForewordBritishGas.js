@@ -8,7 +8,7 @@ export default class ForewordBritishGas extends React.Component {
             <Grid>
                 <article>
                     <h1>Foreword</h1>
-                    <h2>British Gas</h2>
+                    <h2>Sarwjit Sambhi, Managing Director, UK Home, British Gas</h2>
                     <Row>
                         <Col md={5} mdPush={7}>
                             <img className="img-responsive"
