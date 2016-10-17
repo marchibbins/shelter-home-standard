@@ -15,8 +15,7 @@ export default class Base extends React.Component {
         this.handleResize = this.handleResize.bind(this);
     }
 
-    handleAttrClick (objIndex, valueIndex, event) {
-        event.preventDefault();
+    handleAttrClick (objIndex, valueIndex) {
         let attributes = this.state.attributes;
         attributes[objIndex].values.map(value => {
             value['active'] = false;

@@ -19,8 +19,15 @@ import Contact from './components/pages/Contact';
 
 import { URLS } from './config';
 
-const handleUpdate = function () {
+const handleUpdate = () => {
     window.scrollTo(0, 0);
+    if (window.dataLayer) {
+        window.dataLayer.push({
+            'event': 'VirtualPageview',
+            'virtualPageURL': window.location.pathname,
+            'virtualPageTitle': `Living Home Standard – ${window.location.pathname.split('/').pop()}`
+        });
+    }
 };
 
 ReactDOM.render(
