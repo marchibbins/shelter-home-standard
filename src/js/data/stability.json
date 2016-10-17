@@ -44,21 +44,21 @@
             "title": "Percentage failing Stability by tenure",
             "values": [
                 {
-                    "label": "Owned with a mortgage",
-                    "percent": 4.0
-                },
-                {
                     "label": "Owned without a mortgage",
                     "percent": 4.9
                 },
                 {
-                    "label": "LA rented",
-                    "percent": 15.9
+                    "label": "Owned with a mortgage",
+                    "percent": 4.0
                 },
                 {
                     "label": "Private rented",
                     "percent": 24.5,
                     "active": true
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 15.9
                 },
                 {
                     "label": "HA rented",

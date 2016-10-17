@@ -43,21 +43,21 @@
             "title": "Percentage failing Neighbourhood by tenure",
             "values": [
                 {
+                    "label": "Owned without a mortgage",
+                    "percent": 2.6
+                },
+                {
                     "label": "Owned with a mortgage",
                     "percent": 1.9
                 },
                 {
-                    "label": "Owned without a mortgage",
-                    "percent": 2.6
+                    "label": "Private rented",
+                    "percent": 7.0
                 },
                 {
                     "label": "LA rented",
                     "percent": 13.6,
                     "active": true
-                },
-                {
-                    "label": "Private rented",
-                    "percent": 7.0
                 },
                 {
                     "label": "HA rented",

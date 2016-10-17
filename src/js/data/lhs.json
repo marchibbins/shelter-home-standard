@@ -32,21 +32,21 @@
             "title": "Percentage failing the Living Home Standard by tenure",
             "values": [
                 {
-                    "label": "Owned with a mortgage",
-                    "percent": 38.3
-                },
-                {
                     "label": "Owned without a mortgage",
                     "percent": 19.5
                 },
                 {
-                    "label": "LA rented",
-                    "percent": 68.4
+                    "label": "Owned with a mortgage",
+                    "percent": 38.3
                 },
                 {
                     "label": "Private rented",
                     "percent": 68.5,
                     "active": true
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 68.4
                 },
                 {
                     "label": "HA rented",

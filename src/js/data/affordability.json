@@ -43,21 +43,21 @@
             "title": "Percentage failing Affordability by tenure",
             "values": [
                 {
-                    "label": "Owned with a mortgage",
-                    "percent": 27.5
-                },
-                {
                     "label": "Owned without a mortgage",
                     "percent": 3.9
                 },
                 {
-                    "label": "LA rented",
-                    "percent": 47.8
+                    "label": "Owned with a mortgage",
+                    "percent": 27.5
                 },
                 {
                     "label": "Private rented",
                     "percent": 48.2,
                     "active": true
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 47.8
                 },
                 {
                     "label": "HA rented",

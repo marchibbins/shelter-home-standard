@@ -53,21 +53,21 @@
             "title": "Percentage failing Decent conditions by tenure",
             "values": [
                 {
+                    "label": "Owned without a mortgage",
+                    "percent": 10.6
+                },
+                {
                     "label": "Owned with a mortgage",
                     "percent": 12.9
                 },
                 {
-                    "label": "Owned without a mortgage",
-                    "percent": 10.6
+                    "label": "Private rented",
+                    "percent": 27.5
                 },
                 {
                     "label": "LA rented",
                     "percent": 28.9,
                     "active": true
-                },
-                {
-                    "label": "Private rented",
-                    "percent": 27.5
                 },
                 {
                     "label": "HA rented",

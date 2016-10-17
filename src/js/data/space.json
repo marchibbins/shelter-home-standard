@@ -51,20 +51,20 @@
             "title": "Percentage failing Space by tenure",
             "values": [
                 {
-                    "label": "Owned with a mortgage",
-                    "percent": 9.4
-                },
-                {
                     "label": "Owned without a mortgage",
                     "percent": 4.7
                 },
                 {
-                    "label": "LA rented",
-                    "percent": 22.0
+                    "label": "Owned with a mortgage",
+                    "percent": 9.4
                 },
                 {
                     "label": "Private rented",
                     "percent": 16.1
+                },
+                {
+                    "label": "LA rented",
+                    "percent": 22.0
                 },
                 {
                     "label": "HA rented",
