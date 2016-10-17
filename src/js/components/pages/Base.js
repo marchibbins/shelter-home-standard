@@ -58,7 +58,7 @@ export default class Base extends React.Component {
                     <p className="dimension-strapline hidden-md hidden-lg">
                         <span className="dimension-strapline__img">
                             <span className="sr-only">{Math.round(this.props.fail)}%</span></span> of
-                            all homes do not meet the {this.props.name.toLowerCase()} Living Home Standard</p>
+                            all homes do not meet the Living Home Standard</p>
                     <Row>
                         <Col md={6}>
                             <h1 className="dimension-title">{this.props.name}</h1>
@@ -139,7 +139,7 @@ export default class Base extends React.Component {
                     </Grid>
                     <Grid>
                         <a href={`/livinghomestandard/assets/pdf/${this.props.infographicLink}`} className="dimension-infographic__btn btn btn-outline">
-                            Infographic on {this.props.name}
+                            Find out more about {this.props.name}
                         </a>
                     </Grid>
                 </div>
