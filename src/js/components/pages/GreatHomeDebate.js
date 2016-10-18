@@ -12,8 +12,10 @@ export default class GreatHomeDebate extends React.Component {
                 <Grid>
                     <h1 className="ghd__title">
                         <span className="sr-only">Great Home Debate</span>
-                        <img src="/livinghomestandard/assets/img/GHD_Logo_portrait.png" className="img-responsive hidden-sm hidden-md hidden-lg"/>
-                        <img src="/livinghomestandard/assets/img/GHD_Logo_landscape.png" className="img-responsive hidden-xs"/>
+                        <a href="http://www.greathomedebate.org.uk/">
+                            <img src="/livinghomestandard/assets/img/GHD_Logo_portrait.png" className="img-responsive hidden-sm hidden-md hidden-lg"/>
+                            <img src="/livinghomestandard/assets/img/GHD_Logo_landscape.png" className="img-responsive hidden-xs"/>
+                        </a>
                     </h1>
                     <Row>
                         <Col md={6} mdPush={6}>

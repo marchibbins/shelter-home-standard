@@ -20,7 +20,9 @@ export default class Home extends React.Component {
                         <img src="/livinghomestandard/assets/img/great-home-debate.jpg"/>
                     </div>
                     <div className="dimension-case__img">
-                        <img src="/livinghomestandard/assets/img/GHD_Logo_landscape.png"/>
+                        <a href="http://www.greathomedebate.org.uk/">
+                            <img src="/livinghomestandard/assets/img/GHD_Logo_landscape.png"/>
+                        </a>
                     </div>
 
                     <h3 className="dimension-case__title">The Great Home Debate</h3>
