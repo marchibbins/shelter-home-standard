@@ -274,7 +274,7 @@
         transition: background-color .5s ease;
 
         &.active {
-            @extend .dimension-colours-bg;
+            background-color: $dark-grey;
 
             .progress-bar {
                 @extend .dimension-colours;
