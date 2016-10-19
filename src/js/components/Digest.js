@@ -55,10 +55,10 @@ export default class Digest extends React.Component {
                             <Tab.Pane eventKey="2" className="dimension-digest__panel">
                                 <Collapse in={this.state[2]}>
                                     <div>
-                                        <p className="lead">&ldquo;We share a belief with Shelter that we should all have a safe, decent and warm place to call home&rdquo;</p>
-                                        <p>Working together for four years, we’ve raised over £1million and helped to improve living standards for thousands of families.</p>
-                                        <p>Home is central to our work as it’s vital to our customers. We need to do more to improve the standard of homes for everyone. We saw the development of the Living Home Standard as a powerful opportunity to do just this.</p>
-                                        <p>As well as building on our partnership with Shelter, we’ve been able to learn more from our customers about what’s important to them in a home and together produce something that has the potential to help us all have a safe, decent and warm place to call home.</p>
+                                        <p className="lead">&ldquo;We share a belief with Shelter that everyone should have a safe, decent and warm place to call home&rdquo;</p>
+                                        <p>At British Gas we share a belief with Shelter, that everyone should have a safe, decent and warm place to call home. Working together for four years, we’ve raised over £1million and helped to improve living standards for thousands of families.</p>
+                                        <p>Our shared focus has been on improving standards in the private rented sector. We’re proud of all we have achieved together by pooling our expertise and knowledge.</p>
+                                        <p>Home is central to everything we do, because it’s vital to our customers. We know that in too many parts of Britain people are not happy to call where they live ‘home’. So we need to do more to improve the standard of homes for everyone. We saw the development of the Living Home Standard as a powerful opportunity to do just this.</p>
                                         <p><Link to={`${URLS.baseUrl}/foreword-british-gas`} className="read-more">Read more</Link></p>
                                     </div>
                                 </Collapse>
